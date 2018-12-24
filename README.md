@@ -7,7 +7,7 @@ This repository contains the data and code around the (unofficial) Advent of Cod
 - 2015: No survey 😢
 - 2016: No survey 😢
 - 2017: No survey 😢
-- 2018: [Survey Link](https://goo.gl/forms/9c8EvwY470vmIcO92), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/a3fknt/unofficial_aoc_2018_participant_survey/), and [Reddit Reminder (Dec 18)](https://www.reddit.com/r/adventofcode/comments/a7abpp/reminder_unofficial_advent_of_code_survey_closes/)
+- 2018: [Survey Link](https://goo.gl/forms/9c8EvwY470vmIcO92), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/a3fknt/unofficial_aoc_2018_participant_survey/), [Reddit Reminder (Dec 18)](https://www.reddit.com/r/adventofcode/comments/a7abpp/reminder_unofficial_advent_of_code_survey_closes/), and [a Power BI dashboard (valid through around end of Feb 2018)](https://app.powerbi.com/view?r=eyJrIjoiYzRhODNlMWEtMWU4YS00MmE2LWIwNmMtYjg0MzMxMzlhMjEyIiwidCI6IjQwOTEzYjA4LTQyZTYtNGMxOS05Y2FiLTRmOWZlM2U0YzJmZCIsImMiOjl9)
 
 ## License and Affiliation Disclaimer
 
@@ -24,3 +24,9 @@ The code falls under the [MIT License](LICENSE_MIT.txt).
 Data files (`*.json`, `*.csv`, and wherever otherwise explicitly noted) fall under the [Open Database License (ODbL) v1.0](LICENSE_ODBL.txt).
 
 In addition to linked license files, Open Data Commons also has a [human-readable summary of the ODbL v1.0](https://opendatacommons.org/licenses/odbl/summary/index.html).
+
+## Example
+
+Here's an example of a dashboard created based on this data (2018 edition):
+
+![AoC 2018 Unofficial Survey Dashboard Demo](2018/aoc-2018-unofficial-survey-demo.gif)
