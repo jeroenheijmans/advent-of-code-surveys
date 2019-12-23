@@ -8,6 +8,7 @@ This repository contains the data and code around the (unofficial) Advent of Cod
 - 2016: No survey 😢
 - 2017: No survey 😢
 - 2018: [Survey Link](https://goo.gl/forms/9c8EvwY470vmIcO92), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/a3fknt/unofficial_aoc_2018_participant_survey/), [Reddit Reminder (Dec 18)](https://www.reddit.com/r/adventofcode/comments/a7abpp/reminder_unofficial_advent_of_code_survey_closes/), and [a Power BI dashboard (valid through around end of Feb 2018)](https://app.powerbi.com/view?r=eyJrIjoiYzRhODNlMWEtMWU4YS00MmE2LWIwNmMtYjg0MzMxMzlhMjEyIiwidCI6IjQwOTEzYjA4LTQyZTYtNGMxOS05Y2FiLTRmOWZlM2U0YzJmZCIsImMiOjl9)
+- 2019: Survey Link (forthcoming), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/e6m6tj/unofficial_aoc_2019_participant_survey/), [Reddit Reminder (Dec 15)](https://www.reddit.com/r/adventofcode/comments/eb0nfx/reminder_unofficial_advent_of_code_survey_2019/), and a Dashboard (forthcoming)
 
 ## License and Affiliation Disclaimer
 
@@ -25,7 +26,11 @@ Data files (`*.json`, `*.csv`, and wherever otherwise explicitly noted) fall und
 
 In addition to linked license files, Open Data Commons also has a [human-readable summary of the ODbL v1.0](https://opendatacommons.org/licenses/odbl/summary/index.html).
 
-## Example
+## Examples
+
+Here's an example of a dashboard created based on this data (2019 edition):
+
+![AoC 2019 Unofficial Survey Dashboard Demo](2019/aoc-2019-unofficial-survey-demo.gif)
 
 Here's an example of a dashboard created based on this data (2018 edition):
 
