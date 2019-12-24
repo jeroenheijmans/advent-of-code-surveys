@@ -55,6 +55,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "C++"
     ],
     "IDEs": [
@@ -947,7 +948,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "D"
+    ],
     "IDEs": [
       "Vim"
     ],
@@ -1225,7 +1228,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Visual Studio"
     ],
@@ -1673,7 +1678,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "4coder"
     ],
@@ -1954,6 +1961,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Python 2"
     ],
     "IDEs": [
@@ -2000,6 +2008,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Java"
     ],
     "IDEs": [
@@ -2632,7 +2641,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "VS Code"
     ],
@@ -2869,6 +2880,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "C++",
       "Python 3"
     ],
@@ -3341,6 +3353,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Assembly",
+      "C",
       "C++"
     ],
     "IDEs": [
@@ -4374,6 +4387,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "Bash/Shell",
+      "C",
       "Go",
       "Python 3"
     ],
@@ -4421,7 +4435,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "vi"
     ],
@@ -4467,6 +4483,7 @@
     "Participates_in_2017": "Later",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "J",
       "SCHEME"
     ],
     "IDEs": [
@@ -4632,6 +4649,7 @@
     "Participates_in_2017": "Later",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Excel",
       "Python 2"
     ],
@@ -5069,6 +5087,7 @@
       "Perl 6",
       "PHP",
       "Python 3",
+      "R",
       "Ruby",
       "Rust",
       "Scala",
@@ -5306,7 +5325,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "R"
+    ],
     "IDEs": [
       "RStudio"
     ],
@@ -5399,6 +5420,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "C++"
     ],
     "IDEs": [
@@ -5733,6 +5755,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Python 2",
       "Python 3",
       "Rust"
@@ -6237,7 +6260,9 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Notepad++"
     ],
@@ -6287,6 +6312,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Haskell",
+      "R",
       "Rust"
     ],
     "IDEs": [
@@ -7626,7 +7652,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Notepad++"
     ],
@@ -7646,6 +7674,7 @@
     "Participates_in_2017": "Later",
     "Participates_in_2018": "Later",
     "Languages": [
+      "C",
       "Python 3"
     ],
     "IDEs": [
@@ -7975,6 +8004,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
+      "C",
       "C++",
       "Excel"
     ],
@@ -8093,6 +8123,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Java"
     ],
     "IDEs": [
@@ -8931,6 +8962,7 @@
       "Go",
       "Julia",
       "Python 2",
+      "R",
       "Ruby"
     ],
     "IDEs": [
@@ -10575,7 +10607,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "D"
+    ],
     "IDEs": [
       "Vim"
     ],
@@ -12068,7 +12102,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Emacs"
     ],
@@ -12420,7 +12456,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "R"
+    ],
     "IDEs": [
       "Emacs"
     ],
@@ -13059,6 +13097,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "C#",
       "C++"
     ],
@@ -13085,6 +13124,7 @@
     "Participates_in_2017": "Later",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Python 2"
     ],
     "IDEs": [
@@ -13695,6 +13735,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Bash/Shell",
+      "C",
       "Delphi",
       "Go",
       "PHP",
@@ -16010,7 +16051,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "nano"
     ],
@@ -16458,6 +16501,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "J",
       "Python 3"
     ],
     "IDEs": [
@@ -16976,7 +17020,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "VS Code"
     ],
@@ -18093,6 +18139,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Bash/Shell",
+      "C",
       "C++",
       "Python 3",
       "Rust"
@@ -18540,7 +18587,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Emacs"
     ],
@@ -18632,6 +18681,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "D",
       "Lisp"
     ],
     "IDEs": [
@@ -19003,6 +19053,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "C++",
       "Python 3"
     ],
@@ -19124,7 +19175,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "R"
+    ],
     "IDEs": [
       "RStudio"
     ],
@@ -19370,7 +19423,9 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "J"
+    ],
     "IDEs": [
       "Vim"
     ],
@@ -20080,7 +20135,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Vim"
     ],
@@ -20308,7 +20365,8 @@
     "Participates_in_2018": "Later",
     "Languages": [
       "Python 2",
-      "Python 3"
+      "Python 3",
+      "R"
     ],
     "IDEs": [
       "PyCharm"
@@ -20705,7 +20763,9 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "V"
+    ],
     "IDEs": [
       "VS Code"
     ],
@@ -21309,7 +21369,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Emacs"
     ],
@@ -21375,7 +21437,8 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Python 3"
+      "Python 3",
+      "R"
     ],
     "IDEs": [
       "IPython / Jupyter",
@@ -22165,7 +22228,9 @@
     "Participates_in_2016": "Later",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Emacs"
     ],
@@ -22973,9 +23038,11 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
+      "C",
       "C++",
       "Go",
-      "Python 3"
+      "Python 3",
+      "R"
     ],
     "IDEs": [
       "Atom"
@@ -23917,7 +23984,9 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
-    "Languages": [],
+    "Languages": [
+      "q"
+    ],
     "IDEs": [
       "VS Code"
     ],
@@ -24082,6 +24151,7 @@
     "Languages": [
       "Assembly",
       "Bash/Shell",
+      "C",
       "Julia",
       "Prolog",
       "Python 3",
@@ -25707,6 +25777,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
+      "C",
       "Haskell"
     ],
     "IDEs": [
@@ -28610,6 +28681,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Python 2"
     ],
     "IDEs": [
@@ -28729,6 +28801,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "Bash/Shell",
+      "C",
       "C++",
       "Java",
       "JavaScript"
@@ -29292,7 +29365,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "Later",
-    "Languages": [],
+    "Languages": [
+      "C"
+    ],
     "IDEs": [
       "Notepad++"
     ],
@@ -29383,7 +29458,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "R"
+    ],
     "IDEs": [
       "RStudio",
       "VS Code"
@@ -29709,7 +29786,9 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Later",
     "Participates_in_2018": "No",
-    "Languages": [],
+    "Languages": [
+      "D"
+    ],
     "IDEs": [
       "VS Code"
     ],
@@ -30168,6 +30247,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
+      "C",
       "Python 3"
     ],
     "IDEs": [
