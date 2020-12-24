@@ -22,3 +22,5 @@ Below will be a series of images with the same (though non-interactive) results.
 ![Dashboard](dashboard-04.png)
 
 ![Dashboard](dashboard-05.png)
+
+![Dashboard](dashboard-06.png)
