@@ -1,0 +1,7 @@
+# Ignoring this file for a few commits, until I'm sure it does not
+# contain PII accidentally (e.g. someone entering it) so it never
+# accidentally enters git history. Will later allow the sanitized
+# data to be committed and distribute under ODbL.
+#
+# Fun fact: file has a 4 year old spelling mistake, it seems :-)
+results-sanitzed.json
