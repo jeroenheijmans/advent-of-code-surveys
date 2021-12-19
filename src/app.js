@@ -270,10 +270,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   ];
 
   const participationOptions = [
-    { bgColor: "rgba(255, 200,   0, 0.5)", borderColor: "rgba(255, 200,   0, 0.9)", key: "No", },
-    { bgColor: "rgba(255,   0,   0, 0.5)", borderColor: "rgba(255,   0,   0, 0.9)", key: "Later", },
+    { bgColor: "rgba(255, 200,   0, 0.5)", borderColor: "rgba(155, 128,   0, 0.9)", key: "No", },
+    { bgColor: "rgba(255,   0,   0, 0.5)", borderColor: "rgba(155,   0,   0, 0.9)", key: "Later", },
     { bgColor: "rgba(  0, 128,   0, 0.5)", borderColor: "rgba(  0, 128,   0, 0.9)", key: "Dec", },
-    { bgColor: "rgba(  0, 128, 255, 0.5)", borderColor: "rgba(  0, 128, 255, 0.9)", key: "Involved otherwise", },
+    { bgColor: "rgba(  0, 128, 255, 0.5)", borderColor: "rgba(  0,  64, 155, 0.9)", key: "Involved otherwise", },
   ];
 
   data = {
@@ -357,6 +357,23 @@ window.addEventListener("DOMContentLoaded", async () => {
         }
       },
     },
+  });
+
+  function toggleYear(year) {
+    for (let key in charts) {
+      charts[key].data.datasets.forEach((dataset) =>{
+        if (dataset.label === year) {
+          dataset.hidden = !dataset.hidden;
+        }
+      });
+      charts[key].update();
+    }
+  }
+
+  document.querySelectorAll("input[name=years]").forEach(input => {
+    input.addEventListener("change", () => {
+      toggleYear(input.value);
+    });
   });
 
 });
