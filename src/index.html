@@ -2,14 +2,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" 
       integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -26,14 +30,14 @@
       <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2015" disabled> 2015</label>
     </header>
     <section id="charts">
-      <div id="participationTiming">participationTiming</div>
-      <div id="participationReason">participationReason</div>
-      <div id="operatingSystem">operatingSystem</div>
-      <div id="language">language</div>
-      <div id="ide">ide</div>
-      <div id="leaderboardsPrivate">leaderboardsPrivate</div>
-      <div id="leaderboardsGlobal">leaderboardsGlobal</div>
-      <div id="responsesPerDay">responsesPerDay</div>
+      <div class="chart-container"><canvas id="operatingSystem"></canvas></div>
+      <div class="chart-container"><canvas id="language"></canvas></div>
+      <div class="chart-container"><canvas id="participationTiming"></canvas></div>
+      <div class="chart-container"><canvas id="participationReason"></canvas></div>
+      <div class="chart-container"><canvas id="ide"></canvas></div>
+      <div class="chart-container"><canvas id="leaderboardsPrivate"></canvas></div>
+      <div class="chart-container"><canvas id="leaderboardsGlobal"></canvas></div>
+      <div class="chart-container"><canvas id="responsesPerDay"></canvas></div>
       <p>
         Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>Stub for text content.<br>
       </p>
@@ -46,5 +50,6 @@
         <a href="https://github.com/jeroenheijmans/advent-of-code-charts">Related: browser plugin with leaderboard charts</a>
       </p>
     </footer>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
