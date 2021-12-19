@@ -1,3 +1,11 @@
+:root {
+  --bg-darkest: #161d1f;
+  --bg-darker: #1b2223;
+  --bg-dark: #232c2d;
+  --fg-lighter: #f4efef;
+  --fg-light: #cecaca;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +15,8 @@ html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 14pt;
+  background: var(--bg-darkest);
+  color: var(--fg-lighter);
 }
 
 html {
@@ -14,7 +24,12 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100%;
+}
+
+a {
+  color: var(--fg-lighter);
 }
 
 header {
@@ -23,18 +38,22 @@ header {
   padding: 10px;
   margin-bottom: 10px;
   background: #eee;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 2px 0 4px #aaa;
+  border-bottom: 1px solid var(--bg-darkest);
+  background: var(--bg-dark);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 header label {
   cursor: pointer;
   padding: 4px 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 4px 0;
+  border: 1px solid var(--bg-darkest);
+  background: var(--bg-darker);
+  display: inline-block;
 }
 
 header label.disabled {
@@ -42,24 +61,55 @@ header label.disabled {
 }
 
 header label:hover {
-  background: #ddd;
+  background: var(--bg-darkest);
+  border: 1px solid var(--fg-lighter);
+}
+
+.source-link {
+  padding: 10px;
+  float: right;
+  color: var(--fg-light);
+  text-decoration: none !important;
+}
+
+.source-link:hover {
+  text-decoration: underline !important;
 }
 
 footer {
-  position: sticky;
-  bottom: 0px;
   padding: 10px;
   margin-top: 10px;
-  background: #eee;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 2px 0 4px #aaa;
+  background: var(--bg-darker);
+  border-top: 1px solid var(--bg-darkest);
   font-size: 0.8rem;
+  box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+}
+
+#charts {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .chart-container {
-  margin: 20px;
   padding: 10px;
-  border: 2px solid #eee;
-  background: #fafafa;
-  max-width: 800px;
+  border: 1px solid var(--bg-darkest);
+  background: var(--bg-dark);
+}
+
+@media (max-width: 1400px) {
+  #charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .source-link {
+    padding: 0;
+  }
 }

@@ -9,13 +9,16 @@ const years = [
 
 Chart.register(ChartDataLabels);
 
+Chart.defaults.color = "#E0DEDE";
+Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
+
 // Helpers
 const getById = (id) => document.getElementById(id);
 
 function datalabelsYFormatter() {
   return {
     datalabels: {
-      color: "rgba(0, 0, 0, 0.9)",
+      color: "rgba(255, 255, 255, 0.8)",
       formatter: (value, ctx) => value.y || "",
     }
   };
@@ -270,10 +273,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   ];
 
   const participationOptions = [
-    { bgColor: "rgba(255, 200,   0, 0.5)", borderColor: "rgba(155, 128,   0, 0.9)", key: "No", },
-    { bgColor: "rgba(255,   0,   0, 0.5)", borderColor: "rgba(155,   0,   0, 0.9)", key: "Later", },
-    { bgColor: "rgba(  0, 128,   0, 0.5)", borderColor: "rgba(  0, 128,   0, 0.9)", key: "Dec", },
-    { bgColor: "rgba(  0, 128, 255, 0.5)", borderColor: "rgba(  0,  64, 155, 0.9)", key: "Involved otherwise", },
+    { bgColor: "rgba(255, 200,   0, 0.6)", borderColor: "rgba(155, 128,   0, 0.9)", key: "No", },
+    { bgColor: "rgba(255,   0,   0, 0.6)", borderColor: "rgba(155,   0,   0, 0.9)", key: "Later", },
+    { bgColor: "rgba(  0, 128,   0, 0.6)", borderColor: "rgba(  0, 128,   0, 0.9)", key: "Dec", },
+    { bgColor: "rgba(  0, 128, 255, 0.6)", borderColor: "rgba(  0,  64, 155, 0.9)", key: "Involved otherwise", },
   ];
 
   data = {
@@ -281,7 +284,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       label: answer.key,
       backgroundColor: answer.bgColor,
       borderColor: answer.borderColor,
-      borderWidth: 1,
+      borderWidth: 2,
       data: alldata.find(y => y.nr === currentYear)
         .responses
         .reduce((result, current) => {
@@ -323,6 +326,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
       showLine: true,
+      borderWidth: 3,
       data: year
         .responses
         .reduce(singleAnswerReducer("utcResponseDay"), defaultDataPoints())
