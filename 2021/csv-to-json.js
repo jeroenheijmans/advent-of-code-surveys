@@ -17,6 +17,7 @@ const columns = {
   'Have/will you get at least one ⭐ in Advent of Code 2021?': {
     header: 'Participates_in_2021',
     answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
       'Yes, (mostly) in december 2021': 'Dec',
       'Yes, (mostly) after 2021': 'Later',
@@ -27,6 +28,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2015': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -35,6 +37,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2016': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -43,6 +46,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2017': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -51,6 +55,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2018': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -59,6 +64,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2019': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -67,6 +73,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2020': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },

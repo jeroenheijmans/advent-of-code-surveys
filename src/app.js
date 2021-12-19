@@ -258,6 +258,65 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
 
   ////////////////////////////////////////
+  // participationTiming
+  const participationQuestions = [
+    { key: "Participates_in_2021", label: "2021" },
+    { key: "Participates_in_2015", label: "2015" },
+    { key: "Participates_in_2016", label: "2016" },
+    { key: "Participates_in_2017", label: "2017" },
+    { key: "Participates_in_2018", label: "2018" },
+    { key: "Participates_in_2019", label: "2019" },
+    { key: "Participates_in_2020", label: "2020" },
+  ];
+
+  const participationOptions = [
+    { bgColor: "rgba(255, 200,   0, 0.5)", borderColor: "rgba(255, 200,   0, 0.9)", key: "No", },
+    { bgColor: "rgba(255,   0,   0, 0.5)", borderColor: "rgba(255,   0,   0, 0.9)", key: "Later", },
+    { bgColor: "rgba(  0, 128,   0, 0.5)", borderColor: "rgba(  0, 128,   0, 0.9)", key: "Dec", },
+    { bgColor: "rgba(  0, 128, 255, 0.5)", borderColor: "rgba(  0, 128, 255, 0.9)", key: "Involved otherwise", },
+  ];
+
+  data = {
+    datasets: participationOptions.map(answer => ({
+      label: answer.key,
+      backgroundColor: answer.bgColor,
+      borderColor: answer.borderColor,
+      borderWidth: 1,
+      data: alldata.find(y => y.nr === currentYear)
+        .responses
+        .reduce((result, current) => {
+          participationQuestions.forEach(question => {
+            if (current[question.key] === answer.key) {
+              let item = result.find(i => i.x === question.label);
+              if (!item) {
+                item = { x: question.label, y: 0 };
+                result.push(item);
+              }
+              item.y++;
+            }
+          })
+          return result;
+        }, [])
+    }))
+  };
+
+  charts["participationTiming"] = new Chart(getById("participationTiming").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("Previous years: did you participate? (⚠ 2021 data only)"),
+        ...datalabelsYFormatter(),
+      },
+      scales: {
+        x: { stacked: true, },
+        y: { stacked: true, },
+      }
+    },
+  });
+
+  ////////////////////////////////////////
   // responsesPerDay
   const defaultDataPoints = () => [...Array(25).keys()].map(day => ({ x: day + 1, y: 0 }));
   data = {
