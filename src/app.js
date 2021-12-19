@@ -11,6 +11,7 @@ Chart.register(ChartDataLabels);
 
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
+Chart.defaults.aspectRatio = 1.67;
 
 // Helpers
 const getById = (id) => document.getElementById(id);
@@ -119,7 +120,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Operating System"),
         ...datalabelsYFormatter(),
@@ -148,7 +148,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Reason for participating"),
         ...datalabelsYFormatter(),
@@ -174,7 +173,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Language"),
         ...datalabelsYFormatter(),
@@ -200,7 +198,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("IDE"),
         ...datalabelsYFormatter(),
@@ -226,7 +223,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Global Leaderboard Participation"),
         ...datalabelsYFormatter(),
@@ -252,7 +248,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Nr. of Private Leaderboards"),
         ...datalabelsYFormatter(),
@@ -307,7 +302,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Previous years: did you participate? (⚠ 2021 data only)"),
         ...datalabelsYFormatter(),
@@ -344,7 +338,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "scatter",
     data,
     options: {
-      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Survey response per (UTC) day in December"),
         datalabels: {
