@@ -19,7 +19,8 @@ body {
 
 header {
   position: sticky;
-  padding: 20px;
+  top: 0px;
+  padding: 10px;
   margin-bottom: 10px;
   background: #eee;
   border-bottom: 1px solid #ddd;
@@ -52,4 +53,13 @@ footer {
   background: #eee;
   border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 4px #aaa;
+}
+
+.chart-container {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #eee;
+  background: #fafafa;
+  width: 800px;
+  display: inline-block;
 }

@@ -7,6 +7,8 @@ const years = [
   { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
 ];
 
+Chart.register(ChartDataLabels);
+
 // Helpers
 const getById = (id) => document.getElementById(id);
 
@@ -49,7 +51,31 @@ function yearDatasetDefaults(year) {
   };
 }
 
-Chart.register(ChartDataLabels);
+function singleAnswerReducer(key) {
+  return (result, current) => {
+    let item = result.find(i => i.x === current[key]);
+    if (!item) {
+      item = { x: current[key], y: 0 };
+      result.push(item);
+    }
+    item.y++;
+    return result;
+  };
+}
+
+function multiAnswerReducer(key) {
+  return (result, current) => {
+    current[key].forEach(value => {
+      let item = result.find(i => i.x === value);
+      if (!item) {
+        item = { x: value, y: 0 };
+        result.push(item);
+      }
+      item.y++;
+    });
+    return result;
+  };
+}
 
 window.addEventListener("DOMContentLoaded", async () => {
   // TODO: try/catch around loading the data
@@ -67,19 +93,15 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const charts = {};
 
+  ////////////////////////////////////////
   // operatingSystem
   let data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
-      data: year.responses.reduce((result, current) => {
-        let item = result.find(i => i.x === current["OS"]);
-        if (!item) {
-          item = { x: current["OS"], y: 0 };
-          result.push(item);
-        }
-        item.y++;
-        return result;
-      }, []).filter(i => i.y > 20) // TODO: Don"t just filter the rest out!
+      data: year
+        .responses
+        .reduce(singleAnswerReducer("OS"), [])
+        .filter(i => i.y > 20) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -97,5 +119,29 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
+  ////////////////////////////////////////
+  // participationReason
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Reason_for_participating"), [])
+        .filter(i => i.y > 20) // TODO: Don"t just filter the rest out!
+    }))
+  };
+  
+  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+
+  charts["participationReason"] = new Chart(getById("participationReason").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      plugins: {
+        ...chartTitle("Reason for participating"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
 
 });
