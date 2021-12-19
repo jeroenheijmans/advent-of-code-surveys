@@ -16,7 +16,7 @@ function datalabelsYFormatter() {
   return {
     datalabels: {
       color: "rgba(0, 0, 0, 0.9)",
-      formatter: (value, ctx) => value.y,
+      formatter: (value, ctx) => value.y || "",
     }
   };
 }
@@ -91,6 +91,13 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   alldata.sort((a, b) => b.nr.localeCompare(a.nr));
 
+  // Amend data
+  alldata.forEach(year => 
+    year.responses.forEach(r =>
+      r.utcResponseDay = parseInt(r["Timestamp"].match(/\d\d\d\d-\d\d-(\d\d)T.+/)[1], 10)
+    )
+  );
+
   const charts = {};
 
   ////////////////////////////////////////
@@ -109,6 +116,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
+      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Operating System"),
         ...datalabelsYFormatter(),
@@ -137,9 +145,157 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
+      aspectRatio: 1.3,
       plugins: {
         ...chartTitle("Reason for participating"),
         ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////
+  // language
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Languages"), [])
+        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+    }))
+  };
+  
+  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+
+  charts["language"] = new Chart(getById("language").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("Language"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////
+  // ide
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("IDEs"), [])
+        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+    }))
+  };
+  
+  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+
+  charts["ide"] = new Chart(getById("ide").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("IDE"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////
+  // leaderboardsGlobal
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
+        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+    }))
+  };
+  
+  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+
+  charts["leaderboardsGlobal"] = new Chart(getById("leaderboardsGlobal").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("Global Leaderboard Participation"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////
+  // leaderboardsPrivate
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(singleAnswerReducer("Private_Leaderboard_Count"), [])
+        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+    }))
+  };
+  
+  data.datasets.forEach(ds => ds.data.sort((a, b) => a.x.localeCompare(b.x)));
+
+  charts["leaderboardsPrivate"] = new Chart(getById("leaderboardsPrivate").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("Nr. of Private Leaderboards"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////
+  // responsesPerDay
+  const defaultDataPoints = () => [...Array(25).keys()].map(day => ({ x: day + 1, y: 0 }));
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      showLine: true,
+      data: year
+        .responses
+        .reduce(singleAnswerReducer("utcResponseDay"), defaultDataPoints())
+    }))
+  };
+  
+  data.datasets.forEach(ds => {
+    ds.data.sort((a, b) => a.x - b.x);
+    for (let i = 1; i < 25; i++) {
+      ds.data[i].y += ds.data[i-1].y;
+    }
+  });
+
+  charts["responsesPerDay"] = new Chart(getById("responsesPerDay").getContext("2d"), {
+    type: "scatter",
+    data,
+    options: {
+      aspectRatio: 1.3,
+      plugins: {
+        ...chartTitle("Survey response per (UTC) day in December"),
+        datalabels: {
+          display: false,
+        },
+      },
+      scales: {
+        x: {
+          min: 1,
+          max: 25,
+          ticks: {
+            stepSize: 1,
+          },
+        }
       },
     },
   });

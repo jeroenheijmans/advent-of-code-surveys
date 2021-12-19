@@ -53,6 +53,7 @@ footer {
   background: #eee;
   border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 4px #aaa;
+  font-size: 0.8rem;
 }
 
 .chart-container {
@@ -60,6 +61,5 @@ footer {
   padding: 10px;
   border: 2px solid #eee;
   background: #fafafa;
-  width: 800px;
-  display: inline-block;
+  max-width: 800px;
 }
