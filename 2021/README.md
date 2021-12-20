@@ -6,12 +6,10 @@ This folder contains the results for the 2021 (unofficial) Advent of Code Survey
 
 List of things to do for the 2021 dashboard:
 
-- Change all datasets to use percentages instead of absolute numbers
-- Figure out how to use horizontal bar charts to show more items
-- Group the "other" options and don't hide them
+- Fix bug: the filters now remove datasets that are super small even if they are needed for comparing to previous years (e.g. Python2 in the language chart)
 - Add more preprocessing based off the grouping logic in PowerBI versions from previous years
 - Add accessible descriptions of all charts
-- Add option to show datatable with all entries below each chart
+- Add option to show datatable with all entries below each chart (this also shows entries that were not large enough to get a bar in a chart)
 - Remove 2021 gitignore and add sanitized results
 - Create tiny build script to generate /docs folder
 - Set up github pages to show the results
@@ -22,3 +20,4 @@ Optional:
 - Cross-tables for language and IDE and such
 - Include highlights or specials for each year
 - Fix spelling mistake in sanitized files
+- Figure out how to use horizontal bar charts to show more items
