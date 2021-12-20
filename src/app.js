@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Operating System"),
+        ...chartTitle("Operating System", "Single select: primary Operating System."),
         ...datalabelsYFormatter(),
       },
       scales: {
@@ -177,7 +177,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Reason for participating", ),
+        ...chartTitle("Reason for participating", "Multi-select: why do you participate?"),
         ...datalabelsYFormatter(),
       },
     },
@@ -203,7 +203,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Language"),
+        ...chartTitle("Language", "Multi-select: what languages do you use?"),
         ...datalabelsYFormatter(),
       },
     },
@@ -229,7 +229,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("IDE"),
+        ...chartTitle("IDE", "Multi-select: which IDEs do you use?"),
         ...datalabelsYFormatter(),
       },
     },
@@ -351,6 +351,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      hidden: false,
       showLine: true,
       borderWidth: 3,
       data: year
@@ -390,6 +391,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   function toggleYear(year) {
     for (let key in charts) {
+      if (key === "responsesPerDay") continue; // Allows for indivindual toggling
       charts[key].data.datasets.forEach((dataset) =>{
         if (dataset.label === year) {
           dataset.hidden = !dataset.hidden;

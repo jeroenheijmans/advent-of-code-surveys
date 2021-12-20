@@ -4,6 +4,8 @@
   --bg-dark: #232c2d;
   --fg-lighter: #f4efef;
   --fg-light: #cecaca;
+  --primary-lighter: #a2daff;
+  --primary-light: #89d0ff;
 }
 
 * {
@@ -13,8 +15,10 @@
 html, body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14pt;
+  /* Using the GitHub font-family stack, which seems reasonable. */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 24px;
   background: var(--bg-darkest);
   color: var(--fg-lighter);
   height: 100%;
@@ -30,7 +34,13 @@ body {
 }
 
 a {
-  color: var(--fg-lighter);
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-lighter);
 }
 
 header {
@@ -44,8 +54,12 @@ header {
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-  margin: 0 0 10px 0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.25em 0 0.5em 0;
+}
+
+p { 
+  margin: 0.5em 0 0 0;
 }
 
 header label {
@@ -69,12 +83,6 @@ header label:hover {
 .source-link {
   padding: 10px;
   float: right;
-  color: var(--fg-light);
-  text-decoration: none !important;
-}
-
-.source-link:hover {
-  text-decoration: underline !important;
 }
 
 footer {
@@ -82,8 +90,14 @@ footer {
   margin-top: 10px;
   background: var(--bg-darker);
   border-top: 1px solid var(--bg-darkest);
-  font-size: 0.8rem;
   box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+}
+
+#intro {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--bg-darkest);
+  background: var(--bg-dark);
 }
 
 #error {
