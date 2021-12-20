@@ -33,15 +33,22 @@
       <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2016" disabled> 2016</label>
       <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2015" disabled> 2015</label>
     </header>
-    <section id="charts">
-      <div class="chart-container"><canvas id="language"></canvas></div>
-      <div class="chart-container"><canvas id="ide"></canvas></div>
-      <div class="chart-container"><canvas id="operatingSystem"></canvas></div>
-      <div class="chart-container"><canvas id="participationReason"></canvas></div>
-      <div class="chart-container"><canvas id="leaderboardsGlobal"></canvas></div>
-      <div class="chart-container"><canvas id="leaderboardsPrivate"></canvas></div>
-      <div class="chart-container"><canvas id="participationTiming"></canvas></div>
-      <div class="chart-container"><canvas id="responsesPerDay"></canvas></div>
+    <section id="content">
+      <section id="error" style="display: none;">
+        <h2>⛔ The Grinch Killed The App!</h2>
+        <p>Unfortunately an unexpected error occurred, possibly while loading the survey data for one of the years.</p>
+        <p>Please try again in a bit. If the problem persists, consider opening an issue on the repository page.</p>
+      </section>
+      <section id="charts">
+        <div class="chart-container"><canvas id="language"></canvas></div>
+        <div class="chart-container"><canvas id="ide"></canvas></div>
+        <div class="chart-container"><canvas id="operatingSystem"></canvas></div>
+        <div class="chart-container"><canvas id="participationReason"></canvas></div>
+        <div class="chart-container"><canvas id="leaderboardsGlobal"></canvas></div>
+        <div class="chart-container"><canvas id="leaderboardsPrivate"></canvas></div>
+        <div class="chart-container"><canvas id="participationTiming"></canvas></div>
+        <div class="chart-container"><canvas id="responsesPerDay"></canvas></div>
+      </section>
     </section>
     <footer>
       <p>This is <em>community</em> provided and it's "unofficial". "Advent of Code" is Eric Wastl's trademark. Please consider <a href="https://adventofcode.com/sponsors">sponsoring Advent of Code itself</a>.</p>

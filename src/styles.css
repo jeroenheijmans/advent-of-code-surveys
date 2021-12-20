@@ -17,15 +17,16 @@ html, body {
   font-size: 14pt;
   background: var(--bg-darkest);
   color: var(--fg-lighter);
-}
-
-html {
   height: 100%;
 }
 
 body {
-  position: relative;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: auto;
 }
 
 a {
@@ -83,6 +84,14 @@ footer {
   border-top: 1px solid var(--bg-darkest);
   font-size: 0.8rem;
   box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+}
+
+#error {
+  margin: 10px;
+  padding: 0 20px;
+  border: 1px solid var(--bg-darkest);
+  background: var(--bg-dark);
+  color: rgba(232, 64, 64, 0.9);
 }
 
 #charts {

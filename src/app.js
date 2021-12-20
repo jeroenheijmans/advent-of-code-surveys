@@ -82,16 +82,25 @@ function multiAnswerReducer(key) {
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
-  // TODO: try/catch around loading the data
-  // TODO: Parallelize fetches
   const alldata = [];
-  await Promise.all(years.map(async year => {
-    const response = await fetch(`${baseUrl}/${year.nr}/results-sanitzed.json`);
-    alldata.push({
-      ...year,
-      responses: await response.json(),
-    })
-  }));
+
+  try {
+    // TODO: Parallelize fetches
+    await Promise.all(years.map(async year => {
+      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitzed.json`);
+      if (response.status >= 400) {
+        throw new Error(`Loading data for ${year.nr} returned with status ${response.status} (${response.statusText})`);
+      }
+      alldata.push({
+        ...year,
+        responses: await response.json(),
+      })
+    }));
+  } catch (error) {
+    getById("error").style.display = "block";
+    getById("charts").style.display = "none";
+    return;
+  }
 
   alldata.sort((a, b) => b.nr.localeCompare(a.nr));
 
