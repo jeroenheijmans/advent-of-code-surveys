@@ -16,22 +16,30 @@ Chart.defaults.aspectRatio = 1.67;
 // Helpers
 const getById = (id) => document.getElementById(id);
 
-function datalabelsYFormatter() {
+function datalabelsYFormatter(options = { withLabel: false }) {
   return {
     datalabels: {
       color: "rgba(255, 255, 255, 0.8)",
-      formatter: (value, ctx) => value.y || "",
+      textAlign: "center",
+      formatter: (value, ctx) => value.y
+        ? (value.isPercentage ? value.y.toFixed(1) + "%" : value.y) 
+          + (options.withLabel ? `\n(${ctx.dataset.label})` : "")
+        : "",
     }
   };
 }
 
-function chartTitle(text) {
+function chartTitle(text, subtitle) {
   return {
     title: {
       display: true,
-      font: { size: 24, },
+      font: { size: 24, weight: "normal", },
       text,
-    }
+    },
+    subtitle: {
+      display: !!subtitle,
+      text: subtitle,
+    },
   };
 }
 
@@ -81,6 +89,15 @@ function multiAnswerReducer(key) {
   };
 }
 
+function percentageMapperFor(year) {
+  return point => {
+    point.absolute = point.y;
+    point.isPercentage = true;
+    point.y = point.y / year.responses.length * 100;
+    return point;
+  };
+}
+
 window.addEventListener("DOMContentLoaded", async () => {
   const alldata = [];
 
@@ -121,7 +138,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(singleAnswerReducer("OS"), [])
-        .filter(i => i.y > 20) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -147,7 +165,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(multiAnswerReducer("Reason_for_participating"), [])
-        .filter(i => i.y > 20) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -158,7 +177,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Reason for participating"),
+        ...chartTitle("Reason for participating", ),
         ...datalabelsYFormatter(),
       },
     },
@@ -172,7 +191,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(multiAnswerReducer("Languages"), [])
-        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -197,7 +217,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(multiAnswerReducer("IDEs"), [])
-        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -222,7 +243,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
-        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => i.y > 0.5) // TODO: Don"t just filter the rest out!
     }))
   };
   
@@ -233,7 +255,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Global Leaderboard Participation"),
+        ...chartTitle("Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
         ...datalabelsYFormatter(),
       },
     },
@@ -247,7 +269,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       data: year
         .responses
         .reduce(singleAnswerReducer("Private_Leaderboard_Count"), [])
-        .filter(i => i.y > 40) // TODO: Don"t just filter the rest out!
+        .map(percentageMapperFor(year))
+        .filter(i => !!i.x)
     }))
   };
   
@@ -258,7 +281,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Nr. of Private Leaderboards"),
+        ...chartTitle("Private Leaderboards", "Number of private leaderboards you're active on"),
         ...datalabelsYFormatter(),
       },
     },
@@ -312,8 +335,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Previous years: did you participate? (⚠ 2021 data only)"),
-        ...datalabelsYFormatter(),
+        ...chartTitle("Previous years: did you participate?", " ⚠ Showing data from 2021 only!"),
+        ...datalabelsYFormatter({ withLabel: true }),
       },
       scales: {
         x: { stacked: true, },
