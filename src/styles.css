@@ -23,7 +23,7 @@ html, body {
   line-height: 24px;
   background: var(--bg-darkest);
   color: var(--fg-lighter);
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -180,6 +180,7 @@ footer {
 }
 
 .datatable thead th {
+  text-align: center;
   font-weight: bold;
   background: var(--bg-darkest);
 }
@@ -193,7 +194,7 @@ footer {
   display: inline-block;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1800px), (min-width: 960px) and (max-width: 1400px) {
   .datatable .rawdata {
     flex-direction: row;
   }
