@@ -1,5 +1,5 @@
-const fs = require('fs');
-const parse = require('csv-parse');
+import fs from 'fs';
+import { parse } from 'csv-parse';
 
 const options = {
   delimiter: ',',
@@ -166,7 +166,7 @@ function callback(err, records) {
             .map(x => info.hasOwnProperty('answers') ? info.answers[x] || x : x)
             .map(x => x.trim())
             .map(x => postProcess(x))
-            .filter(x => !!x && x.length > 1);
+            .filter(x => !!x && x.length > 0);
         } else {
           item[newProp] = postProcess(item[newProp].trim());
         }

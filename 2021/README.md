@@ -12,7 +12,6 @@ List of things to do for the 2021 dashboard:
 - Remove 2021 gitignore and add sanitized results
 - Create tiny build script to generate /docs folder
 - Set up github pages to show the results
-- Run the "single letter fix" on 2018, see [this commit](https://github.com/jeroenheijmans/advent-of-code-surveys/commit/b769f4b6db291628d38d57c073e001930277ff9c)
 
 Optional:
 
