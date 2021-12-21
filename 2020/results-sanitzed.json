@@ -158,7 +158,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -282,7 +282,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Haskell",
-      "Perl 6",
+      "Raku",
       "Python 3"
     ],
     "IDEs": [
@@ -631,7 +631,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "WSL 2",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -1290,7 +1290,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -1889,7 +1889,7 @@
     "Participates_in_2019": "No",
     "Languages": [
       "Prolog",
-      "Awk"
+      "AWK"
     ],
     "IDEs": [
       "Vim"
@@ -2199,7 +2199,7 @@
       "C++"
     ],
     "IDEs": [
-      "geany"
+      "Geany"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -2349,7 +2349,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -2989,7 +2989,7 @@
       "Notepad++",
       "VS Code"
     ],
-    "OS": "Windows/WSL2",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -3112,10 +3112,10 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -3186,7 +3186,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Lisp",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -3678,7 +3678,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -5553,7 +5553,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows + WSL2",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -7202,7 +7202,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Python 3",
-      "Ponylang"
+      "Pony"
     ],
     "IDEs": [
       "VS Code"
@@ -8044,7 +8044,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -8369,7 +8369,7 @@
       "C"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -8538,7 +8538,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl 6 / Raku",
+      "Raku",
       "Python 3"
     ],
     "IDEs": [
@@ -9487,7 +9487,7 @@
     "Participates_in_2018": "Later",
     "Participates_in_2019": "Later",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "No IDE. (A generic text editor a..."
@@ -9678,7 +9678,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -10000,7 +10000,7 @@
       "Julia"
     ],
     "IDEs": [
-      "geany"
+      "Geany"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -10449,7 +10449,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Go",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Vim"
@@ -10547,7 +10547,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -11184,7 +11184,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Vim"
@@ -11579,7 +11579,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows + WSL",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -12485,7 +12485,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -12968,7 +12968,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "C++",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim",
@@ -13284,7 +13284,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Later",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -14199,7 +14199,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Windows Subsystem for Linux + Debian",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -16285,7 +16285,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Later",
     "Languages": [
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Emacs"
@@ -16386,7 +16386,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -16611,7 +16611,7 @@
     "Participates_in_2018": "Later",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Emacs"
@@ -17810,7 +17810,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "J",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Emacs"
@@ -18784,7 +18784,7 @@
       "Lua"
     ],
     "IDEs": [
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -19502,7 +19502,7 @@
     "Participates_in_2018": "",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "VS Code"
@@ -19855,7 +19855,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Emacs"
@@ -20146,7 +20146,7 @@
     "Languages": [
       "C",
       "Google Sheets",
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -20197,7 +20197,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -20219,7 +20219,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "OCamL"
+      "OCaml"
     ],
     "IDEs": [
       "VS Code"
@@ -20830,7 +20830,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Later",
     "Languages": [
-      "Awk"
+      "AWK"
     ],
     "IDEs": [
       "Vim"
@@ -21217,7 +21217,7 @@
       "Visual Studio",
       "VS Code"
     ],
-    "OS": "WSL2 on Windows10",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -21558,7 +21558,8 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "TCL should come in the list"
+      "Tcl",
+      "Each day a different language"
     ],
     "IDEs": [
       "Vim"
@@ -22251,7 +22252,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Julia",
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -22475,7 +22476,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -24803,7 +24804,7 @@
       "C#"
     ],
     "IDEs": [
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -25095,7 +25096,7 @@
       "Bash/Shell",
       "C",
       "C++",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -25146,7 +25147,7 @@
     "Participates_in_2018": "Later",
     "Participates_in_2019": "Later",
     "Languages": [
-      "Perl 6 / Raku"
+      "Raku"
     ],
     "IDEs": [
       "VS Code"
@@ -25968,7 +25969,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Later",
     "Languages": [
-      "GameMaker Language"
+      "GameMaker"
     ],
     "IDEs": [
       "GameMaker Studio 2"
@@ -26021,7 +26022,7 @@
     "Participates_in_2019": "Later",
     "Languages": [
       "Groovy",
-      "Perl",
+      "Perl 5",
       "Python 2",
       "Python 3",
       "Ruby"
@@ -27334,7 +27335,7 @@
       "VB .NET"
     ],
     "IDEs": [
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -27409,7 +27410,7 @@
     "Participates_in_2018": "Later",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl 6 / Raku",
+      "Raku",
       "Python 3"
     ],
     "IDEs": [
@@ -28084,7 +28085,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Jupyter"
+      "IPython / Jupyter"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -28485,7 +28486,7 @@
     ],
     "IDEs": [
       "Notepad++",
-      "python IDLE"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -28756,7 +28757,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "iDLE"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -28827,7 +28828,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Prefer not to say",
@@ -28872,7 +28873,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl 6 / Raku"
+      "Raku"
     ],
     "IDEs": [
       "Vim",
@@ -29075,7 +29076,7 @@
     "Participates_in_2019": "No",
     "Languages": [
       "Python 3",
-      "Gamemaker Language"
+      "GameMaker"
     ],
     "IDEs": [
       "Atom",
@@ -30764,7 +30765,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -30833,8 +30834,8 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl",
-      "Perl 6 / Raku",
+      "Perl 5",
+      "Raku",
       "Python 3",
       "Ruby",
       "Rust"
@@ -30890,7 +30891,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -32131,7 +32132,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -33186,7 +33187,7 @@
     "Languages": [
       "Bash/Shell",
       "C",
-      "Perl",
+      "Perl 5",
       "Ruby",
       "dc",
       "Smalltalk"
@@ -33264,7 +33265,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Go",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -33846,7 +33847,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "python idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -34358,7 +34359,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "LinqPad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -34579,7 +34580,7 @@
     "Participates_in_2018": "Later",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Awk"
+      "AWK"
     ],
     "IDEs": [
       "Vim"
@@ -35469,7 +35470,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "nano"
+      "Nano"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -36634,7 +36635,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl 6 / Raku",
+      "Raku",
       "Ruby"
     ],
     "IDEs": [
@@ -37584,7 +37585,7 @@
     "Languages": [
       "Assembly",
       "C",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Notepad++",
@@ -38959,7 +38960,7 @@
       "Wolfram"
     ],
     "IDEs": [
-      "Wolfram Mathematica"
+      "Mathematica"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, that doesn't feel realistic",
@@ -40361,7 +40362,7 @@
     "Participates_in_2019": "No",
     "Languages": [
       "Lisp",
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -40680,7 +40681,7 @@
       "C"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -41107,7 +41108,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Sublime Text"
@@ -41730,7 +41731,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -42149,8 +42150,8 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl",
-      "Perl 6 / Raku"
+      "Perl 5",
+      "Raku"
     ],
     "IDEs": [
       "Emacs"
@@ -42844,7 +42845,7 @@
     "Participates_in_2019": "No",
     "Languages": [
       "Python 3",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "VS Code"
@@ -44119,7 +44120,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "WSL2 Ubuntu, so both Windows and Linux? idk",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -44185,7 +44186,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -44441,7 +44442,7 @@
     "Languages": [
       "Bash/Shell",
       "C",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Vim"
@@ -45191,7 +45192,7 @@
     ],
     "IDEs": [
       "IntelliJ",
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -46342,7 +46343,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "Go",
-      "Perl",
+      "Perl 5",
       "Racket"
     ],
     "IDEs": [
@@ -46713,7 +46714,7 @@
     "Participates_in_2019": "No",
     "Languages": [
       "C++",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "CLion"
@@ -47010,7 +47011,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "No",
     "Languages": [
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Vim"
@@ -47277,7 +47278,7 @@
     "Languages": [
       "Bash/Shell",
       "C",
-      "Awk"
+      "AWK"
     ],
     "IDEs": [
       "acme"
@@ -50510,7 +50511,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -51252,7 +51253,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -52675,7 +52676,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -52779,7 +52780,7 @@
       "TypeScript"
     ],
     "IDEs": [
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -55230,7 +55231,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -55401,7 +55402,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -56394,7 +56395,7 @@
     "Participates_in_2018": "No",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "VS Code"
@@ -56868,7 +56869,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "No",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "Vim keystrokes"
     ],
     "IDEs": [
@@ -56901,7 +56902,7 @@
     "IDEs": [
       "Rider",
       "Vim",
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -57201,7 +57202,7 @@
     "Participates_in_2019": "Dec",
     "Languages": [
       "C",
-      "Perl",
+      "Perl 5",
       "lex",
       "yacc"
     ],

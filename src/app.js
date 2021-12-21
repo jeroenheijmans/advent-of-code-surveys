@@ -112,6 +112,10 @@ function ySorter() {
   return ySorterWithFixedEndItems([]);
 }
 
+function xSorter() {
+  return (a, b) => a.x.localeCompare(b.x);
+}
+
 // Apologies for this name, and apologies for such a "mutable" (mutant?) method
 // TODO: Wrangle some JavaScript to make this nicer, more functional...
 function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
@@ -148,7 +152,7 @@ function wireUpDataTableFor(chartData, title, subject) {
     scrollWrapper.classList.add("datatable-scroll-wrapper");
     scrollWrapper.style.display = "none";
     console.log(container.offsetWidth);
-    scrollWrapper.style.maxWidth = container.offsetWidth + "px";
+    scrollWrapper.style.maxWidth = (container.offsetWidth - 4) + "px";
 
     const table = scrollWrapper.appendChild(createElement("table"));
 
@@ -297,7 +301,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
 
   wireUpDataTableFor(data, "Operating System", "operatingSystem");
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   
   charts["operatingSystem"] = new Chart(getById("operatingSystem").getContext("2d"), {

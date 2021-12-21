@@ -1705,7 +1705,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -2530,7 +2530,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -3687,7 +3687,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -4484,7 +4484,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "J",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Emacs"
@@ -4505,7 +4505,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "minecraft commands"
+      "Minecraft"
     ],
     "IDEs": [
       "Sublime Text"
@@ -4622,7 +4622,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Haskell",
-      "Perl",
+      "Perl 5",
       "Rust"
     ],
     "IDEs": [
@@ -5055,7 +5055,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "TextWrangler"
@@ -5083,8 +5083,8 @@
       "Julia",
       "Kotlin",
       "Lua",
-      "Perl",
-      "Perl 6",
+      "Perl 5",
+      "Raku",
       "PHP",
       "Python 3",
       "R",
@@ -5398,7 +5398,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "nim"
+      "Nim"
     ],
     "IDEs": [
       "VS Code"
@@ -5951,7 +5951,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "PHP",
       "Haxe"
     ],
@@ -8533,7 +8533,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -9010,7 +9010,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -9061,7 +9061,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -9258,7 +9258,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "LinqPad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -10989,7 +10989,7 @@
       "Go"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -12215,7 +12215,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -12387,7 +12387,7 @@
       "C++"
     ],
     "IDEs": [
-      "geany"
+      "Geany"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -13665,7 +13665,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Later",
     "Languages": [
-      "nim"
+      "Nim"
     ],
     "IDEs": [
       "Emacs"
@@ -14343,7 +14343,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "Elixir",
-      "Perl",
+      "Perl 5",
       "Python 3",
       "Rust"
     ],
@@ -14646,7 +14646,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "tcl"
+      "Tcl"
     ],
     "IDEs": [
       "Vim"
@@ -14696,7 +14696,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows Subsystem for Linux",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -14984,7 +14984,7 @@
       "C#"
     ],
     "IDEs": [
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -15313,7 +15313,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "JavaScript",
-      "Perl",
+      "Perl 5",
       "Python 3",
       "Rust"
     ],
@@ -15572,7 +15572,7 @@
     ],
     "IDEs": [
       "Notepad++",
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -15640,7 +15640,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "ocaml"
+      "OCaml"
     ],
     "IDEs": [
       "VS Code"
@@ -16055,7 +16055,7 @@
       "C"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -16955,7 +16955,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -17325,7 +17325,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -18914,7 +18914,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "N/A"
+      "n/a"
     ],
     "IDEs": [
       "Alteryx"
@@ -18985,7 +18985,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Later",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Notepad++"
@@ -19133,7 +19133,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "webstorm"
+      "WebStorm"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -19766,7 +19766,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -20788,7 +20788,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -21511,7 +21511,7 @@
     "Participates_in_2017": "Later",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "dc"
     ],
     "IDEs": [
@@ -22038,7 +22038,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -23985,7 +23985,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "q"
+      "Q"
     ],
     "IDEs": [
       "VS Code"
@@ -24156,7 +24156,7 @@
       "Prolog",
       "Python 3",
       "Ruby",
-      "SCHEME",
+      "Scheme",
       "APL",
       "Logo"
     ],
@@ -24605,7 +24605,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "C++",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -24846,7 +24846,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "Python 3",
-      "google spreadsheet",
+      "Google Sheets",
       "emacs"
     ],
     "IDEs": [
@@ -25065,7 +25065,7 @@
       "Haskell",
       "Python 3",
       "Scala",
-      "SCHEME"
+      "Scheme"
     ],
     "IDEs": [
       "Vim",
@@ -26480,7 +26480,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -26951,7 +26951,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -27357,7 +27357,7 @@
     ],
     "IDEs": [
       "Excel",
-      "iDLE"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -27618,7 +27618,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -27710,7 +27710,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -30274,7 +30274,7 @@
       "C++"
     ],
     "IDEs": [
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",

@@ -193,7 +193,7 @@
       "C#"
     ],
     "IDEs": [
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -325,7 +325,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "IDE? I don't need any IDE. To ca..."
@@ -347,7 +347,7 @@
     "Languages": [
       "Lua",
       "Ruby",
-      "Perl 6"
+      "Raku"
     ],
     "IDEs": [
       "Atom",
@@ -550,7 +550,7 @@
       "C#"
     ],
     "IDEs": [
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -1810,8 +1810,8 @@
       "Mathematica"
     ],
     "IDEs": [
-      "Wolfram Notebook",
-      "Mathematica Notebook"
+      "Mathematica",
+      "Mathematica"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -2146,7 +2146,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "common lisp"
+      "Common Lisp"
     ],
     "IDEs": [
       "Emacs"
@@ -2420,7 +2420,7 @@
     "Participates_in_2017": "Dec",
     "Languages": [
       "Go",
-      "Perl",
+      "Perl 5",
       "Python 3",
       "Swift"
     ],
@@ -2582,8 +2582,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "Tcl",
-      "Each day a different language"
+      "Tcl"
     ],
     "IDEs": [
       "Vim"
@@ -2844,7 +2843,7 @@
     "Participates_in_2017": "No",
     "Languages": [
       "JavaScript",
-      "Perl",
+      "Perl 5",
       "Swift",
       "TypeScript"
     ],
@@ -3412,7 +3411,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -3482,7 +3481,7 @@
       "C"
     ],
     "IDEs": [
-      "nano"
+      "Nano"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -3568,7 +3567,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -3812,7 +3811,7 @@
     "IDEs": [
       "Vim",
       "VS Code",
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -4221,7 +4220,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "VS Code"
@@ -4409,7 +4408,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "q"
+      "Q"
     ],
     "IDEs": [
       "Vim"
@@ -5429,7 +5428,7 @@
       "TypeScript"
     ],
     "IDEs": [
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -6784,7 +6783,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Combi of Windows/Linux",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
@@ -7318,7 +7317,7 @@
       "Matlab"
     ],
     "IDEs": [
-      "matlab"
+      "Matlab"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -7447,7 +7446,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -8306,7 +8305,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl",
+      "Perl 5",
       "PHP",
       "Python 2"
     ],
@@ -9571,7 +9570,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl 6"
+      "Raku"
     ],
     "IDEs": [
       "Vim"
@@ -9715,7 +9714,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Linux",
+    "OS": "Ubuntu",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
@@ -10015,7 +10014,7 @@
     "IDEs": [
       "Visual Studio",
       "VS Code",
-      "Linqpad"
+      "LINQPad"
     ],
     "OS": "Combi of Windows/macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -10354,7 +10353,7 @@
       "Bash/Shell",
       "C",
       "Lisp",
-      "Awk"
+      "AWK"
     ],
     "IDEs": [
       "Emacs"
@@ -10595,7 +10594,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Idle"
+      "IDLE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -10789,7 +10788,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "scheme"
+      "Scheme"
     ],
     "IDEs": [
       "Vim"
@@ -12801,7 +12800,7 @@
     "Participates_in_2017": "Dec",
     "Languages": [
       "Rust",
-      "Ocaml"
+      "OCaml"
     ],
     "IDEs": [
       "Emacs"
@@ -12870,7 +12869,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Jupyter"
+      "IPython / Jupyter"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -13616,7 +13615,7 @@
     "Participates_in_2017": "Dec",
     "Languages": [
       "Haskell",
-      "Perl 6"
+      "Raku"
     ],
     "IDEs": [
       "VS Code"
@@ -14298,7 +14297,7 @@
       "Matlab"
     ],
     "IDEs": [
-      "matlab"
+      "Matlab"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -14962,7 +14961,7 @@
       "C#",
       "Python 3",
       "vim",
-      "brainfuck"
+      "Brainfuck"
     ],
     "IDEs": [
       "IntelliJ",
@@ -15012,7 +15011,7 @@
       "F#"
     ],
     "IDEs": [
-      "LinqPAD"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -15335,7 +15334,7 @@
       "C#"
     ],
     "IDEs": [
-      "LinqPad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -15444,7 +15443,7 @@
       "Python 3",
       "Rust",
       "SCHEME dialect",
-      "probably racket"
+      "Racket"
     ],
     "IDEs": [
       "VS Code"
@@ -16306,8 +16305,8 @@
     "Participates_in_2017": "No",
     "Languages": [
       "Bash/Shell",
-      "Perl",
-      "Awk"
+      "Perl 5",
+      "AWK"
     ],
     "IDEs": [
       "Vim",
@@ -16864,9 +16863,9 @@
     "IDEs": [
       "Atom",
       "Notepad++",
-      "Webstorm"
+      "WebStorm"
     ],
-    "OS": "Combi of Windows/Linux",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -16980,7 +16979,7 @@
     "Participates_in_2017": "No",
     "Languages": [
       "Bash/Shell",
-      "Perl",
+      "Perl 5",
       "Python 3"
     ],
     "IDEs": [
@@ -17417,7 +17416,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -17557,7 +17556,7 @@
       "C++"
     ],
     "IDEs": [
-      "gedit"
+      "Gedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -17672,7 +17671,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Jupyter"
+      "IPython / Jupyter"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -17779,7 +17778,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -18217,7 +18216,7 @@
     "Participates_in_2017": "No",
     "Languages": [
       "C",
-      "awk"
+      "AWK"
     ],
     "IDEs": [
       "what's an IDE?"
@@ -18706,7 +18705,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Emacs"
@@ -18800,7 +18799,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "MATLAB",
+      "Matlab",
       "Spyder"
     ],
     "OS": "Windows",
@@ -19316,7 +19315,7 @@
     ],
     "IDEs": [
       "IntelliJ",
-      "Idle"
+      "IDLE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -21062,7 +21061,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Webstorm"
+      "WebStorm"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -21292,7 +21291,7 @@
     "Participates_in_2017": "Dec",
     "Languages": [
       "C",
-      "Perl"
+      "Perl 5"
     ],
     "IDEs": [
       "Vim"
@@ -22905,7 +22904,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "LinqPad"
+      "LINQPad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
