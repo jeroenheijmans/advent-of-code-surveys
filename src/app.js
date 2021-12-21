@@ -157,10 +157,63 @@ window.addEventListener("DOMContentLoaded", async () => {
   );
 
   const charts = {};
+  let data = null; // TODO: This variable is a good indication of some missing encapsulation :-)
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  // language
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Languages"), [])
+        .map(percentageMapperFor(year))
+    }))
+  };
+  
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+
+  charts["language"] = new Chart(getById("language").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      plugins: {
+        ...chartTitle("Language", "Multi-select: what languages do you use?"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // ide
+  data = {
+    datasets: alldata.map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("IDEs"), [])
+        .map(percentageMapperFor(year))
+    }))
+  };
+  
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+
+  charts["ide"] = new Chart(getById("ide").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      plugins: {
+        ...chartTitle("IDE", "Multi-select: which IDEs do you use?"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+  ////////////////////////////////////////////////////////////////////////////////
   // operatingSystem
-  let data = {
+  data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
       data: year
@@ -187,7 +240,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   // participationReason
   data = {
     datasets: alldata.map(year => ({
@@ -213,59 +266,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  ////////////////////////////////////////
-  // language
-  data = {
-    datasets: alldata.map(year => ({
-      ...yearDatasetDefaults(year),
-      data: year
-        .responses
-        .reduce(multiAnswerReducer("Languages"), [])
-        .map(percentageMapperFor(year))
-    }))
-  };
-  
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
-
-  charts["language"] = new Chart(getById("language").getContext("2d"), {
-    type: "bar",
-    data,
-    options: {
-      plugins: {
-        ...chartTitle("Language", "Multi-select: what languages do you use?"),
-        ...datalabelsYFormatter(),
-      },
-    },
-  });
-
-  ////////////////////////////////////////
-  // ide
-  data = {
-    datasets: alldata.map(year => ({
-      ...yearDatasetDefaults(year),
-      data: year
-        .responses
-        .reduce(multiAnswerReducer("IDEs"), [])
-        .map(percentageMapperFor(year))
-    }))
-  };
-  
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
-
-  charts["ide"] = new Chart(getById("ide").getContext("2d"), {
-    type: "bar",
-    data,
-    options: {
-      plugins: {
-        ...chartTitle("IDE", "Multi-select: which IDEs do you use?"),
-        ...datalabelsYFormatter(),
-      },
-    },
-  });
-
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   // leaderboardsGlobal
   data = {
     datasets: alldata.map(year => ({
@@ -291,7 +292,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   // leaderboardsPrivate
   data = {
     datasets: alldata.map(year => ({
@@ -317,7 +318,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   // participationTiming
   const participationQuestions = [
     { key: "Participates_in_2021", label: "2021" },
@@ -375,7 +376,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   // responsesPerDay
   const defaultDataPoints = () => [...Array(25).keys()].map(day => ({ x: day + 1, y: 0 }));
   data = {
@@ -419,12 +420,13 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  function toggleYear(year) {
+  function toggleYear(year, visible) {
     for (let key in charts) {
       if (key === "responsesPerDay") continue; // Allows for indivindual toggling
       charts[key].data.datasets.forEach((dataset) =>{
         if (dataset.label === year) {
-          dataset.hidden = !dataset.hidden;
+          const idx = charts[key].data.datasets.indexOf(dataset);
+          charts[key].setDatasetVisibility(idx, visible);
         }
       });
       charts[key].update();
@@ -433,7 +435,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelectorAll("input[name=years]").forEach(input => {
     input.addEventListener("change", () => {
-      toggleYear(input.value);
+      toggleYear(input.value, input.checked);
     });
   });
 
