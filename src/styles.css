@@ -6,6 +6,8 @@
   --fg-light: #cecaca;
   --primary-lighter: #a2daff;
   --primary-light: #89d0ff;
+  --secondary-lighter: #daffa2;
+  --secondary-light: #d0ff89;
 }
 
 * {
@@ -121,6 +123,86 @@ footer {
   background: var(--bg-dark);
 }
 
+.chart-dump {
+  border-top: 1px solid var(--bg-darkest);
+  padding-top: 10px;
+}
+
+.chart-dump button {
+  border: 1px solid transparent;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+  background: var(--primary-light);
+  color: var(--bg-dark);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+
+.chart-dump button:hover {
+  background-color: var(--bg-darkest);
+  color: var(--primary-light);
+  transition: all 0.2s;
+}
+
+.datatable-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.datatable {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.datatable tbody tr:nth-child(odd) {
+  background: var(--bg-darker);
+}
+
+.datatable tbody tr:hover {
+  color: var(--secondary-light);
+  background: var(--bg-darkest);
+}
+
+.datatable th {
+  text-align: left;
+}
+
+.datatable th,
+.datatable td {
+  font-weight: normal;
+  font-size: 0.9rem;
+  border: 1px solid var(--fg-light);
+  padding: 4px 6px;
+}
+
+.datatable thead th {
+  font-weight: bold;
+  background: var(--bg-darkest);
+}
+
+.datatable .rawdata {
+  display: flex;
+  flex-direction: column;
+}
+
+.datatable .rawdata > span {
+  display: inline-block;
+}
+
+@media (min-width: 1800px) {
+  .datatable .rawdata {
+    flex-direction: row;
+  }
+
+  .datatable .rawdata > span {
+    width: 50%;
+  }
+}
+
 @media (max-width: 1400px) {
   #charts {
     grid-template-columns: 1fr;
@@ -134,6 +216,15 @@ footer {
 
   .source-link {
     padding: 0;
+  }
+
+  .datatable {
+    font-size: 0.7rem;
+  }
+
+  .datatable th,
+  .datatable td {
+    padding: 2px 4px;
   }
 }
 

@@ -15,6 +15,7 @@ Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1
 
 // Helpers
 const getById = (id) => document.getElementById(id);
+const createElement = (tag, text = "") => { const el = document.createElement(tag); el.innerText = text; return el; }
 
 function datalabelsYFormatter(options = { withLabel: false }) {
   return {
@@ -107,6 +108,10 @@ function ySorterWithFixedEndItems(endItems = []) {
   };
 }
 
+function ySorter() {
+  return ySorterWithFixedEndItems([]);
+}
+
 // Apologies for this name, and apologies for such a "mutable" (mutant?) method
 // TODO: Wrangle some JavaScript to make this nicer, more functional...
 function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
@@ -124,6 +129,72 @@ function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
     }
     return result;
   }, []));
+}
+
+// It's nice to have nearly no dependencies, but wow building some html
+// without a framework or templating library is cumbersome. Anyways, it
+// keeps things simple for now, so...
+function wireUpDataTableFor(chartData, title, subject) {
+  // Cheap clone setup, because we want our own private copy of this data:
+  chartData = JSON.parse(JSON.stringify(chartData));
+
+  const container = getById(`${subject}Dump`);
+  const button = container.appendChild(createElement("button", "Toggle show/hide data table..."));
+  let tableGenerated = false;
+  let scrollWrapper = null;
+  
+  function generateTable() {
+    scrollWrapper = container.appendChild(createElement("div"));
+    scrollWrapper.classList.add("datatable-scroll-wrapper");
+    scrollWrapper.style.display = "none";
+    console.log(container.offsetWidth);
+    scrollWrapper.style.maxWidth = container.offsetWidth + "px";
+
+    const table = scrollWrapper.appendChild(createElement("table"));
+
+    table.classList.add("datatable");
+  
+    chartData.datasets.forEach(ds => ds.data.sort(ySorter()));
+  
+    let thead = table.appendChild(createElement("thead"));
+    let tbody = table.appendChild(createElement("tbody"));
+    let tr = thead.appendChild(createElement("tr"));
+    let th = tr.appendChild(createElement("th", title));
+  
+    years.forEach(year => tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : ""))));
+    
+    const rows = {};
+  
+    chartData.datasets.forEach(ds => ds.data.forEach(i => {
+      if (!rows.hasOwnProperty(i.x)) {
+        let row = { tr: tbody.appendChild(createElement("tr")) };
+        let rowTh = row.tr.appendChild(createElement("th", i.x));
+
+        // No worry for injection we only set innerText. But as a workaround we
+        // do want to sniff out entries with super long "words" (usually hrefs)
+        // and let the browser then break it more agressively, so the table will
+        // render nicely on small devices.
+        if (i.x.match(/\S{16,}/)) rowTh.style.wordBreak = "break-all";
+
+        years.forEach(year => {
+          row[year.nr] = row.tr.appendChild(createElement("td")).appendChild(createElement("div"));
+          row[year.nr].classList.add("rawdata")
+        });
+        rows[i.x] = row;
+      }
+      rows[i.x][ds.label].appendChild(createElement("span", i.absolute));
+      rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(2)}%`));
+    }));
+
+    tableGenerated = true;
+  }
+
+  button.addEventListener("click", () => {
+    if (!tableGenerated) {
+      generateTable();
+    }
+    scrollWrapper.style.display = scrollWrapper.style.display === "none" ? "block" : "none";
+  });
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
@@ -157,7 +228,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   );
 
   const charts = {};
-  let data = null; // TODO: This variable is a good indication of some missing encapsulation :-)
+  let data = null; // TODO: These variable is a good indication of some missing encapsulation :-)
 
   ////////////////////////////////////////////////////////////////////////////////
   // language
@@ -170,7 +241,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         .map(percentageMapperFor(year))
     }))
   };
-  
+
+  wireUpDataTableFor(data, "Language", "language");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
@@ -197,6 +269,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
+  wireUpDataTableFor(data, "IDE", "ide");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
@@ -223,6 +296,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
 
+  wireUpDataTableFor(data, "Operating System", "operatingSystem");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   
@@ -252,6 +326,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
+  wireUpDataTableFor(data, "Reason for participating", "participationReason");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
@@ -276,8 +351,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
         .map(percentageMapperFor(year))
     }))
-  };  
+  };
   
+  wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
@@ -305,6 +381,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
+  wireUpDataTableFor(data, "Number of Private Leaderboards", "leaderboardsPrivate");
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["leaderboardsPrivate"] = new Chart(getById("leaderboardsPrivate").getContext("2d"), {
