@@ -136,3 +136,17 @@ footer {
     padding: 0;
   }
 }
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .source-link {
+    padding: 0;
+  }
+
+  #charts, #intro {
+    margin: 20px 10px;
+  }
+}

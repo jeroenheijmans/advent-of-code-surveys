@@ -11,7 +11,7 @@ Chart.register(ChartDataLabels);
 
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
-Chart.defaults.aspectRatio = 1.67;
+Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
 
 // Helpers
 const getById = (id) => document.getElementById(id);
@@ -98,6 +98,34 @@ function percentageMapperFor(year) {
   };
 }
 
+function ySorterWithFixedEndItems(endItems = []) {
+  return (a, b) => {
+    if (a.x === b.x) return 0;
+    if (endItems.includes(a.x)) return 1;
+    if (endItems.includes(b.x)) return -1;
+    return b.y - a.y;
+  };
+}
+
+// Apologies for this name, and apologies for such a "mutable" (mutant?) method
+// TODO: Wrangle some JavaScript to make this nicer, more functional...
+function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
+  const shownDataPoints = data.datasets.map(ds => ds.data.filter(i => i.y > yThreshold).map(i => i.x)).flat();
+  data.datasets.forEach(ds => ds.data = ds.data.reduce((result, current) => {
+    if (!shownDataPoints.includes(current.x)) {
+      let item = result.find(i => i.x === "Other...");
+      if (!item) {
+        item = { x: "Other...", y: 0, isPercentage: current.isPercentage };
+        result.push(item);
+      }
+      item.y += current.y;
+    } else {
+      result.push(current);
+    }
+    return result;
+  }, []));
+}
+
 window.addEventListener("DOMContentLoaded", async () => {
   const alldata = [];
 
@@ -139,9 +167,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         .responses
         .reduce(singleAnswerReducer("OS"), [])
         .map(percentageMapperFor(year))
-        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
+
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   
   charts["operatingSystem"] = new Chart(getById("operatingSystem").getContext("2d"), {
     type: "bar",
@@ -166,11 +196,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         .responses
         .reduce(multiAnswerReducer("Reason_for_participating"), [])
         .map(percentageMapperFor(year))
-        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
-  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["participationReason"] = new Chart(getById("participationReason").getContext("2d"), {
     type: "bar",
@@ -192,11 +222,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         .responses
         .reduce(multiAnswerReducer("Languages"), [])
         .map(percentageMapperFor(year))
-        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
-  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["language"] = new Chart(getById("language").getContext("2d"), {
     type: "bar",
@@ -218,11 +248,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         .responses
         .reduce(multiAnswerReducer("IDEs"), [])
         .map(percentageMapperFor(year))
-        .filter(i => i.y > 2) // TODO: Don"t just filter the rest out!
     }))
   };
   
-  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["ide"] = new Chart(getById("ide").getContext("2d"), {
     type: "bar",
@@ -244,11 +274,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         .responses
         .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
         .map(percentageMapperFor(year))
-        .filter(i => i.y > 0.5) // TODO: Don"t just filter the rest out!
     }))
-  };
+  };  
   
-  data.datasets.forEach(ds => ds.data.sort((a, b) => b.y - a.y));
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["leaderboardsGlobal"] = new Chart(getById("leaderboardsGlobal").getContext("2d"), {
     type: "bar",
@@ -274,7 +304,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
-  data.datasets.forEach(ds => ds.data.sort((a, b) => a.x.localeCompare(b.x)));
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["leaderboardsPrivate"] = new Chart(getById("leaderboardsPrivate").getContext("2d"), {
     type: "bar",
