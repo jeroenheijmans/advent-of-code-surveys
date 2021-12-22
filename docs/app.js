@@ -288,9 +288,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         ...chartTitle("IDE", "Multi-select: which IDEs do you use?"),
         ...datalabelsYFormatter(),
       },
-    },
-    scales: {
-      x: { ticks: { autoSkip: false, } }
+      scales: {
+        x: { ticks: { autoSkip: false, } }
+      },
     },
   });
 
