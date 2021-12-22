@@ -17,3 +17,4 @@ Copy-Item ./2021/results-sanitzed.json ./docs/2021/
 # Hack needed because GitHub pages serves the site as a 
 # subfolder on my gh-pages domain:
 (Get-Content ./docs/app.js).replace('const baseUrl = "";', 'const baseUrl = ".";') | Set-Content ./docs/app.js
+(Get-Content ./docs/index.html).replace('?v1', '?v' + (New-Guid)) | Set-Content ./docs/index.html
