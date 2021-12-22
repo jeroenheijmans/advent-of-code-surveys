@@ -136,9 +136,15 @@ const columns = {
     multi: true,
     answers: {
       'CodeBlocks': 'Code::Blocks',
+      'Codeblocks': 'Code::Blocks',
+      'Code Blocks': 'Code::Blocks',
+      'code::blocks': 'Code::Blocks',
       'geany': 'Geany',
       'gedit + console': 'Gedit',
       'gedit': 'Gedit',
+      "google colabs": "Google Colab",
+      "Colab": "Google Colab",
+      "Google colab": "Google Colab",
       'Jetbrains Rider': 'Rider',
       'JetBrains Rider': 'Rider',
       'Jupyter Notebook': 'IPython / Jupyter',
@@ -156,6 +162,11 @@ const columns = {
       'MATLAB': 'Matlab',
       'matlab': 'Matlab',
       'matlab?': 'Matlab',
+      "neovim": "Neovim",
+      "NeoVim": "Neovim",
+      "Replit": "Repl.it",
+      "repl.it": "Repl.it",
+      "Vscode neovim": "Neovim",
       'vim and a shell': 'Vim',
       'Visual Studio Code': 'VS Code',
       "webstorm": "WebStorm",
@@ -208,7 +219,11 @@ const columns = {
       'WSL2 on Windows10': 'WSL',
       'WSL2 Ubuntu, so both Windows and Linux? idk': 'WSL',
       'WSL2': 'WSL',
-      'WSL2': 'WSL',
+      'WSL2 (I\'m not sure whether it counts as Windows or Linux)': 'WSL',
+      'Using WSL (so Windows). Ideally Linux.': 'WSL',
+      'Windows Subsystem for Linux (Ubuntu 20)': 'WSL',
+      'Windows + Ubuntu via WSL': 'WSL',
+      'Windows running Linux through the WSL? So, is that both? If not, put me down for Windows.': 'WSL',
 
       'macOS and Windows': 'Combi of Windows/macOS',
       'Windows and MacOS': 'Combi of Windows/macOS',
@@ -249,6 +264,10 @@ const columns = {
       'to add to my resumé': 'add to resumé',
       'because I\'m forced to participate': 'forced to participate',
       '(prefer not to say)': 'prefer not to say',
+    },
+    preProcess: answer => {
+      if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
+      return answer;
     },
   },
 };

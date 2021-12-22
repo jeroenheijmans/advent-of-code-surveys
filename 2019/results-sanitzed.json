@@ -453,7 +453,7 @@
       "OCaml"
     ],
     "IDEs": [
-      "NeoVim"
+      "Neovim"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -4418,7 +4418,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows + Ubuntu via WSL",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [

@@ -877,7 +877,7 @@
     ],
     "IDEs": [
       "Vim",
-      "NeoVim"
+      "Neovim"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -16714,7 +16714,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "repl.it"
+      "Repl.it"
     ],
     "OS": "Chromebook",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -18866,7 +18866,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "code::blocks"
+      "Code::Blocks"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "the fast ones are always done by the time i finish reading the task",
@@ -35910,7 +35910,7 @@
       "Rust"
     ],
     "IDEs": [
-      "neovim"
+      "Neovim"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -37692,7 +37692,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Colab"
+      "Google Colab"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -54396,7 +54396,7 @@
       "C++"
     ],
     "IDEs": [
-      "Codeblocks"
+      "Code::Blocks"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
