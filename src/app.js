@@ -151,7 +151,7 @@ function wireUpDataTableFor(chartData, title, subject) {
     scrollWrapper = container.appendChild(createElement("div"));
     scrollWrapper.classList.add("datatable-scroll-wrapper");
     scrollWrapper.style.display = "none";
-    console.log(container.offsetWidth);
+
     scrollWrapper.style.maxWidth = (container.offsetWidth - 4) + "px";
 
     const table = scrollWrapper.appendChild(createElement("table"));
@@ -258,6 +258,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         ...chartTitle("Language", "Multi-select: what languages do you use?"),
         ...datalabelsYFormatter(),
       },
+      scales: {
+        x: { ticks: { autoSkip: false, } }
+      },
     },
   });
 
@@ -285,6 +288,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         ...chartTitle("IDE", "Multi-select: which IDEs do you use?"),
         ...datalabelsYFormatter(),
       },
+    },
+    scales: {
+      x: { ticks: { autoSkip: false, } }
     },
   });
 
