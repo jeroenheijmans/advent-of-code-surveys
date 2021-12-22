@@ -2,6 +2,10 @@
 
 This repository contains the data and code around the (unofficial) Advent of Code survey, started in 2018.
 
+## Live Dashboard
+
+👉 **View the live dashboard at [https://jeroenheijmans.github.io/advent-of-code-surveys/](https://jeroenheijmans.github.io/advent-of-code-surveys/)**
+
 ## Editions
 
 - 2015: No survey 😢
