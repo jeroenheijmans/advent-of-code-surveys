@@ -7,19 +7,20 @@ const options = {
   columns: true,
 };
 
-const raw = fs.readFileSync('2020/results-raw.csv', { encoding: 'utf8' });
+const raw = fs.readFileSync('2021/results-raw.csv', { encoding: 'utf8' });
 
 const columns = {
   'Timestamp': {
     header: 'Timestamp',
     postProcess: x => (new Date(x)).toISOString(),
   },
-  'Have/will you get at least one ⭐ in Advent of Code 2020?': {
-    header: 'Participates_in_2020',
+  'Have/will you get at least one ⭐ in Advent of Code 2021?': {
+    header: 'Participates_in_2021',
     answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
-      'Yes, (mostly) in december 2020': 'Dec',
-      'Yes, (mostly) after 2020': 'Later',
+      'Yes, (mostly) in december 2021': 'Dec',
+      'Yes, (mostly) after 2021': 'Later',
     }
   },
   'Did you participate in 2015? (first edition)': {
@@ -27,6 +28,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2015': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -35,6 +37,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2016': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -43,6 +46,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2017': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -51,6 +55,7 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2018': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
@@ -59,10 +64,20 @@ const columns = {
     answers: {
       'Yes, (mostly) in december 2019': 'Dec',
       'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
     },
   },
-  'Primary language(s) for AoC 2020?': {
+  'Did you participate in 2020?': {
+    header: 'Participates_in_2020',
+    answers: {
+      'Yes, (mostly) in december 2020': 'Dec',
+      'Yes, but (mostly) only later on': 'Later',
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
+      'No': 'No',
+    },
+  },
+  'Primary language(s) for AoC 2021?': {
     header: 'Languages',
      multi: true,
      answers: {
@@ -116,7 +131,7 @@ const columns = {
        return answer;
      }
   },
-  'Primary IDE(s) for AoC 2020?': {
+  'Primary IDE(s) for AoC 2021?': {
     header: 'IDEs',
     multi: true,
     answers: {
@@ -159,7 +174,7 @@ const columns = {
       return answer;
     }
   },
-  'Primary OS for AoC 2020?': {
+  'Primary OS for AoC 2021?': {
     header: 'OS',
     answers: {
       'Chrome OS': 'ChromeOS',
@@ -270,7 +285,7 @@ function callback(err, records) {
 
   // console.log(result);
 
-  fs.writeFileSync('2020/results-sanitzed.json', JSON.stringify(result, null, 2), { encoding: 'utf8' });
+  fs.writeFileSync('2021/results-sanitzed.json', JSON.stringify(result, null, 2), { encoding: 'utf8' });
 }
 
 parse(raw, options, callback);

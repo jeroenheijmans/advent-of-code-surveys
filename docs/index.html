@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css?v1">
+    <link rel="icon" href="favicon.png?v1">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" 
+      integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a class="source-link" href="https://github.com/jeroenheijmans/advent-of-code-surveys" target="_blank">
+        🔗 GitHub
+      </a>
+      <h1>Advent of Code Surveys: Results</h1>
+      <!-- <label><input type="checkbox" name="years" value="2021" checked> 2021</label> -->
+      <label><input type="checkbox" name="years" value="2020" checked> 2020</label>
+      <label><input type="checkbox" name="years" value="2019"> 2019</label>
+      <label><input type="checkbox" name="years" value="2018"> 2018</label>
+      <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2017" disabled> 2017</label>
+      <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2016" disabled> 2016</label>
+      <label class="disabled" title="No data as no survey was held"><input type="checkbox" name="years" value="2015" disabled> 2015</label>
+    </header>
+    <section id="content">
+      <div id="intro">
+        <h2>About this survey</h2>
+        <p>
+          Enjoy yearly programming puzzels at <a href="https://adventofcode.com/">Advent of Code</a> ever since 2015!
+          Since 2018 a community-run survey has been held.
+          The data is available under the ODbL license <a href="https://github.com/jeroenheijmans/advent-of-code-surveys">on GitHub</a>.
+          Here we present summarized results since 2021.
+          Old dashboards:
+          <a href="https://www.reddit.com/r/adventofcode/comments/kj53l1/unofficial_aoc_2020_survey_results/">2020 (Reddit)</a>,
+          <a href="https://www.reddit.com/r/adventofcode/comments/eepeld/unofficial_aoc_2019_survey_results/">2019 (Reddit)</a>,
+          and
+          <a href="https://www.reddit.com/r/adventofcode/comments/a90a8g/unofficial_aoc_2018_survey_results/">2018 (Reddit)</a>.
+        </p>
+      </div>
+      <section id="error" style="display: none;">
+        <h2>⛔ The Grinch Killed The App!</h2>
+        <p>Unfortunately an unexpected error occurred, possibly while loading the survey data for one of the years.</p>
+        <p>Please try again in a bit. If the problem persists, consider opening an issue on the repository page.</p>
+      </section>
+      <section id="charts">
+        <div class="chart-container"><canvas id="language"></canvas><div class="chart-dump" id="languageDump"></div></div>
+        <div class="chart-container"><canvas id="ide"></canvas><div class="chart-dump" id="ideDump"></div></div>
+        <div class="chart-container"><canvas id="operatingSystem"></canvas><div class="chart-dump" id="operatingSystemDump"></div></div>
+        <div class="chart-container"><canvas id="participationReason"></canvas><div class="chart-dump" id="participationReasonDump"></div></div>
+        <div class="chart-container"><canvas id="leaderboardsGlobal"></canvas><div class="chart-dump" id="leaderboardsGlobalDump"></div></div>
+        <div class="chart-container"><canvas id="leaderboardsPrivate"></canvas><div class="chart-dump" id="leaderboardsPrivateDump"></div></div>
+        <div class="chart-container"><canvas id="participationTiming"></canvas><div class="chart-dump" id="participationTimingDump"></div></div>
+        <div class="chart-container"><canvas id="responsesPerDay"></canvas><div class="chart-dump" id="responsesPerDayDump"></div></div>
+      </section>
+    </section>
+    <footer>
+      <p>This is <em>community</em> provided and it's "unofficial". "Advent of Code" is Eric Wastl's trademark. Please consider <a href="https://adventofcode.com/sponsors">sponsoring Advent of Code itself</a>.</p>
+      <p>
+        <a href="https://github.com/jeroenheijmans/advent-of-code-surveys">Source and License info for the Survey</a>
+        |
+        <a href="https://github.com/jeroenheijmans/advent-of-code-charts">Related: browser plugin with leaderboard charts</a>
+      </p>
+    </footer>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

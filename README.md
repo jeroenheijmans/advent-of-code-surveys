@@ -27,6 +27,10 @@ Data files (`*.json`, `*.csv`, and wherever otherwise explicitly noted) fall und
 
 In addition to linked license files, Open Data Commons also has a [human-readable summary of the ODbL v1.0](https://opendatacommons.org/licenses/odbl/summary/index.html).
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Examples
 
 Here's an example of a dashboard created based on this data (2019 edition):
