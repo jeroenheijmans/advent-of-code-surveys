@@ -1,4 +1,4 @@
-const baseUrl = "";
+const baseUrl = ".";
 const currentYear = "2020";
 const years = [
   { nr: "2018", bgColor: "rgba(255, 99, 132, 0.2)", borderColor: "rgb(255, 99, 132)", },
