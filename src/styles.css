@@ -4,6 +4,7 @@
   --bg-dark: #232c2d;
   --fg-lighter: #f4efef;
   --fg-light: #cecaca;
+  --fg-dark: #a1a1a1;
   --primary-lighter: #a2daff;
   --primary-light: #89d0ff;
   --secondary-lighter: #daffa2;
@@ -123,6 +124,14 @@ footer {
   background: var(--bg-dark);
 }
 
+.chart-note {
+  margin: 10px 0;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: var(--fg-dark);
+  border-top: 1px solid var(--bg-darkest);
+}
+
 .chart-dump {
   border-top: 1px solid var(--bg-darkest);
   padding-top: 10px;
@@ -180,6 +189,7 @@ footer {
 }
 
 .datatable thead th {
+  white-space: nowrap;
   text-align: center;
   font-weight: bold;
   background: var(--bg-darkest);
@@ -192,6 +202,7 @@ footer {
 
 .datatable .rawdata > span {
   display: inline-block;
+  text-align: right;
 }
 
 @media (min-width: 1800px), (min-width: 960px) and (max-width: 1400px) {
@@ -200,7 +211,8 @@ footer {
   }
 
   .datatable .rawdata > span {
-    width: 50%;
+    padding-left: 10px;
+    margin-left: auto;
   }
 }
 

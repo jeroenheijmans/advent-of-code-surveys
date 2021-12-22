@@ -1,10 +1,10 @@
 const baseUrl = "";
-const currentYear = "2020";
+const currentYear = "2021";
 const years = [
   { nr: "2018", bgColor: "rgba(255, 99, 132, 0.2)", borderColor: "rgb(255, 99, 132)", },
   { nr: "2019", bgColor: "rgba(255, 205, 86, 0.2)", borderColor: "rgb(255, 205, 86)", },
   { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", },
-//  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
 ];
 
 Chart.register(ChartDataLabels);
@@ -187,7 +187,7 @@ function wireUpDataTableFor(chartData, title, subject) {
         rows[i.x] = row;
       }
       rows[i.x][ds.label].appendChild(createElement("span", i.absolute));
-      rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(2)}%`));
+      rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(1)}%`));
     }));
 
     tableGenerated = true;
