@@ -1,10 +1,11 @@
 const baseUrl = "";
 const currentYear = "2021";
 const years = [
-  { nr: "2018", bgColor: "rgba(255, 99, 132, 0.2)", borderColor: "rgb(255, 99, 132)", },
-  { nr: "2019", bgColor: "rgba(255, 205, 86, 0.2)", borderColor: "rgb(255, 205, 86)", },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", },
   { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", },
   { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", },
 ];
 
 Chart.register(ChartDataLabels);
@@ -408,6 +409,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // participationTiming
   const participationQuestions = [
+    { key: "Participates_in_2022", label: "2022" },
     { key: "Participates_in_2021", label: "2021" },
     { key: "Participates_in_2015", label: "2015" },
     { key: "Participates_in_2016", label: "2016" },

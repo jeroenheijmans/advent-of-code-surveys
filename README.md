@@ -15,6 +15,7 @@ This repository contains the data and code around the (unofficial) Advent of Cod
 - 2019: [Survey Link](https://forms.gle/bzGHWpBEHFgREqj18), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/e6m6tj/unofficial_aoc_2019_participant_survey/), [Reddit Reminder (Dec 15)](https://www.reddit.com/r/adventofcode/comments/eb0nfx/reminder_unofficial_advent_of_code_survey_2019/), and a [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMzk1YjhmNTUtYWQ3Ny00MDE5LWE3ZDgtYzA5NTRjMGVhMWJhIiwidCI6IjQwOTEzYjA4LTQyZTYtNGMxOS05Y2FiLTRmOWZlM2U0YzJmZCIsImMiOjl9)
 - 2020: [Survey Link](https://forms.gle/k8MrYd6LVV7Sigpp6), [Reddit Announcement (Dec 5)](https://www.reddit.com/r/adventofcode/comments/k76nux/unofficial_aoc_2020_participant_survey/), [Reddit Reminder (Dec 16)](https://www.reddit.com/r/adventofcode/comments/kek9sg/reminder_unofficial_advent_of_code_survey_2020/), and a [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTQ3OTlmNDgtYmZlMS00ZTJmLTkwYTgtMWQyMTkxNWI5NGM1IiwidCI6IjQwOTEzYjA4LTQyZTYtNGMxOS05Y2FiLTRmOWZlM2U0YzJmZCIsImMiOjl9)
 - 2021: [Survey Link](https://forms.gle/pucYXedo1JYmWe8PA), [Reddit Announcement (Dec 4)](https://www.reddit.com/r/adventofcode/comments/r8xopu/unofficial_aoc_2021_participant_survey/), [Reddit Reminder (Dec 16)](https://www.reddit.com/r/adventofcode/comments/rhy5f4/reminder_unofficial_advent_of_code_survey_2021/), and [a completely revamped dashboard](https://jeroenheijmans.github.io/advent-of-code-surveys/)!
+- 2022: Forthcoming!
 
 ## License and Affiliation Disclaimer
 
@@ -38,6 +39,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Examples
 
+Since 2021 the dashboard is a live static web application at [https://jeroenheijmans.github.io/advent-of-code-surveys/](https://jeroenheijmans.github.io/advent-of-code-surveys/).
+
+There's also samples from earlier years.
 Here's an example of a dashboard created based on this data (2019 edition):
 
 ![AoC 2019 Unofficial Survey Dashboard Demo](2019/aoc-2019-unofficial-survey-demo.gif)
