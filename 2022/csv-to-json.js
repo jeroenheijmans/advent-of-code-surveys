@@ -23,7 +23,7 @@ const columns = {
       'Yes, (mostly) after 2022': 'Later',
     }
   },
-  'Did you participate in 2015? (first edition)': {
+  'Did you participate in 2015? (first edition, "star-powered machine" theme)': {
     header: 'Participates_in_2015',
     answers: {
       'Yes, (mostly) in december 2015': 'Dec',
@@ -32,7 +32,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2016?': {
+  'Did you participate in 2016? ("Easter Bunny HQ" theme)': {
     header: 'Participates_in_2016',
     answers: {
       'Yes, (mostly) in december 2016': 'Dec',
@@ -41,7 +41,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2017?': {
+  'Did you participate in 2017? ("naughty or nice list" theme)': {
     header: 'Participates_in_2017',
     answers: {
       'Yes, (mostly) in december 2017': 'Dec',
@@ -50,7 +50,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2018?': {
+  'Did you participate in 2018? ("time travel" theme)': {
     header: 'Participates_in_2018',
     answers: {
       'Yes, (mostly) in december 2018': 'Dec',
@@ -59,7 +59,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2019?': {
+  'Did you participate in 2019? ("spacecraft" theme)': {
     header: 'Participates_in_2019',
     answers: {
       'Yes, (mostly) in december 2019': 'Dec',
@@ -68,7 +68,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2020?': {
+  'Did you participate in 2020? ("tropical island vacation" theme)': {
     header: 'Participates_in_2020',
     answers: {
       'Yes, (mostly) in december 2020': 'Dec',
@@ -77,7 +77,7 @@ const columns = {
       'No': 'No',
     },
   },
-  'Did you participate in 2021?': {
+  'Did you participate in 2021? ("ocean" theme)': {
     header: 'Participates_in_2021',
     answers: {
       'Yes, (mostly) in december 2021': 'Dec',
