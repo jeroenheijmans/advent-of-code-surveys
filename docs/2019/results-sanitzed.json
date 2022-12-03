@@ -620,7 +620,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "FORTRAN",
+      "Fortran",
       "Racket"
     ],
     "IDEs": [
@@ -4796,7 +4796,7 @@
       "Racket"
     ],
     "IDEs": [
-      "Drracket"
+      "DrRacket"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -7555,7 +7555,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Unreal Engine 4"
+      "Unreal Engine"
     ],
     "IDEs": [
       "Unreal Engine 4"
@@ -8362,7 +8362,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "C++",
-      "FORTRAN",
+      "Fortran",
       "JavaScript",
       "Rust"
     ],
@@ -8602,7 +8602,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "FORTRAN"
+      "Fortran"
     ],
     "IDEs": [
       "Emacs"
@@ -8679,7 +8679,7 @@
     "IDEs": [
       "Spyder"
     ],
-    "OS": "both Windows & macOS",
+    "OS": "Combi of Windows/macOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -9443,7 +9443,7 @@
     ],
     "IDEs": [
       "Notepad++",
-      "Firefox Console"
+      "Firefox"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -9465,7 +9465,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "Java",
-      "Intcode"
+      "IntCode"
     ],
     "IDEs": [
       "Eclipse"
@@ -11113,7 +11113,7 @@
       "Visual Studio",
       "VS Code"
     ],
-    "OS": "Windows + Linux",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -16647,7 +16647,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Visual Studio Codium"
+      "VSCodium"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -16713,7 +16713,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Later",
     "Languages": [
-      "V (vlang.io)"
+      "V"
     ],
     "IDEs": [
       "Vim"
@@ -18168,11 +18168,11 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "C#",
-      "PeopleCode for 2018"
+      "PeopleCode"
     ],
     "IDEs": [
       "Visual Studio",
-      "Application Designer for 2018"
+      "Application Designer"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -18362,7 +18362,7 @@
     "IDEs": [
       "Sublime Text",
       "Visual Studio",
-      "QtCreator"
+      "Qt"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -18570,7 +18570,7 @@
       "C++"
     ],
     "IDEs": [
-      "clion"
+      "CLion"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -18633,7 +18633,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "A different language every day",
+      "Different language every day",
       "chosen on that day."
     ],
     "IDEs": [
@@ -22473,7 +22473,7 @@
       "LabVIEW"
     ],
     "IDEs": [
-      "LabVIEW 2018"
+      "LabVIEW"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -22688,7 +22688,7 @@
     "IDEs": [
       "vis"
     ],
-    "OS": "openbsd",
+    "OS": "OpenBSD",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -23189,7 +23189,7 @@
     "IDEs": [
       "IDLE"
     ],
-    "OS": "Windows and Linux",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -23914,7 +23914,7 @@
     "Participates_in_2018": "Dec",
     "Languages": [
       "JavaScript",
-      "Typescript"
+      "TypeScript"
     ],
     "IDEs": [
       "VS Code"
@@ -25399,7 +25399,7 @@
     "IDEs": [
       "Notepad++",
       "VS Code",
-      "PowerShell ISE"
+      "PowerShell"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -25590,7 +25590,7 @@
     "IDEs": [
       "IntelliJ",
       "Vim",
-      "Clion"
+      "CLion"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -26507,7 +26507,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -27166,7 +27166,7 @@
     "IDEs": [
       "Sublime Text",
       "Visual Studio",
-      "Qt Creator"
+      "Qt"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -28974,7 +28974,7 @@
     ],
     "IDEs": [
       "Spacemacs",
-      "drracket"
+      "DrRacket"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",

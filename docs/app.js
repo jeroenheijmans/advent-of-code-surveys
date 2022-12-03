@@ -1,5 +1,5 @@
 const baseUrl = ".";
-const currentYear = "2021";
+const currentYear = "2022";
 const years = [
   { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", },
   { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", },
@@ -485,6 +485,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     for (let i = 1; i < 25; i++) {
       ds.data[i].y += ds.data[i-1].y;
     }
+    ds.data.unshift({ x: 0, y: 0 });
   });
 
   charts["responsesPerDay"] = new Chart(getById("responsesPerDay").getContext("2d"), {
@@ -499,10 +500,11 @@ window.addEventListener("DOMContentLoaded", async () => {
       },
       scales: {
         x: {
-          min: 1,
+          min: 0,
           max: 25,
           ticks: {
             stepSize: 1,
+            callback: val => !!val ? val : "",
           },
         }
       },

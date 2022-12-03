@@ -615,7 +615,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "FORTRAN"
+      "Fortran"
     ],
     "IDEs": [
       "VS Code"
@@ -1217,10 +1217,10 @@
     "Languages": [
       "Python 3",
       "Rust",
-      "own scripting language"
+      "My own language!"
     ],
     "IDEs": [
-      "own text editor"
+      "My own editor"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -3598,7 +3598,7 @@
       "PHPStorm",
       "VS Code",
       "CLion",
-      "Chrome DevTools"
+      "Chrome"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -5063,7 +5063,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "No",
     "Languages": [
-      "Each day a different language"
+      "Different language every day"
     ],
     "IDEs": [
       "IntelliJ",
@@ -5272,7 +5272,7 @@
     ],
     "IDEs": [
       "Notepad++",
-      "Chrome DevTools"
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -5631,7 +5631,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "BBedit"
+      "BBEdit"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -6416,7 +6416,7 @@
     ],
     "IDEs": [
       "IntelliJ",
-      "Clion"
+      "CLion"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -9481,7 +9481,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "PowerShell ISE"
+      "PowerShell"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -10793,7 +10793,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "openbsd",
+    "OS": "OpenBSD",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -12089,7 +12089,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "pythonista"
+      "Pythonista"
     ],
     "OS": "iOS",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -12173,7 +12173,7 @@
     "Participates_in_2016": "Later",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "FORTRAN"
+      "Fortran"
     ],
     "IDEs": [
       "Emacs"
@@ -12760,7 +12760,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "jsfiddle"
+      "JSFiddle"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -12911,7 +12911,7 @@
     "Participates_in_2016": "No",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "elm"
+      "Elm"
     ],
     "IDEs": [
       "Vim"
@@ -13071,7 +13071,7 @@
     ],
     "IDEs": [
       "IntelliJ",
-      "Clion"
+      "CLion"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -14157,7 +14157,7 @@
       "C++"
     ],
     "IDEs": [
-      "qtcreator"
+      "Qt"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -14524,9 +14524,9 @@
     "Participates_in_2017": "No",
     "Languages": [
       "Bash/Shell",
-      "FORTRAN",
+      "Fortran",
       "Python 3",
-      "q/kdb+"
+      "Q/KDB+"
     ],
     "IDEs": [
       "Vim"
@@ -14960,7 +14960,7 @@
     "Languages": [
       "C#",
       "Python 3",
-      "vim",
+      "Vim",
       "Brainfuck"
     ],
     "IDEs": [
@@ -16310,7 +16310,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -17071,7 +17071,7 @@
       "Go"
     ],
     "IDEs": [
-      "Goland"
+      "GoLand"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -17957,7 +17957,7 @@
       "Go"
     ],
     "IDEs": [
-      "Goland"
+      "GoLand"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -19965,7 +19965,7 @@
     ],
     "IDEs": [
       "Notepad++",
-      "ZeroBrane Studio"
+      "ZeroBrane"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
