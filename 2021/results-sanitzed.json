@@ -702,7 +702,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "pythonista"
+      "Pythonista"
     ],
     "OS": "iOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -861,7 +861,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "my own scripting language (unpublished)"
+      "My own language!"
     ],
     "IDEs": [
       "my own Notepad clone (unpublished)"
@@ -4097,7 +4097,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Swift playground iOS"
+      "Swift playground"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -5941,7 +5941,7 @@
       "Vim",
       "Tic80"
     ],
-    "OS": "Chrome os (chromebook)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -6746,7 +6746,7 @@
       "Java"
     ],
     "IDEs": [
-      "Processing ide"
+      "Processing"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -6847,7 +6847,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Linux on Chrome OS",
+    "OS": "ChromeOS (Linux)",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -6872,7 +6872,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "ObservableHQ"
+      "Observable"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -7893,7 +7893,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "custom"
+      "Custom Language"
     ],
     "IDEs": [
       "VS Code"
@@ -8310,7 +8310,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "Unreal Engine 4"
+      "Unreal Engine"
     ],
     "IDEs": [
       "Unreal Engine 4 Blueprint Graph"
@@ -15036,7 +15036,7 @@
       "SQL"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -15963,7 +15963,7 @@
       "PHPStorm",
       "Rider"
     ],
-    "OS": "Windows including WSL",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -18212,7 +18212,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "25 Languages challenge"
+      "Different language every day"
     ],
     "IDEs": [
       "Visual Studio",
@@ -18662,7 +18662,7 @@
     "Languages": [
       "COBOL",
       "Python 3",
-      "REXX"
+      "Rexx"
     ],
     "IDEs": [
       "VS Code"
@@ -20570,7 +20570,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "chrome dev tools"
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -20928,7 +20928,7 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "Bash/Shell",
-      "my own programming language!"
+      "My own language!"
     ],
     "IDEs": [
       "VS Code"
@@ -21857,7 +21857,7 @@
       "PowerShell"
     ],
     "IDEs": [
-      "PowerShell ISE"
+      "PowerShell"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -23471,7 +23471,7 @@
       "Haskell"
     ],
     "IDEs": [
-      "micro: https://micro-editor.github.io/"
+      "Micro"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -23644,7 +23644,7 @@
     "Participates_in_2019": "No",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "Intersystems IRIS object script"
+      "Intersystems Objectscript"
     ],
     "IDEs": [
       "VS Code"
@@ -32441,7 +32441,7 @@
       "PHP"
     ],
     "IDEs": [
-      "vscodium"
+      "VSCodium"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -33655,7 +33655,7 @@
       "Lua"
     ],
     "IDEs": [
-      "ZeroBrane Studio"
+      "ZeroBrane"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -34991,7 +34991,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Specifially VSCodium"
+      "VSCodium"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "I do start on release, but mostly to do well on a private leaderboard",
@@ -36061,7 +36061,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "BBedit"
+      "BBEdit"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -36113,7 +36113,7 @@
       "APL"
     ],
     "IDEs": [
-      "RIDE"
+      "Dyalog RIDE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -36639,7 +36639,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -40689,7 +40689,7 @@
     "IDEs": [
       "PyCharm",
       "VS Code",
-      "VS Codium"
+      "VSCodium"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -41985,7 +41985,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Browser's console"
+      "Browser (Console)"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -42164,7 +42164,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "SAPIEN Powershell Studio"
+      "Sapien PowerShell Studio"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -42578,7 +42578,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "chrome console"
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -46868,7 +46868,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Pythonista 3 on iPad Pro"
+      "Pythonista"
     ],
     "OS": "iPadOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -51546,7 +51546,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -51806,7 +51806,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "micro"
+      "Micro"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -54032,7 +54032,7 @@
       "SLANG"
     ],
     "IDEs": [
-      "kilo"
+      "Kilo"
     ],
     "OS": "SCAMP/os",
     "Global_Leaderboard_Participation": "No, too difficult",
@@ -57309,7 +57309,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "REXX"
+      "Rexx"
     ],
     "IDEs": [
       "VS Code"
@@ -59177,7 +59177,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "ObservableHQ"
+      "Observable"
     ],
     "OS": "In browser (Firefox)",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -60269,7 +60269,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "different language each day"
+      "Different language every day"
     ],
     "IDEs": [
       "Vim"
@@ -66185,7 +66185,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows + Windows Subsystem for Linux",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -67082,7 +67082,7 @@
       "Vim",
       "sam"
     ],
-    "OS": "openbsd",
+    "OS": "OpenBSD",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -67872,7 +67872,7 @@
       "OpenLisp"
     ],
     "IDEs": [
-      "None"
+      "No IDE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -68951,7 +68951,7 @@
       "APL"
     ],
     "IDEs": [
-      "Dyalog APL"
+      "Dyalog RIDE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Prefer not to say",
@@ -71094,7 +71094,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "browser console"
+      "Browser (Console)"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -71475,7 +71475,7 @@
       "C++"
     ],
     "IDEs": [
-      "QT Creator"
+      "Qt"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -72740,7 +72740,7 @@
     ],
     "IDEs": [
       "IPython / Jupyter",
-      "observablehq.com"
+      "Observable"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -73253,7 +73253,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Codepen"
+      "CodePen"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -82751,7 +82751,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -83397,7 +83397,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -84439,7 +84439,7 @@
       "Lua"
     ],
     "IDEs": [
-      "no IDE",
+      "No IDE",
       "just a shell"
     ],
     "OS": "Linux",
@@ -84601,7 +84601,7 @@
     ],
     "IDEs": [
       "Xcode",
-      "Swift Playgrounds on iPad/Mac"
+      "Swift playground"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -86282,7 +86282,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "browser"
+      "Browser (Console)"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -90282,7 +90282,7 @@
       "PowerShell"
     ],
     "IDEs": [
-      "PowerShell ISE"
+      "PowerShell"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -91795,7 +91795,7 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "C#",
-      "The 3DS game: SmileBasic 4"
+      "SmileBASIC"
     ],
     "IDEs": [
       "Visual Studio",
@@ -91927,7 +91927,7 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "C#",
-      "SmileBasic for 3DS"
+      "SmileBASIC"
     ],
     "IDEs": [
       "Visual Studio",
@@ -95712,7 +95712,7 @@
     ],
     "IDEs": [
       "Neovim",
-      "QtCreator"
+      "Qt"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -98569,7 +98569,7 @@
     "Participates_in_2019": "No",
     "Participates_in_2020": "No",
     "Languages": [
-      "Vim Script"
+      "Vim"
     ],
     "IDEs": [
       "Neovim"
@@ -100989,7 +100989,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "codepen.io"
+      "CodePen"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -101533,7 +101533,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -101661,7 +101661,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "pycharm"
+      "PyCharm"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -103773,10 +103773,10 @@
     "Participates_in_2020": "No",
     "Languages": [
       "JavaScript",
-      "processing"
+      "Processing"
     ],
     "IDEs": [
-      "Processing IDE"
+      "Processing"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -105215,7 +105215,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "dataspell"
+      "DataSpell"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -105863,7 +105863,7 @@
       "HTML"
     ],
     "IDEs": [
-      "emacs"
+      "Emacs"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -105991,7 +105991,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Kate"
+      "KATE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -106350,7 +106350,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Chrome Developer Tools"
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
