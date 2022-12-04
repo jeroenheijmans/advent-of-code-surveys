@@ -199,6 +199,7 @@ const columns = {
       "Each day a different language": "Different language every day",
       "awk": "AWK",
       "Awk": "AWK",
+      "bqn": "BQN",
       "brainfuck": "Brainfuck",
       "Clojure": "Clojure/ClojureScript",
       "common lisp": "Common Lisp",
@@ -231,7 +232,7 @@ const columns = {
       "OCamL": "OCaml",
       "pen": "Pen & Paper",
       "Pen": "Pen & Paper",
-      "Paper probably": "Pen & Paper",
+      "Pen and Paper probably": "Pen & Paper",
       "Perl": "Perl 5", // The years where this was asked on the survey it clearly meant Perl 5
       "Perl 6": "Raku",
       "Perl 6 / Raku": "Raku",
@@ -270,7 +271,41 @@ const columns = {
       "zig": "Zig",
      },
      preProcess: answer => {
-       return answer.replace(',', ';').replace(' and ', ';');
+       // Manually fixing some cases is dumb, but still scalable currently
+       // so let's not try and be too smart about it. In the spirit of AoC:
+       answer = answer.replace("vim and brainfuck", "vim;brainfuck");
+       answer = answer.replace("google spreadsheet, and emacs", "Google Sheets;Emacs");
+       answer = answer.replace("also, Befunge-93, CMake, Idris, OCaml, and others TBD", "Befunge-93;CMake;Idris;OCaml");
+
+       answer = answer.replace("Ada;D, Nim", "Ada;D;Nim");
+       answer = answer.replace("Lisp, Awk", "Lisp;Awk");
+       answer = answer.replace("APL, Logo", "APL;Logo");
+       answer = answer.replace("Tailspin, Dart", "Tailspin;Dart");
+       answer = answer.replace("dc, Smalltalk", "dc;Smalltalk");
+       answer = answer.replace("Factor, Red, QB64", "Factor;Red;QB64");
+       answer = answer.replace("BQN, Idris2", "BQN;Idris2");
+       answer = answer.replace("sed, awk", "sed;awk");
+       answer = answer.replace("Ocaml, Pony", "Ocaml;Pony");
+       answer = answer.replace("zig, GNU Smalltalk, OCaml, Turing, Dart", "zig;GNU Smalltalk;OCaml;Turing;Dart");
+       answer = answer.replace("Odin, Elm", "Odin;Elm");
+       answer = answer.replace("APL, BQN", "APL;BQN");
+       answer = answer.replace("APL, BQN, K, Lil", "APL;BQN;K;Lil");
+       answer = answer.replace("APL;BQN, K, Lil", "APL;BQN;K;Lil");
+       answer = answer.replace("Smalltalk, dc", "Smalltalk;dc");
+       answer = answer.replace("APL, GFORTH", "APL;GFORTH");
+       answer = answer.replace("Picat, Clean", "Picat;Clean");
+       answer = answer.replace("bqn, smalltalk", "bqn;smalltalk");
+       answer = answer.replace("emojiC, portaLANG, BQN", "emojiC;portaLANG;BQN");
+       answer = answer.replace("BASIC, Pascal, Smalltalk, REXX, TCL, SAIL, Groovy", "BASIC;Pascal;Smalltalk;REXX;TCL;SAIL;Groovy");
+
+       if (answer.includes(' and ')) {
+         console.warn("  => DANGER! Language with 'and':", answer);
+       }
+       if (answer.includes(', ')) {
+         console.warn("  => DANGER! Language with ', ':", answer);
+       }
+
+       return answer;
      },
      postProcess: answer => {
        if (!answer) return '';
@@ -378,6 +413,7 @@ const columns = {
       'Idle': 'IDLE',
       'idle': 'IDLE',
       'iDLE': 'IDLE',
+      'Spyder, included in anaconda python3 distributio': 'Spyder',
       'Swift playground iOS': 'Swift playground',
       'Swift Playgrounds for iPad': 'Swift playground',
       'Swift Playgrounds on iPad/Mac': 'Swift playground',
@@ -411,7 +447,23 @@ const columns = {
       "ZeroBrane Studio": "ZeroBrane",
     },
     preProcess: answer => {
-      return answer.replace(',', ';');
+      // Manually fixing some cases is dumb, but still scalable currently
+      // so let's not try and be too smart about it. In the spirit of AoC:
+      answer = answer.replace("Qt, gedit + console", "Qt;gedit + console");
+      answer = answer.replace("NEdit, QPython", "NEdit;QPython");
+      answer = answer.replace("MATLAB, Spyder", "MATLAB;Spyder");
+      answer = answer.replace("Spacemacs, drracket", "Spacemacs;drracket");
+      answer = answer.replace("https://pythontutor.com, https://www.online-python.com/, https://regex101.com/, and Python's own compiler", "https://pythontutor.com;https://www.online-python.com/;https://regex101.com/;Python's own compiler");
+      answer = answer.replace("Browser Console, Node REPL", "Browser Console;Node REPL");
+      answer = answer.replace("CLion, Chrome DevTools", "CLion;Chrome DevTools");
+      answer = answer.replace("JSFiddle, CodePen", "JSFiddle;CodePen");
+      answer = answer.replace("nvim, geany", "nvim;geany");
+
+      if (answer.includes(', ')) {
+        console.warn("  => DANGER! IDE with ', ':", answer);
+      }
+
+      return answer;
     },
     postProcess: answer => {
       if (!answer) return '';
@@ -532,6 +584,8 @@ const columns = {
 };
 
 export const getParseCallback = (year) => function callback(err, records) {
+  console.log('------------------------------');
+
   let id = 100001;
   const result = records.map(record => {
     var item = { Id: id++ };
@@ -567,13 +621,11 @@ export const getParseCallback = (year) => function callback(err, records) {
     return item;
   });
 
-  // console.log(result);
-  
-  console.log('----------');
   console.log("Parsed year", year);
   console.log("Records:", result.length);
   console.log("Distinct languages:", new Set(result.map(r => r.Languages).flat()).size);
   console.log("Distinct IDEs:", new Set(result.map(r => r.IDEs).flat()).size);
+  console.log();
 
   fs.writeFileSync(`${year}/results-sanitized.json`, JSON.stringify(result, null, 2), { encoding: 'utf8' });
 };

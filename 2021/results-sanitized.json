@@ -725,7 +725,8 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "Factor",
-      "Red, QB64"
+      "Red",
+      "QB64"
     ],
     "IDEs": [
       "Notepad++"
@@ -26381,8 +26382,7 @@
     "Languages": [
       "C++",
       "Python 3",
-      "Sublime Text Syntax Highlighting (day 3",
-      "a bunch of manual labor lmao)"
+      "Sublime Text Syntax Highlighting..."
     ],
     "IDEs": [
       "Repl.it",
@@ -32227,7 +32227,10 @@
       "Rust",
       "Swift",
       "Zig",
-      "GNU Smalltalk, OCaml, Turing, Dart"
+      "GNU Smalltalk",
+      "OCaml",
+      "Turing",
+      "Dart"
     ],
     "IDEs": [
       "VS Code"
@@ -46981,8 +46984,7 @@
       "Python 3",
       "Ruby",
       "TypeScript",
-      "Trying to do a different languag...",
-      "haven't decided what languages"
+      "Trying to do a different languag..."
     ],
     "IDEs": [
       "VS Code"
@@ -52741,8 +52743,7 @@
       "Godot Engine"
     ],
     "IDEs": [
-      "Godot Engine",
-      "some JS IDE i found while travel..."
+      "Godot Engine, some JS IDE i foun..."
     ],
     "OS": "(Blank)",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -84439,8 +84440,7 @@
       "Lua"
     ],
     "IDEs": [
-      "No IDE",
-      "just a shell"
+      "no IDE, just a shell"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -84802,8 +84802,7 @@
     "Participates_in_2020": "Later",
     "Languages": [
       "Go",
-      "Rockstar (just one day",
-      "to see if I could)"
+      "Rockstar (just one day, to see i..."
     ],
     "IDEs": [
       "IntelliJ"
@@ -95816,8 +95815,7 @@
       "C++"
     ],
     "IDEs": [
-      "Code::Blocks",
-      "the original gtk+ fischer-price ..."
+      "Code::Blocks, the original gtk+ ..."
     ],
     "OS": "I'd like to interject for a moment, what you are calling 'Linux' is better called GNU/Linux, or as I've recently taken to calling it GNU+Linux.",
     "Global_Leaderboard_Participation": "No, my language is too strict/verbose to be competitive",
@@ -105474,7 +105472,9 @@
     ],
     "IDEs": [
       "https://pythontutor.com",
-      "https://www.online-python.com/, ..."
+      "https://www.online-python.com/",
+      "https://regex101.com/",
+      "Python's own compiler"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",

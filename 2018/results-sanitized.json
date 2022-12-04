@@ -7522,8 +7522,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "No IDE",
-      "just a stock text editor."
+      "No IDE, just a stock text editor."
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -15442,8 +15441,7 @@
     "Languages": [
       "Python 3",
       "Rust",
-      "SCHEME dialect",
-      "Racket"
+      "Scheme dialect"
     ],
     "IDEs": [
       "VS Code"
@@ -21552,8 +21550,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Spyder",
-      "included in anaconda python3 dis..."
+      "Spyder, included in anaconda pyt..."
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Nope, nowhere near experienced/good enough. Using it as a learning exercise.",
@@ -22414,8 +22411,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Vim",
-      "super comfy"
+      "vim and a shell, super comfy"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
