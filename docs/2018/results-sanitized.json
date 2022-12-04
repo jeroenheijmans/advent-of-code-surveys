@@ -328,7 +328,7 @@
       "Perl 5"
     ],
     "IDEs": [
-      "IDE? I don't need any IDE. To ca..."
+      "IDE? I don't need any IDE. To call a plain general purpose text-editor an \"IDE\" hollows aout the meaning of \"IDE\"."
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -3717,7 +3717,7 @@
     ],
     "IDEs": [
       "Vim",
-      "https://play.golang.org and also..."
+      "https://play.golang.org and also Google chrome console"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -7522,8 +7522,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "No IDE",
-      "just a stock text editor."
+      "No IDE, just a stock text editor."
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -13553,7 +13552,7 @@
       "Java"
     ],
     "IDEs": [
-      "Some online shit because i keep ..."
+      "Some online shit because i keep forgetting to download eclipse"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -15442,8 +15441,7 @@
     "Languages": [
       "Python 3",
       "Rust",
-      "SCHEME dialect",
-      "Racket"
+      "Scheme dialect"
     ],
     "IDEs": [
       "VS Code"
@@ -20460,7 +20458,7 @@
     ],
     "IDEs": [
       "Atom",
-      "Using the Litvis plug-in for Ato..."
+      "Using the Litvis plug-in for Atom (https://github.com/gicentre/litvis)"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Partly too stressful, but mostly because I have no chance of ever being that fast",
@@ -21552,8 +21550,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Spyder",
-      "included in anaconda python3 dis..."
+      "Spyder, included in anaconda python3 distribution"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Nope, nowhere near experienced/good enough. Using it as a learning exercise.",
@@ -22414,8 +22411,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Vim",
-      "super comfy"
+      "vim and a shell, super comfy"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",

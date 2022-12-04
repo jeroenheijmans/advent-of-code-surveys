@@ -499,8 +499,7 @@
     "Languages": [
       "C++",
       "Python 3",
-      "Various esoteric languages inclu...",
-      "BF, Befunge"
+      "Various esoteric languages including Piet, BF, Befunge"
     ],
     "IDEs": [
       "Notepad++"
@@ -11728,7 +11727,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Generic online thing so I don't ..."
+      "Generic online thing so I don't crash my computer installing language again"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -12792,7 +12791,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "'repl.it' - a website based thin..."
+      "'repl.it' - a website based thingy. For a first few tasks I didn't need anything special and was too lazy to boot up an IDE :D"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -18633,8 +18632,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "Different language every day",
-      "chosen on that day."
+      "A different language every day, chosen on that day."
     ],
     "IDEs": [
       "VS Code"
@@ -24847,7 +24845,7 @@
     "Languages": [
       "Python 3",
       "Google Sheets",
-      "emacs"
+      "Emacs"
     ],
     "IDEs": [
       "Emacs",
@@ -27777,7 +27775,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Lox (custom language from https:..."
+      "Lox (custom language from https://craftinginterpreters.com)"
     ],
     "IDEs": [
       "IntelliJ",
@@ -28395,8 +28393,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "C#",
-      "SLAFL",
-      "my custom language interpreter (..."
+      "SLAFL, my custom language interpreter (you can search on github)"
     ],
     "IDEs": [
       "Notepad++",
