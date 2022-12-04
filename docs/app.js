@@ -1,11 +1,11 @@
 const baseUrl = ".";
 const currentYear = "2022";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -13,6 +13,13 @@ Chart.register(ChartDataLabels);
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
 Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
+  let label = context.dataset.label || "";
+  if (label) label += ": ";
+  if (context.parsed.y !== null) label += context.formattedValue;
+  if (context.dataset.data[context.dataIndex].isPercentage) label += "%";
+  return label;
+};
 
 // Helpers
 const getById = (id) => document.getElementById(id);
@@ -62,6 +69,8 @@ function yearDatasetDefaults(year) {
     borderColor: year.borderColor,
     borderWidth: 1,
     hidden: year.nr !== currentYear,
+    radius: 4,
+    pointStyle: year.pointStyle,
   };
 }
 
@@ -144,7 +153,7 @@ function wireUpDataTableFor(chartData, title, subject) {
   chartData = JSON.parse(JSON.stringify(chartData));
 
   const container = getById(`${subject}Dump`);
-  const button = container.appendChild(createElement("button", "Toggle show/hide data table..."));
+  const button = container.appendChild(createElement("button", "Toggle data table..."));
   let tableGenerated = false;
   let scrollWrapper = null;
   
@@ -192,6 +201,12 @@ function wireUpDataTableFor(chartData, title, subject) {
     }));
 
     tableGenerated = true;
+
+    const bottomButton = scrollWrapper.appendChild(createElement("button", "Collapse data table..."));
+    bottomButton.style.marginTop = "10px";
+    bottomButton.addEventListener("click", () => {
+      scrollWrapper.style.display = scrollWrapper.style.display === "none" ? "block" : "none";
+    });
   }
 
   button.addEventListener("click", () => {
@@ -208,7 +223,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   try {
     // TODO: Parallelize fetches
     await Promise.all(years.map(async year => {
-      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitzed.json`);
+      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitized.json`);
       if (response.status >= 400) {
         throw new Error(`Loading data for ${year.nr} returned with status ${response.status} (${response.statusText})`);
       }
@@ -473,7 +488,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       ...yearDatasetDefaults(year),
       hidden: false,
       showLine: true,
-      borderWidth: 3,
+      borderWidth: 2,
       data: year
         .responses
         .reduce(singleAnswerReducer("utcResponseDay"), defaultDataPoints())
@@ -494,6 +509,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     options: {
       plugins: {
         ...chartTitle("Survey response per (UTC) day in December"),
+        legend: { labels: { usePointStyle: true } },
         datalabels: {
           display: false,
         },

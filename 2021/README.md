@@ -4,7 +4,7 @@ This folder contains the results for the 2021 (unofficial) Advent of Code Survey
 
 ## Data
 
-The [results-sanitzed.json](results-sanitzed.json) file contains the cleaned up data for you to play with.
+The [results-sanitized.json](results-sanitized.json) file contains the cleaned up data for you to play with.
 See the top level of this repository for license details on the data.
 
 ## Results

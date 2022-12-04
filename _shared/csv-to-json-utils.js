@@ -575,5 +575,5 @@ export const getParseCallback = (year) => function callback(err, records) {
   console.log("Distinct languages:", new Set(result.map(r => r.Languages).flat()).size);
   console.log("Distinct IDEs:", new Set(result.map(r => r.IDEs).flat()).size);
 
-  fs.writeFileSync(`${year}/results-sanitzed.json`, JSON.stringify(result, null, 2), { encoding: 'utf8' });
+  fs.writeFileSync(`${year}/results-sanitized.json`, JSON.stringify(result, null, 2), { encoding: 'utf8' });
 };

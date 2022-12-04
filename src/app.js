@@ -223,7 +223,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   try {
     // TODO: Parallelize fetches
     await Promise.all(years.map(async year => {
-      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitzed.json`);
+      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitized.json`);
       if (response.status >= 400) {
         throw new Error(`Loading data for ${year.nr} returned with status ${response.status} (${response.statusText})`);
       }
