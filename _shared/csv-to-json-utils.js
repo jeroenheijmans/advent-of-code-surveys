@@ -309,7 +309,7 @@ const columns = {
      },
      postProcess: answer => {
        if (!answer) return '';
-       if (answer.length > 40) return answer.substring(0, 32) + '...';
+       if (answer.length > 280) return answer.substring(0, 270) + '...';
        return answer;
      }
   },
@@ -467,7 +467,7 @@ const columns = {
     },
     postProcess: answer => {
       if (!answer) return '';
-      if (answer.length > 40) return answer.substring(0, 32) + '...';
+      if (answer.length > 280) return answer.substring(0, 270) + '...';
       return answer;
     }
   },

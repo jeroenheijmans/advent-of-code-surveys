@@ -9490,7 +9490,7 @@
       "Perl 5"
     ],
     "IDEs": [
-      "No IDE. (A generic text editor a..."
+      "No IDE. (A generic text editor ain't an IDE)"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -35642,7 +35642,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Chrome/Firefox console (direct i..."
+      "Chrome/Firefox console (direct in webpage)"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -41284,7 +41284,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Does the Python REPL (ptpython) ..."
+      "Does the Python REPL (ptpython) count as an IDE?"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -43095,7 +43095,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Not using one (firefox console /..."
+      "Not using one (firefox console / notepad)"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -53993,7 +53993,7 @@
       "Forth"
     ],
     "IDEs": [
-      "command-line, using vim for sour..."
+      "command-line, using vim for source editor"
     ],
     "OS": "Linux VPS, using Putty on Windows to reach it",
     "Global_Leaderboard_Participation": "No, not interested",
