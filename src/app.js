@@ -1,11 +1,11 @@
 const baseUrl = "";
 const currentYear = "2022";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -62,6 +62,8 @@ function yearDatasetDefaults(year) {
     borderColor: year.borderColor,
     borderWidth: 1,
     hidden: year.nr !== currentYear,
+    radius: 4,
+    pointStyle: year.pointStyle,
   };
 }
 
@@ -473,7 +475,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       ...yearDatasetDefaults(year),
       hidden: false,
       showLine: true,
-      borderWidth: 3,
+      borderWidth: 2,
       data: year
         .responses
         .reduce(singleAnswerReducer("utcResponseDay"), defaultDataPoints())
@@ -494,6 +496,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     options: {
       plugins: {
         ...chartTitle("Survey response per (UTC) day in December"),
+        legend: { labels: { usePointStyle: true } },
         datalabels: {
           display: false,
         },
