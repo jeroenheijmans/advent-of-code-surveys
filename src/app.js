@@ -13,6 +13,13 @@ Chart.register(ChartDataLabels);
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
 Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
+  let label = context.dataset.label || "";
+  if (label) label += ": ";
+  if (context.parsed.y !== null) label += context.formattedValue;
+  if (context.dataset.data[context.dataIndex].isPercentage) label += "%";
+  return label;
+};
 
 // Helpers
 const getById = (id) => document.getElementById(id);
@@ -146,7 +153,7 @@ function wireUpDataTableFor(chartData, title, subject) {
   chartData = JSON.parse(JSON.stringify(chartData));
 
   const container = getById(`${subject}Dump`);
-  const button = container.appendChild(createElement("button", "Toggle show/hide data table..."));
+  const button = container.appendChild(createElement("button", "Toggle data table..."));
   let tableGenerated = false;
   let scrollWrapper = null;
   
@@ -194,6 +201,12 @@ function wireUpDataTableFor(chartData, title, subject) {
     }));
 
     tableGenerated = true;
+
+    const bottomButton = scrollWrapper.appendChild(createElement("button", "Collapse data table..."));
+    bottomButton.style.marginTop = "10px";
+    bottomButton.addEventListener("click", () => {
+      scrollWrapper.style.display = scrollWrapper.style.display === "none" ? "block" : "none";
+    });
   }
 
   button.addEventListener("click", () => {
