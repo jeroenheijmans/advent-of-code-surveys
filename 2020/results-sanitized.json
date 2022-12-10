@@ -16311,7 +16311,7 @@
       "Kotlin"
     ],
     "IDEs": [
-      "https://play.kotlinlang.org/"
+      "Kotlin Playground"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -17267,7 +17267,7 @@
       "Unreal Engine"
     ],
     "IDEs": [
-      "Unreal Engine 4"
+      "Unreal Engine"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -25972,7 +25972,7 @@
       "GameMaker"
     ],
     "IDEs": [
-      "GameMaker Studio 2"
+      "GameMaker"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -26056,7 +26056,7 @@
       "GML"
     ],
     "IDEs": [
-      "GameMaker Studio 2"
+      "GameMaker"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -26760,7 +26760,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Roblox Studio (yes i actually used it)"
+      "Roblox Studio"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -35642,7 +35642,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Chrome/Firefox console (direct in webpage)"
+      "Browser (Console)"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -46050,7 +46050,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "https://observablehq.com/"
+      "Observable"
     ],
     "OS": "chrome",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -56820,7 +56820,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Anaconda/spyder"
+      "Spyder"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",

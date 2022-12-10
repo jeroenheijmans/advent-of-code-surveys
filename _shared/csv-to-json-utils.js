@@ -197,6 +197,10 @@ const columns = {
       "A different language every day": "Different language every day",
       "different language each day": "Different language every day",
       "Each day a different language": "Different language every day",
+      "New language every day": "Different language every day",
+      "one day, one lang": "Different language every day",
+      "Trying to do a different language every day, haven't decided what languages": "Different language every day",
+      "A different language every day, chosen on that day.": "Different language every day",
       "awk": "AWK",
       "Awk": "AWK",
       "bqn": "BQN",
@@ -208,6 +212,8 @@ const columns = {
       "dart": "Dart",
       "Dart!": "Dart",
       "elm": "Elm",
+      "emojicode": "Emojicode",
+      "emojiC": "Emojicode",
       "Frink ( https://frinklang.org/ )": "Frink",
       "FORTRAN": "Fortran",
       "Gamemaker Language": "GameMaker",
@@ -220,16 +226,19 @@ const columns = {
       "JQ": "jq",
       "minecraft commands": "Minecraft",
       "minecraft function": "Minecraft",
-      "my own": "My own language!",
       "my own programming language!": "My own language!",
       "My own programming language!": "My own language!",
+      "My own programming language": "My own language!",
       "my own scripting language (unpublished)": "My own language!",
+      "my own, unpublished language": "My own language!",
+      "my own": "My own language!",
       "own scripting language": "My own language!",
       "nim": "Nim",
       "N/A": "n/a",
       "ocaml": "OCaml",
       "Ocaml": "OCaml",
       "OCamL": "OCaml",
+      "k": "K",
       "pen": "Pen & Paper",
       "Pen": "Pen & Paper",
       "Pen and Paper probably": "Pen & Paper",
@@ -241,6 +250,8 @@ const columns = {
       "Ponylang": "Pony",
       "processing": "Processing",
       "q/kdb+": "Q/KDB+",
+      "Squeak Smalltalk IDE": "Squeak",
+      "Kdb+ / Q": "Q/KDB+",
       "REXX": "Rexx",
       "rockstar": "Rockstar",
       "scratch": "Scratch",
@@ -252,9 +263,11 @@ const columns = {
       'Some kind of SCHEME dialect': 'SCHEME dialect',
       'Some kind of SCHEME dialect, probably racket': 'Scheme dialect',
       'Squeam (a Lisp dialect I made up)': 'Squeam (own Lisp dialect)',
-      'Racket/Scheme': 'Scheme/Racket', // So that they sort together
+      'Racket/Scheme': 'Racket',
+      'Scheme/Racket': 'Racket',
       'probably racket': 'Racket',
       'tcl': 'Tcl',
+      'TCL': 'Tcl',
       'Tcl for each + a different language each day': 'Tcl',
       'TCL should come in the list': 'Tcl;Each day a different language',
       'Typescript': 'TypeScript',
@@ -278,6 +291,7 @@ const columns = {
        answer = answer.replace("also, Befunge-93, CMake, Idris, OCaml, and others TBD", "Befunge-93;CMake;Idris;OCaml");
 
        answer = answer.replace("Ada;D, Nim", "Ada;D;Nim");
+       answer = answer.replace("k and q", "k;q");
        answer = answer.replace("Lisp, Awk", "Lisp;Awk");
        answer = answer.replace("APL, Logo", "APL;Logo");
        answer = answer.replace("Tailspin, Dart", "Tailspin;Dart");
@@ -285,9 +299,11 @@ const columns = {
        answer = answer.replace("Factor, Red, QB64", "Factor;Red;QB64");
        answer = answer.replace("BQN, Idris2", "BQN;Idris2");
        answer = answer.replace("sed, awk", "sed;awk");
+       answer = answer.replace("emojiC, portaLANG, BQN", "emojiC;portaLANG;BQN");
        answer = answer.replace("Ocaml, Pony", "Ocaml;Pony");
        answer = answer.replace("zig, GNU Smalltalk, OCaml, Turing, Dart", "zig;GNU Smalltalk;OCaml;Turing;Dart");
        answer = answer.replace("Odin, Elm", "Odin;Elm");
+       answer = answer.replace("lex,yacc", "lex,yacc");
        answer = answer.replace("APL, BQN", "APL;BQN");
        answer = answer.replace("APL, BQN, K, Lil", "APL;BQN;K;Lil");
        answer = answer.replace("APL;BQN, K, Lil", "APL;BQN;K;Lil");
@@ -295,7 +311,10 @@ const columns = {
        answer = answer.replace("APL, GFORTH", "APL;GFORTH");
        answer = answer.replace("Picat, Clean", "Picat;Clean");
        answer = answer.replace("bqn, smalltalk", "bqn;smalltalk");
-       answer = answer.replace("emojiC, portaLANG, BQN", "emojiC;portaLANG;BQN");
+       answer = answer.replace("bqn, smalltalk", "bqn;smalltalk");
+       answer = answer.replace("jq, terraform, dhall", "jq;terraform;dhall");
+       answer = answer.replace("fennel, hy", "Fennel;hy");
+       answer = answer.replace("Haxe,Pascal,Carbon,Jakt,Vale,Coq,LDPL,Haxe", "Haxe;Pascal;Carbon;Jakt;Vale;Coq;LDPL;Haxe");
        answer = answer.replace("BASIC, Pascal, Smalltalk, REXX, TCL, SAIL, Groovy", "BASIC;Pascal;Smalltalk;REXX;TCL;SAIL;Groovy");
 
        if (answer.includes(' and ')) {
@@ -305,7 +324,7 @@ const columns = {
          console.warn("  => DANGER! Language with ', ':", answer);
        }
 
-       return answer;
+       return answer.trim();
      },
      postProcess: answer => {
        if (!answer) return '';
@@ -319,10 +338,12 @@ const columns = {
     answers: {
       'Application Designer for 2018': 'Application Designer',
       'BBedit': 'BBEdit',
+      'console in browser': 'Browser (Console)',
       'Browser': 'Browser (Console)',
       'browser': 'Browser (Console)',
       'browser console': 'Browser (Console)',
       'Browser Console': 'Browser (Console)',
+      'Chrome/Firefox console (direct in webpage)': 'Browser (Console)',
       'Browser\'s console': 'Browser (Console)',
       'Console in web browser': 'Browser (Console)',
       'chrome browser console': 'Chrome',
@@ -335,11 +356,13 @@ const columns = {
       'Chrome Developer Tools': 'Chrome',
       'Chrome DevTools': 'Chrome',
       'Chrome DevTools...': 'Chrome',
+      'Google Chrome Console': 'Chrome',
       'CodeBlocks': 'Code::Blocks',
       'Codeblocks': 'Code::Blocks',
       'Code Blocks': 'Code::Blocks',
       'code::blocks': 'Code::Blocks',
       'CodeBlocks and Dr. Java': 'Code::Blocks',
+      'Comma IDE': 'Comma',
       'clion': 'CLion',
       'Clion': 'CLion',
       'Codepen': 'CodePen',
@@ -352,11 +375,15 @@ const columns = {
       'Dyalog APL': 'Dyalog RIDE',
       'Dyalog APL IDE': 'Dyalog RIDE',
       'Dyalog RIDE': 'Dyalog RIDE',
+      'Dataspell': 'DataSpell',
+      "GameMaker Studio 2": "GameMaker",
+      'Studio for kdb+': 'KDB Studio',
       'Ride': 'Dyalog RIDE',
       'RIDE': 'Dyalog RIDE',
       'emacs': 'Emacs',
       'Firefox Console': 'Firefox',
       'Firefox Developer Tools': 'Firefox',
+      'Devtools (Firefox)': 'Firefox',
       'geany': 'Geany',
       'gedit + console': 'Gedit',
       'gedit': 'Gedit',
@@ -365,15 +392,26 @@ const columns = {
       "Google colab": "Google Colab",
       "Google CoLab": "Google Colab",
       "Google Collaborate": "Google Colab",
+      "Google Colaboratory": "Google Colab",
       'Goland': 'GoLand',
       'google sheets': 'Google Sheets',
       'Google Sheets in Chrome Browser': 'Google Sheets',
+      'no IDE, just a shell': 'No IDE',
       'helix': 'Helix',
+      'Helix editor': 'Helix',
+      'https://github.com/helix-editor/helix': 'Helix',
+      'Helix (https://helix-editor.com/)': 'Helix',
       'Jetbrains Rider': 'Rider',
       'JetBrains Rider': 'Rider',
       'Jupyter Notebook': 'IPython / Jupyter',
       'Jupyter': 'IPython / Jupyter',
+      'jupyter': 'IPython / Jupyter',
       "jsfiddle": "JSFiddle",
+      "jqt": "JQT",
+      "Jqt": "JQT",
+      'jdoodle.com': 'JDoodle',
+      'JDoodle.com': 'JDoodle',
+      "https://play.kotlinlang.org/": "Kotlin Playground",
       "kakoune": "Kakoune",
       "Kate": "KATE",
       "kilo": "Kilo",
@@ -389,7 +427,9 @@ const columns = {
       "Notepad.exe": "Notepad",
       "ObservableHQ": "Observable",
       "observablehq.com": "Observable",
+      "https://observablehq.com/": "Observable",
       "Onivim2": "OniVim2",
+      'Nova': 'Panic Nova',
       "PowerShell CLI": "PowerShell",
       "Powershell ISE": "PowerShell",
       "PowerShell ISE": "PowerShell",
@@ -414,6 +454,8 @@ const columns = {
       'idle': 'IDLE',
       'iDLE': 'IDLE',
       'Spyder, included in anaconda python3 distributio': 'Spyder',
+      'Spyder, included in anaconda python3 distribution': 'Spyder',
+      'Anaconda/spyder': 'Spyder',
       'Swift playground iOS': 'Swift playground',
       'Swift Playgrounds for iPad': 'Swift playground',
       'Swift Playgrounds on iPad/Mac': 'Swift playground',
@@ -422,13 +464,19 @@ const columns = {
       'Linqpad': 'LINQPad',
       'LinqPad': 'LINQPad',
       'LinqPAD': 'LINQPad',
+      'spacemacs': 'Spacemacs',
+      'Roblox Studio (yes i actually used it)': 'Roblox Studio',
       'MATLAB': 'Matlab',
       'matlab': 'Matlab',
       'matlab?': 'Matlab',
+      'https://www.onlinegdb.com/online_c++_compiler': 'OnlineGDB',
+      'Online GDB': 'OnlineGDB',
+      'https://www.onlinegdb.com/': 'OnlineGDB',
       "neovim": "Neovim",
       "NeoVim": "Neovim",
       "Replit": "Repl.it",
       "repl.it": "Repl.it",
+      "StackBlitz Web Editor": "StackBlitz",
       "Vscode neovim": "Neovim",
       'vim and a shell': 'Vim',
       'Visual Studio Code': 'VS Code',
@@ -444,6 +492,10 @@ const columns = {
       "Wolfram Mathematica": "Mathematica",
       "Wolfram Notebook": "Mathematica",
       'Wolfram Notebook / Mathematica Notebook': 'Wolfram Notebook;Mathematica Notebook',
+      "Wing IDE": "Wing",
+      "Wing 101": "Wing",
+      "Unreal Engine 4": "Unreal Engine",
+      "Unreal Engine 4 Blueprint Graph": "Unreal Engine",
       "ZeroBrane Studio": "ZeroBrane",
     },
     preProcess: answer => {
@@ -458,6 +510,7 @@ const columns = {
       answer = answer.replace("CLion, Chrome DevTools", "CLion;Chrome DevTools");
       answer = answer.replace("JSFiddle, CodePen", "JSFiddle;CodePen");
       answer = answer.replace("nvim, geany", "nvim;geany");
+      answer = answer.replace("JDoodle, Vista TN3270 Terminal", "JDoodle;Vista TN3270 Terminal");
 
       if (answer.includes(', ')) {
         console.warn("  => DANGER! IDE with ', ':", answer);
@@ -501,8 +554,14 @@ const columns = {
       'Windows with WSL': 'WSL',
       'wsl': 'WSL',
       'WSL2': 'WSL',
+      'WLS2': 'WSL',
       'WSL 2.0': 'WSL',
       'WSL in windows': 'WSL',
+      'WSL2 Ubuntu': 'WSL',
+      'Windows and WSL': 'WSL',
+      'WSL (Ubuntu terminal, windows vs code)': 'WSL',
+      'Windows with Linux Subsystem': 'WSL',
+      'Windows Subsystem for Linux (WSL)': 'WSL',
       'Wsl in Windows': 'WSL',
       'WSL on Windows. So both lol': 'WSL',
       'WSL-Ubuntu': 'WSL',
@@ -536,6 +595,7 @@ const columns = {
       'Combi of Windows/macOS': 'Combi of Windows/macOS',
       'macOS and Windows': 'Combi of Windows/macOS',
       'macOS and Windows': 'Combi of Windows/macOS',
+      'mac and windows': 'Combi of Windows/macOS',
       'both Windows & macOS': 'Combi of Windows/macOS',
       'Windows and MacOS': 'Combi of Windows/macOS',
       'ios': 'iOS',

@@ -7557,7 +7557,7 @@
       "Unreal Engine"
     ],
     "IDEs": [
-      "Unreal Engine 4"
+      "Unreal Engine"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -10845,7 +10845,7 @@
       "PHP"
     ],
     "IDEs": [
-      "Nova"
+      "Panic Nova"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -14526,7 +14526,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Kdb+ / Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "cmd"
@@ -18632,7 +18632,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "No",
     "Languages": [
-      "A different language every day, chosen on that day."
+      "Different language every day"
     ],
     "IDEs": [
       "VS Code"
@@ -20091,7 +20091,7 @@
     ],
     "IDEs": [
       "Emacs",
-      "spacemacs"
+      "Spacemacs"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
