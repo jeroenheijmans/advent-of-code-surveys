@@ -19356,7 +19356,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Wing IDE"
+      "Wing"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -20724,7 +20724,7 @@
       "Haskell",
       "Prolog",
       "Python 3",
-      "Scheme/Racket"
+      "Racket"
     ],
     "IDEs": [
       "Emacs"
@@ -21550,7 +21550,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Spyder, included in anaconda python3 distribution"
+      "Spyder"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Nope, nowhere near experienced/good enough. Using it as a learning exercise.",

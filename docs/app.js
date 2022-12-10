@@ -114,7 +114,8 @@ function ySorterWithFixedEndItems(endItems = []) {
     if (a.x === b.x) return 0;
     if (endItems.includes(a.x)) return 1;
     if (endItems.includes(b.x)) return -1;
-    return b.y - a.y;
+    const delta = b.y - a.y;
+    return delta !== 0 ? delta : a.x.localeCompare(b.x);
   };
 }
 
