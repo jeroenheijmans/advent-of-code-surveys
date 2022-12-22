@@ -194,6 +194,7 @@ const columns = {
      answers: {
       "awk": "AWK",
       "Awk": "AWK",
+      "Basic": "BASIC",
       "bqn": "BQN",
       "brainfuck": "Brainfuck",
       "Clojure": "Clojure/ClojureScript",
@@ -210,6 +211,7 @@ const columns = {
       "Each day a different language": "Different language every day",
       "New language every day": "Different language every day",
       "one day, one lang": "Different language every day",
+      "One Language per day": "Different language every day",
       "Trying to do a different language every day, haven't decided what languages": "Different language every day",
       "elm": "Elm",
       "emojiC": "Emojicode",
@@ -428,6 +430,7 @@ const columns = {
       "jqt": "JQT",
       "Jqt": "JQT",
       "jsfiddle": "JSFiddle",
+      "JsFiddle": "JSFiddle",
       "kakoune": "Kakoune",
       "Kate": "KATE",
       "Studio for kdb+": "KDB Studio",
@@ -435,6 +438,7 @@ const columns = {
       "https://play.kotlinlang.org/": "Kotlin Playground",
       "LabVIEW 2018": "LabVIEW",
       "Lazarus/Free Pascal": "Lazarus",
+      "lapce": "Lapce",
 
       "Linqpad": "LINQPad",
       "LinqPad": "LINQPad",
@@ -464,6 +468,7 @@ const columns = {
 
       "Notepad.exe": "Notepad",
 
+      "https://observablehq.com": "Observable",
       "https://observablehq.com/": "Observable",
       "observablehq.com": "Observable",
       "ObservableHQ": "Observable",
@@ -518,6 +523,7 @@ const columns = {
       "vim and a shell": "Vim",
       "Visual Studio Code": "VS Code",
 
+      "Codium": "VSCodium",
       "Specifially VSCodium": "VSCodium",
       "Visual Studio Codium": "VSCodium",
       "VS Codium": "VSCodium",
@@ -611,6 +617,7 @@ const columns = {
       'Wsl in Windows': 'WSL',
       'WSL in windows': 'WSL',
       'WSL in Windows': 'WSL',
+      'WSL on Windows': 'WSL',
       'WSL on Windows (Windows/Linux combo)': 'WSL',
       'WSL on Windows. So both lol': 'WSL',
       'WSL ubuntu': 'WSL',

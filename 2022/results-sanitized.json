@@ -16586,7 +16586,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Codium"
+      "VSCodium"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, I know sub100 is out of my reach but I still try to go fast",
@@ -27888,7 +27888,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Codium"
+      "VSCodium"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -41111,7 +41111,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "lapce"
+      "Lapce"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -82685,7 +82685,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "JsFiddle"
+      "JSFiddle"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -86896,7 +86896,7 @@
     "Participates_in_2021": "Dec",
     "Languages": [
       "Python 3",
-      "Basic"
+      "BASIC"
     ],
     "IDEs": [
       "PyCharm"
@@ -94259,7 +94259,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "https://observablehq.com"
+      "Observable"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -100057,7 +100057,7 @@
     "Participates_in_2020": "No",
     "Participates_in_2021": "No",
     "Languages": [
-      "One Language per day"
+      "Different language every day"
     ],
     "IDEs": [
       "VS Code"
