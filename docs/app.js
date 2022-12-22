@@ -409,7 +409,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
   
   wireUpDataTableFor(data, "Number of Private Leaderboards", "leaderboardsPrivate");
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  data.datasets.forEach(ds => ds.data.sort(xSorter()));
 
   charts["leaderboardsPrivate"] = new Chart(getById("leaderboardsPrivate").getContext("2d"), {
     type: "bar",
@@ -425,14 +425,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // participationTiming
   const participationQuestions = [
-    { key: "Participates_in_2022", label: "2022" },
-    { key: "Participates_in_2021", label: "2021" },
     { key: "Participates_in_2015", label: "2015" },
     { key: "Participates_in_2016", label: "2016" },
     { key: "Participates_in_2017", label: "2017" },
     { key: "Participates_in_2018", label: "2018" },
     { key: "Participates_in_2019", label: "2019" },
     { key: "Participates_in_2020", label: "2020" },
+    { key: "Participates_in_2021", label: "2021" },
+    { key: "Participates_in_2022", label: "2022" },
   ];
 
   const participationOptions = [
@@ -465,6 +465,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         }, [])
     }))
   };
+
+  data.datasets.forEach(ds => ds.data.sort(xSorter()));
 
   charts["participationTiming"] = new Chart(getById("participationTiming").getContext("2d"), {
     type: "bar",
