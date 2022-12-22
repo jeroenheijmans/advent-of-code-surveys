@@ -301,6 +301,7 @@ const columns = {
        answer = answer.replace("emojiC, portaLANG, BQN", "emojiC;portaLANG;BQN");
        answer = answer.replace("Factor, Red, QB64", "Factor;Red;QB64");
        answer = answer.replace("fennel, hy", "Fennel;hy");
+       answer = answer.replace("Forth, BASIC", "Forth;BASIC");
        answer = answer.replace("google spreadsheet, and emacs", "Google Sheets;Emacs");
        answer = answer.replace("Haxe,Pascal,Carbon,Jakt,Vale,Coq,LDPL,Haxe", "Haxe;Pascal;Carbon;Jakt;Vale;Coq;LDPL;Haxe");
        answer = answer.replace("jq, terraform, dhall", "jq;terraform;dhall");
