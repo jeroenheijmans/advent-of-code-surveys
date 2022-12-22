@@ -103605,5 +103605,119 @@
       "for a challenge",
       "improve skills"
     ]
+  },
+  {
+    "Id": 103848,
+    "Timestamp": "2022-12-22T11:40:09.000Z",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Languages": [
+      "C#",
+      "Python 3"
+    ],
+    "IDEs": [
+      "Visual Studio",
+      "VS Code",
+      "JetBrains Fleet"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "improve skills"
+    ]
+  },
+  {
+    "Id": 103849,
+    "Timestamp": "2022-12-22T14:31:40.000Z",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Languages": [
+      "Lisp"
+    ],
+    "IDEs": [
+      "Emacs"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ]
+  },
+  {
+    "Id": 103850,
+    "Timestamp": "2022-12-22T16:19:24.000Z",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Languages": [
+      "Rust",
+      "TypeScript"
+    ],
+    "IDEs": [
+      "Neovim",
+      "Vim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn new language",
+      "improve skills"
+    ]
+  },
+  {
+    "Id": 103851,
+    "Timestamp": "2022-12-22T17:16:51.000Z",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Languages": [
+      "Java",
+      "Python 3"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn to code",
+      "learn new language",
+      "improve skills"
+    ]
   }
 ]
