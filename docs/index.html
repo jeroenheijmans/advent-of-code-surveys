@@ -7,8 +7,8 @@
     <meta name="description" content="Results dashboard with the yearly (unofficial) Advent of Code participant survey">
     <meta name="author" content="Jeroen Heijmans & Contributors">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?ve74358aa-6275-4f9d-9aa7-8b4bb0c5fd20">
-    <link rel="icon" href="favicon.png?ve74358aa-6275-4f9d-9aa7-8b4bb0c5fd20">
+    <link rel="stylesheet" href="styles.css?v964a3bac-7547-4346-987b-94a06e2dc052">
+    <link rel="icon" href="favicon.png?v964a3bac-7547-4346-987b-94a06e2dc052">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" 
       integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
@@ -25,11 +25,11 @@
   <body>
     <header>
       <a class="source-link" href="https://github.com/jeroenheijmans/advent-of-code-surveys" target="_blank">
-        🔗 GitHub
+        Source (GitHub)
       </a>
       <h1>Advent of Code Surveys: Results</h1>
-      <label><input type="checkbox" name="years" value="2022"> 2022 (no data yet)</label>
-      <label><input type="checkbox" name="years" value="2021" checked> 2021</label>
+      <label><input type="checkbox" name="years" value="2022" checked> 2022</label>
+      <label><input type="checkbox" name="years" value="2021"> 2021</label>
       <label><input type="checkbox" name="years" value="2020"> 2020</label>
       <label><input type="checkbox" name="years" value="2019"> 2019</label>
       <label><input type="checkbox" name="years" value="2018"> 2018</label>
@@ -62,11 +62,11 @@
         <div class="chart-container">
           <canvas id="language" aria-describedby="languageDescription"><p>Chart showing (top) used languages</p></canvas>
           <p id="languageDescription" class="chart-description">
-            The bar chart shows Python 3 as the absolute top language of choice, for many years already, but certainly in 2021.
-            Rust is a clear second, JavaScript number 3.
-            Python 2 is in steady decline over the years.
-            Finally, a whopping roughly 20% had "Other" languages than the top 15 options.
-            Overall, however, the languages of choice have been fairly stable over the years.
+            Bar chart showing Python 3 at a whopping (steady over the years) 40ish percent.
+            Rust is a clear second and another year on the rise up to 16%.
+            In third place is JavaScript for many consecutive years, followed closely (in order) by C++, C#, Java, and Go (all roughly 5-8%).
+            Python 2 is is nearly gone in 2022.
+            Finally, a whopping roughly 20% had "Other" languages than the top 15 options!
             For full details on this graph and others, you can toggle a data table (warning: that really gives you <em>all</em> the data!).
           </p>
           <div class="chart-dump" id="languageDump"></div>
@@ -74,8 +74,10 @@
         <div class="chart-container">
           <canvas id="ide" aria-describedby="ideDescription"><p>Chart showing the (top) used IDEs</p></canvas>
           <p id="ideDescription" class="chart-description">
-            The bar chart shows VS Code reigns supreme, with 40+% of respondents using it in 2021 (and not much less in previous years).
-            Newcomer from 0.3% in 2019 to 3.2% in 2021 is Neovim! Perhaps that explains the fact that Vim itself (the second most popular option) declined by a similar percentage? Either way, there's a steady top set of options over the years, in order: VS Code, Vim, IntelliJ, PyCharm, Visual Studio, Emacs, and Sublime Text.
+            Bar chart showing VS Code in top spot, climbing a bit more to a staggering 45%!
+            Neovim doubled from last year on to a near 7% share!
+            Vim declined in a roughly equal percentage (but is still in 3rd place).
+            It is preceded by IntelliJ in 2nd spot at 10%, and followed by (in order) PyCharm, Neovim, Visual Studio, Emacs, and others.
             Finally, roughly 15% of users each year said they use some "Other" IDE not listed in the top.
           </p>
           <div class="chart-dump" id="ideDump"></div>
@@ -83,33 +85,36 @@
         <div class="chart-container">
           <canvas id="operatingSystem" aria-describedby="operatingSystemDescription"><p>Chart showing used (primary) operating systems</p></canvas>
           <p id="operatingSystemDescription" class="chart-description">
-            In order, Windows, Linux, and macOS make up (very) roughly equal parts, representing nearly all respondents.
-            WSL as a popular "Other" option is on the rise, and only 1.2% in 2021 had a different "Other" operating system.
-            The full data table (toggled below) does give cool insights in all the different options though!
+            The Bar Chart shows the three main Operating Systems as the three top options.
+            Windows in first (42% in 2022), Linux next (31% in 2022), and macOS third (25% in 2022).
+            WSL is a "fourth" option at a little under 1%, and a little over 1% of people responded with custom options.
+            Toggle the data table for full details.
           </p>
           <div class="chart-dump" id="operatingSystemDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="participationReason" aria-describedby="participationReasonDescription"><p>Chart showing the reason for participating</p></canvas>
           <p id="participationReasonDescription" class="chart-description">
-            This bar chart clearly shows very steady results over the years.
-            Over 95% of the people do AoC "For fun", followed closely by "For a challenge" and "Improve skills".
-            After that, options decline in percentage a bit, but still significant percentages answered "Learn a new language", "Learn to code", "Add to resume", and "For leaderboards".
+            Bar Chart showing people chose three main options as a reason for participating.
+            In order (roughly the same for all years) are "For Fun" (96% in 2022), "For a challenge" (84% in 2022), and "Improve Skills" (76% in 2022).
+            After ther decent chunks of people selected other default answers, and a bunch of people gave custom remarks: toggle the data table below for full details!
           </p>
-          <p class="chart-note">Note: "For Santa!" was not a default answer in the survey until 2019 onwards.</p><div class="chart-dump" id="participationReasonDump"></div>
+          <p class="chart-note">Note: "For Santa!" was not a default answer in the survey until 2020 onwards.</p><div class="chart-dump" id="participationReasonDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="leaderboardsGlobal" aria-describedby="leaderboardsGlobalDescription"><p>Chart showing participation in global leaderboard</p></canvas>
           <p id="leaderboardsGlobalDescription" class="chart-description">
-            Most people are not in it for the Global Leaderboard, as shown in this graph with mostly consistent results from over the years.
-            Still, a sizeable portion of respondents <em>are</em> folks who expect to get some amount of points on the leaderboard.
+            Bar chart shows a clear change from 2018 when the first survey was held.
+            Especially the change from 29% (2018) to 43% (2022) of people answering they're "Not interested" in going for the leaderboard.
+            Interestingly, less people directly attribute this to "Timezone is problematic" (down to 22% in 2022 from 32% in 2018).
+            Again a couple percent of respondents gave custom reasons, toggle the data table for all insights.
           </p>
           <div class="chart-dump" id="leaderboardsGlobalDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="leaderboardsPrivate" aria-describedby="leaderboardsPrivateDescription"><p>Chart showing number of private leaderboards one is involved in</p></canvas>
           <p id="leaderboardsPrivateDescription" class="chart-description">
-            About 70% of all people are in either 0 or 1 private leaderboards, split 50/50.
+            Same as previous years, about 70% of all people are in either 0 or 1 private leaderboards, split 50/50.
             After that, it declines, but even then, roughly 4% have 4 or even 5+ private leaderboards they participate in.
           </p>
           <div class="chart-dump" id="leaderboardsPrivateDump"></div>
@@ -117,15 +122,16 @@
         <div class="chart-container">
           <canvas id="participationTiming" aria-describedby="participationTimingDescription"><p>Chart showing when respondents completed each of the AoC years</p></canvas>
           <p id="participationTimingDescription" class="chart-description">
-            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in December itself.
-            Each year going back into the past, the number of people who participated in the event halves (some of them doing it "Later").
+            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in 2022 in December itself.
+            Every year before that, the number of people who said they participated roughly halves (and "Did it after December of that year" is a lot smaller than "In December").
           </p>
           <div class="chart-dump" id="participationTimingDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="responsesPerDay" aria-describedby="responsesPerDayDescription"><p>Line chart showing cumulative number of responses to the survey</p></canvas>
           <p id="responsesPerDayDescription" class="chart-description">
-            This very straightforward line chart shows that all 4 survey years followed the same pattern: a huge bump after the survey announement, and a small boost around December 15th following the reminder.
+            This very straightforward line chart shows that all 4 survey years 2021 and before followed the same pattern: a huge bump after the survey announement, and a small boost around December 15th following the reminder.
+            In 2022 there are three bumps (and three announcements), and the line ends up a couple hundred responses below 2021.
           </p>
           <div class="chart-dump" id="responsesPerDayDump"></div>
         </div>
@@ -169,6 +175,6 @@
         <a href="https://github.com/jeroenheijmans/advent-of-code-charts">Related: browser plugin with leaderboard charts</a>
       </p>
     </footer>
-    <script src="app.js?ve74358aa-6275-4f9d-9aa7-8b4bb0c5fd20" type="module"></script>
+    <script src="app.js?v964a3bac-7547-4346-987b-94a06e2dc052" type="module"></script>
   </body>
 </html>

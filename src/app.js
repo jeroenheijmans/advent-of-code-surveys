@@ -1,11 +1,11 @@
 const baseUrl = "";
-const currentYear = "2021";
+const currentYear = "2022";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -13,6 +13,13 @@ Chart.register(ChartDataLabels);
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
 Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
+  let label = context.dataset.label || "";
+  if (label) label += ": ";
+  if (context.parsed.y !== null) label += context.formattedValue;
+  if (context.dataset.data[context.dataIndex].isPercentage) label += "%";
+  return label;
+};
 
 // Helpers
 const getById = (id) => document.getElementById(id);
@@ -62,6 +69,8 @@ function yearDatasetDefaults(year) {
     borderColor: year.borderColor,
     borderWidth: 1,
     hidden: year.nr !== currentYear,
+    radius: 4,
+    pointStyle: year.pointStyle,
   };
 }
 
@@ -105,7 +114,8 @@ function ySorterWithFixedEndItems(endItems = []) {
     if (a.x === b.x) return 0;
     if (endItems.includes(a.x)) return 1;
     if (endItems.includes(b.x)) return -1;
-    return b.y - a.y;
+    const delta = b.y - a.y;
+    return delta !== 0 ? delta : a.x.localeCompare(b.x);
   };
 }
 
@@ -144,7 +154,7 @@ function wireUpDataTableFor(chartData, title, subject) {
   chartData = JSON.parse(JSON.stringify(chartData));
 
   const container = getById(`${subject}Dump`);
-  const button = container.appendChild(createElement("button", "Toggle show/hide data table..."));
+  const button = container.appendChild(createElement("button", "Toggle data table..."));
   let tableGenerated = false;
   let scrollWrapper = null;
   
@@ -192,6 +202,12 @@ function wireUpDataTableFor(chartData, title, subject) {
     }));
 
     tableGenerated = true;
+
+    const bottomButton = scrollWrapper.appendChild(createElement("button", "Collapse data table..."));
+    bottomButton.style.marginTop = "10px";
+    bottomButton.addEventListener("click", () => {
+      scrollWrapper.style.display = scrollWrapper.style.display === "none" ? "block" : "none";
+    });
   }
 
   button.addEventListener("click", () => {
@@ -208,7 +224,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   try {
     // TODO: Parallelize fetches
     await Promise.all(years.map(async year => {
-      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitzed.json`);
+      const response = await fetch(`${baseUrl}/${year.nr}/results-sanitized.json`);
       if (response.status >= 400) {
         throw new Error(`Loading data for ${year.nr} returned with status ${response.status} (${response.statusText})`);
       }
@@ -278,7 +294,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
   
   wireUpDataTableFor(data, "IDE", "ide");
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["ide"] = new Chart(getById("ide").getContext("2d"), {
@@ -393,7 +409,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
   
   wireUpDataTableFor(data, "Number of Private Leaderboards", "leaderboardsPrivate");
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  data.datasets.forEach(ds => ds.data.sort(xSorter()));
 
   charts["leaderboardsPrivate"] = new Chart(getById("leaderboardsPrivate").getContext("2d"), {
     type: "bar",
@@ -409,14 +425,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // participationTiming
   const participationQuestions = [
-    { key: "Participates_in_2022", label: "2022" },
-    { key: "Participates_in_2021", label: "2021" },
     { key: "Participates_in_2015", label: "2015" },
     { key: "Participates_in_2016", label: "2016" },
     { key: "Participates_in_2017", label: "2017" },
     { key: "Participates_in_2018", label: "2018" },
     { key: "Participates_in_2019", label: "2019" },
     { key: "Participates_in_2020", label: "2020" },
+    { key: "Participates_in_2021", label: "2021" },
+    { key: "Participates_in_2022", label: "2022" },
   ];
 
   const participationOptions = [
@@ -450,6 +466,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
 
+  data.datasets.forEach(ds => ds.data.sort(xSorter()));
+
   charts["participationTiming"] = new Chart(getById("participationTiming").getContext("2d"), {
     type: "bar",
     data,
@@ -473,7 +491,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       ...yearDatasetDefaults(year),
       hidden: false,
       showLine: true,
-      borderWidth: 3,
+      borderWidth: 2,
       data: year
         .responses
         .reduce(singleAnswerReducer("utcResponseDay"), defaultDataPoints())
@@ -485,6 +503,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     for (let i = 1; i < 25; i++) {
       ds.data[i].y += ds.data[i-1].y;
     }
+    ds.data.unshift({ x: 0, y: 0 });
   });
 
   charts["responsesPerDay"] = new Chart(getById("responsesPerDay").getContext("2d"), {
@@ -493,16 +512,18 @@ window.addEventListener("DOMContentLoaded", async () => {
     options: {
       plugins: {
         ...chartTitle("Survey response per (UTC) day in December"),
+        legend: { labels: { usePointStyle: true } },
         datalabels: {
           display: false,
         },
       },
       scales: {
         x: {
-          min: 1,
+          min: 0,
           max: 25,
           ticks: {
             stepSize: 1,
+            callback: val => !!val ? val : "",
           },
         }
       },
