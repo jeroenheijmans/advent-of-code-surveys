@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
   
   wireUpDataTableFor(data, "IDE", "ide");
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 1.5);
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
 
   charts["ide"] = new Chart(getById("ide").getContext("2d"), {
