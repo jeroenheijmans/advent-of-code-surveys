@@ -1,4 +1,4 @@
-# The Unofficial Advent of Code 2021 Survey
+# The Unofficial Advent of Code 2022 Survey
 
 This folder contains the results for the 2022 (unofficial) Advent of Code Survey.
 
