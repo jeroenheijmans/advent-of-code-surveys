@@ -1,12 +1,14 @@
 const baseUrl = "";
 const currentYear = "2022";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", bgColorDimmed: "rgba(208, 203, 60, 0.1)", borderColor: "rgb(208, 203, 60)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", bgColorDimmed: "rgba(60, 208, 106, 0.1)", borderColor: "rgb(60, 208, 106)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", bgColorDimmed: "rgba(75, 192, 192, 0.1)", borderColor: "rgb(75, 192, 192)", borderColorDimmed: "rgb(75, 192, 192, 0.25)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", bgColorDimmed: "rgba(153, 102, 255, 0.1)", borderColor: "rgb(153, 102, 255)", borderColorDimmed: "rgb(153, 102, 255, 0.25)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", bgColorDimmed: "rgba(208, 60, 88, 0.1)", borderColor: "rgb(208, 60, 88)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
 ];
+const datalabelsColor = "rgba(255, 255, 255, 0.8)";
+const datalabelsColorDimmed = "rgba(255, 255, 255, 0.1)";
 
 Chart.register(ChartDataLabels);
 
@@ -28,7 +30,7 @@ const createElement = (tag, text = "") => { const el = document.createElement(ta
 function datalabelsYFormatter(options = { withLabel: false }) {
   return {
     datalabels: {
-      color: "rgba(255, 255, 255, 0.8)",
+      color: datalabelsColor,
       textAlign: "center",
       formatter: (value, ctx) => value.y
         ? (value.isPercentage ? value.y.toFixed(1) + "%" : value.y) 
@@ -62,11 +64,12 @@ function scaleWithText(text) {
   };
 }
 
-function yearDatasetDefaults(year) {
+function yearDatasetDefaults(year, isDimmed = false) {
   return {
     label: year.nr,
-    backgroundColor: year.bgColor,
-    borderColor: year.borderColor,
+    backgroundColor: isDimmed ? year.bgColorDimmed : year.bgColor,
+    borderColor: isDimmed ? year.borderColorDimmed : year.borderColor,
+    datalabels: { color: isDimmed ? datalabelsColorDimmed : datalabelsColor },
     borderWidth: 1,
     hidden: year.nr !== currentYear,
     radius: 4,
@@ -86,8 +89,9 @@ function singleAnswerReducer(key) {
   };
 }
 
-function multiAnswerReducer(key) {
+function multiAnswerReducer(key, sliceFn = () => true) {
   return (result, current) => {
+    if (!sliceFn(current)) return result;
     current[key].forEach(value => {
       let item = result.find(i => i.x === value);
       if (!item) {
@@ -254,14 +258,29 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // language
   data = {
-    datasets: alldata.map(year => ({
-      ...yearDatasetDefaults(year),
-      data: year
-        .responses
-        .reduce(multiAnswerReducer("Languages"), [])
-        .map(percentageMapperFor(year))
-    }))
+    datasets: alldata.map(year => {
+      return [
+        {
+          ...yearDatasetDefaults(year),
+          stack: `Year ${year.nr}`,
+          data: year
+            .responses
+            .reduce(multiAnswerReducer("Languages", val => val.Id % 3 === 0), [])
+            .map(percentageMapperFor(year))
+        },
+        {
+          ...yearDatasetDefaults(year, true),
+          stack: `Year ${year.nr}`,
+          data: year
+            .responses
+            .reduce(multiAnswerReducer("Languages", val => val.Id % 3 !== 0), [])
+            .map(percentageMapperFor(year))
+        }
+      ]
+    }).flat()
   };
+
+  console.log(data);
 
   wireUpDataTableFor(data, "Language", "language");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
@@ -276,7 +295,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         ...datalabelsYFormatter(),
       },
       scales: {
-        x: { ticks: { autoSkip: false, } }
+        x: { ticks: { autoSkip: false, }, stacked: true, },
+        y: { stacked: true, },
       },
     },
   });
