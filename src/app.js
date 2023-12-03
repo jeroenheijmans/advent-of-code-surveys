@@ -6,6 +6,7 @@ const years = [
   { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
   { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
   { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
+  { nr: "2023", bgColor: "rgba(182, 70, 9, 0.2)", borderColor: "rgb(182, 70, 9)", pointStyle: 'crossRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -433,6 +434,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     { key: "Participates_in_2020", label: "2020" },
     { key: "Participates_in_2021", label: "2021" },
     { key: "Participates_in_2022", label: "2022" },
+    { key: "Participates_in_2023", label: "2023" },
   ];
 
   const participationOptions = [
