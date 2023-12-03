@@ -1,5 +1,5 @@
 const baseUrl = "";
-const currentYear = "2022";
+const currentYear = "2023";
 const years = [
   { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
   { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
