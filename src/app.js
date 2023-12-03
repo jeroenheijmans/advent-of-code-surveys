@@ -532,6 +532,35 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // 2023 Specific Question
+  data = {
+    datasets: alldata.filter(year => year.nr === "2023").map(year => ({
+      ...yearDatasetDefaults(year),
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Year_specific_2023_AI_and_LLM_thoughts"), [])
+        .map(percentageMapperFor(year))
+    }))
+  };
+  
+  wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2023");
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.1);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+
+  charts["yearSpecificQuestion2023"] = new Chart(getById("yearSpecificQuestion2023").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: 3,
+      plugins: {
+        ...chartTitle("2023-specific question: thoughts about AI and LLM's", "Multi-select: anno 2023 in context of AoC, what are your thoughts on AI and LLM's?"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
   function toggleYear(year, visible) {
     for (let key in charts) {
       if (key === "responsesPerDay") continue; // Allows for indivindual toggling
