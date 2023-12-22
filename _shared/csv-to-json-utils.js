@@ -296,6 +296,7 @@ const columns = {
     header: 'Languages',
      multi: true,
      answers: {
+      "also used a tiny bit of Maxima": "Maxima",
       "awk": "AWK",
       "Awk": "AWK",
       "Basic": "BASIC",
@@ -307,6 +308,7 @@ const columns = {
       "custom": "Custom Language",
       "Dart!": "Dart",
       "dart": "Dart",
+      "G (a.k.a. LabVIEW)": "LabVIEW",
       "25 different languages": "Different language every day",
       "25 Languages challenge": "Different language every day",
       "A different language every day, chosen on that day.": "Different language every day",
@@ -314,32 +316,52 @@ const columns = {
       "different language each day": "Different language every day",
       "Each day a different language": "Different language every day",
       "New language every day": "Different language every day",
+      "Unique for each day": "Different language every day",
       "one day, one lang": "Different language every day",
       "One Language per day": "Different language every day",
+      "Random language every day": "Different language every day",
       "Trying to do a different language every day, haven't decided what languages": "Different language every day",
+      "actually trying a different language each day, but if it's too difficult, Python is the fallback": "Different language every day",
+      "1 different programming language per day, python if I don't manage": "Different language every day",
+      "will try a different language for each day": "Different language every day",
+      "emacs lisp inside emacs": "emacs lisp",
       "elm": "Elm",
       "emojiC": "Emojicode",
       "emojicode": "Emojicode",
       "FORTRAN": "Fortran",
       "Frink ( https://frinklang.org/ )": "Frink",
+      "Frink (100%)": "Frink",
       "Gamemaker Language": "GameMaker",
       "GameMaker Language": "GameMaker",
       "google spreadsheet": "Google Sheets",
+      "gdscript (Godot)": "GDScript",
+      "GDscript": "GDScript",
+      "GWBASIC": "GW-BASIC",
       "Idris2": "Idris",
       "Intcode": "IntCode",
       "Intersystems IRIS object script": "Intersystems Objectscript",
       "Janet (janet-lang-org)": "Janet",
       "JQ": "jq",
       "k": "K",
+      "Lean4": "Lean 4",
+      "Miranda / Miranda2 (precursor to Haskell)": "Miranda",
       "minecraft commands": "Minecraft",
       "minecraft function": "Minecraft",
+      "mcfunction (Minecraft)": "Minecraft",
+      "My own": "My own language!",
+      "my own programming language": "My own language!",
+      "my own unpublished scripting language": "My own language!",
       "my own programming language!": "My own language!",
       "My own programming language!": "My own language!",
       "My own programming language": "My own language!",
       "my own scripting language (unpublished)": "My own language!",
       "my own, unpublished language": "My own language!",
       "my own": "My own language!",
+      "Self-made toy language": "My own language!",
       "own scripting language": "My own language!",
+      "SLAFL, my custom language interpreter (you can search on github)": "My own language: SLAFL",
+      "XallScript (my own scripting language))": "My own language: XallScript",
+      "My own language - Chi to test its usefulness (https://github.com/marad/chi-compiler-kotlin)": "My own language: Chi",
       "N/A": "n/a",
       "nim": "Nim",
       "ocaml": "OCaml",
@@ -353,7 +375,9 @@ const columns = {
       "pony": "Pony",
       "Ponylang": "Pony",
       "processing": "Processing",
-      "q": "Q",
+      "q": "Q/KDB+",
+      "Q": "Q/KDB+",
+      "Q / kdb+": "Q/KDB+",
       "Kdb+ / Q": "Q/KDB+",
       "q/kdb+": "Q/KDB+",
       "probably racket": "Racket",
@@ -362,7 +386,9 @@ const columns = {
       "Perl 6 / Raku": "Raku",
       "Perl 6": "Raku",
       "REXX": "Rexx",
+      "might try learning rust also": "Rust",
       "rockstar": "Rockstar",
+      "Rockstar (just one day, to see if I could)": "Rockstar",
       "Some kind of SCHEME dialect, probably racket": "Scheme dialect",
       "Some kind of SCHEME dialect": "SCHEME dialect",
       "scheme": "Scheme",
@@ -371,6 +397,7 @@ const columns = {
       "smalltalk": "Smalltalk",
       "SmileBasic for 3DS": "SmileBASIC",
       "The 3DS game: SmileBasic 4": "SmileBASIC",
+      "https://github.com/cessnao3/solariumprocessor": "SolariumProcessor",
       "Squeak Smalltalk IDE": "Squeak",
       "Squeam (a Lisp dialect I made up)": "Squeam (own Lisp dialect)",
       "TCL should come in the list": "Tcl;Each day a different language",
@@ -380,11 +407,15 @@ const columns = {
       "Typescript": "TypeScript",
       "Unreal Engine 4 (Blueprints)": "Unreal Engine",
       "Unreal Engine 4": "Unreal Engine",
+      "Undecided yet, will improvise": "Undecided",
+      "To be decided": "Undecided",
       "V (vlang.io)": "V",
+      "verilog": "Verilog",
       "Vim keystrokes": "Vim",
       "Vim Script": "Vim",
       "vim": "Vim",
       "vim": "Vim",
+      "WebAssembly": "WASM",
       "Wolfram Language / Mathematica": "Wolfram;Mathematica",
       "WolfLang": "Wolfram",
       "zig": "Zig",
@@ -412,22 +443,37 @@ const columns = {
        answer = answer.replace("Haxe,Pascal,Carbon,Jakt,Vale,Coq,LDPL,Haxe", "Haxe;Pascal;Carbon;Jakt;Vale;Coq;LDPL;Haxe");
        answer = answer.replace("jq, terraform, dhall", "jq;terraform;dhall");
        answer = answer.replace("k and q", "k;q");
-       answer = answer.replace("lex,yacc", "lex,yacc");
+       answer = answer.replace("lex,yacc", "lex;yacc");
        answer = answer.replace("Lisp, Awk", "Lisp;Awk");
        answer = answer.replace("Ocaml, Pony", "Ocaml;Pony");
        answer = answer.replace("Odin, Elm", "Odin;Elm");
        answer = answer.replace("Picat, Clean", "Picat;Clean");
+       answer = answer.replace("Pyret, Tailspin", "Pyret;Tailspin");
+       answer = answer.replace("Roc, Uiua, Elm", "Roc;Uiua;Elm");
+       answer = answer.replace("Uiua, Factor", "Uiua;Factor");
+       answer = answer.replace("Already added a day 1 solution in Sed, may pull out some other languages as the month goes on", "sed");
        answer = answer.replace("sed, awk", "sed;awk");
+       answer = answer.replace("Sometimes i'll grab my Nintendo 3DS and use SmileBASIC. Only when I really want to torture myself though", "SmileBASIC on Nintendo 3DS (only when I really want to torture myself though)");
        answer = answer.replace("Smalltalk, dc", "Smalltalk;dc");
        answer = answer.replace("Tailspin, Dart", "Tailspin;Dart");
        answer = answer.replace("vim and brainfuck", "vim;brainfuck");
        answer = answer.replace("zig, GNU Smalltalk, OCaml, Turing, Dart", "zig;GNU Smalltalk;OCaml;Turing;Dart");
+       answer = answer.replace("Hare, Fennel, Own languages", "Hare;Fennel;my own");
+       answer = answer.replace("Bash/Shell;C;Clojure/ClojureScript;Crystal;Dart;F#;Haskell;Lisp;Lua;Nim;OCaml;Python 3;Ruby;Rust;Scala;Swift;Zig;Uiua, Koka, Fennel", "Bash/Shell;C;Clojure/ClojureScript;Crystal;Dart;F#;Haskell;Lisp;Lua;Nim;OCaml;Python 3;Ruby;Rust;Scala;Swift;Zig;Uiua;Koka;Fennel");
+       answer = answer.replace("I do a “solve every day in a different language” thing, so no primary language. I did aoc2020 in assembly though.", "Different language every day");
+       answer = answer.replace("Atari Basic / 6502 assembler for 2016", "Atari Basic");
+       answer = answer.replace("sed gurklang postscript", "sed;gurklang;postscript");
+       answer = answer.replace("trying to use it to learn Rust this year, but submitting with Java", "Rust;Java");
+       answer = answer.replace("Various esoteric languages including Piet, BF, Befunge", "Various esoteric languages;Piet;BF;Befunge");
 
        if (answer.includes(' and ')) {
          console.warn("  => DANGER! Language with 'and':", answer);
        }
        if (answer.includes(', ')) {
          console.warn("  => DANGER! Language with ', ':", answer);
+       }
+       if (answer.includes(';)')) {
+         console.warn("  => DANGER! Language with ';)' smiley:", answer);
        }
 
        return answer.trim();
@@ -442,6 +488,9 @@ const columns = {
     header: 'IDEs',
     multi: true,
     answers: {
+      "acme": "Acme",
+      "Alteryx Designer": "Alteryx",
+      "N/A Alteryx is not a coding language": "Alteryx",
       "Application Designer for 2018": "Application Designer",
       "BBedit": "BBEdit",
 
@@ -453,10 +502,17 @@ const columns = {
       "Chrome/Firefox console (direct in webpage)": "Browser (Console)",
       "console in browser": "Browser (Console)",
       "Console in web browser": "Browser (Console)",
+      "browser developer tools console": "Browser (Console)",
+      "Browser JS console": "Browser (Console)",
+      "my browser js console": "Browser (Console)",
+      "Browser's console": "Browser (Console)",
+      "Web console": "Browser (Console)",
 
       "chrome browser console": "Chrome",
       "chrome console": "Chrome",
       "Chrome console": "Chrome",
+      "Chrome Console": "Chrome",
+      "chrome Console": "Chrome",
       "Chrome debugger": "Chrome",
       "Chrome dev console (:": "Chrome",
       "chrome dev tools": "Chrome",
@@ -469,6 +525,9 @@ const columns = {
       "clion": "CLion",
       "Clion": "CLion",
       
+      "AWS Cloud9 IDE": "AWS Cloud9",
+      "Cloud9": "AWS Cloud9",
+      
       "Code Blocks": "Code::Blocks",
       "code::blocks": "Code::Blocks",
       "CodeBlocks and Dr. Java": "Code::Blocks",
@@ -476,6 +535,7 @@ const columns = {
       "CodeBlocks": "Code::Blocks",
       
       "codepen.io": "CodePen",
+      "Codepen.io": "CodePen",
       "Codepen": "CodePen",
       "Coderunner": "CodeRunner",
       "Comma IDE": "Comma",
@@ -496,11 +556,16 @@ const columns = {
       "Devtools (Firefox)": "Firefox",
       "Firefox Console": "Firefox",
       "Firefox Developer Tools": "Firefox",
+      "Firefox console": "Firefox",
+      "Firefox Console": "Firefox",
 
+      "Jetbrains Fleet": "Fleet",
+      "JetBrains Fleet": "Fleet",
       "GameMaker Studio 2": "GameMaker",
       "geany": "Geany",
       "gedit + console": "Gedit",
       "gedit": "Gedit",
+      "Notepad (vanilla)/gedit": "Gedit",
       "Goland": "GoLand",
 
       "Colab": "Google Colab",
@@ -531,12 +596,18 @@ const columns = {
 
       "jdoodle.com": "JDoodle",
       "JDoodle.com": "JDoodle",
+      "jgrasp": "jGRASP",
+      "Jgrasp": "jGRASP",
       "jqt": "JQT",
       "Jqt": "JQT",
       "jsfiddle": "JSFiddle",
       "JsFiddle": "JSFiddle",
-      "kakoune": "Kakoune",
+      "JSFiddle.net": "JSFiddle",
+      "J Ide": "J IDE",
+      "J built-in IDE (see jsoftware.com)": "J IDE",
       "Kate": "KATE",
+      "kakoune": "Kakoune",
+      "joe on CLI": "joe",
       "Studio for kdb+": "KDB Studio",
       "kilo": "Kilo",
       "https://play.kotlinlang.org/": "Kotlin Playground",
@@ -548,6 +619,8 @@ const columns = {
       "LinqPad": "LINQPad",
       "LinqPAD": "LINQPad",
 
+      "LiveBook.dev": "Livebook",
+
       "Mathematica Notebook": "Mathematica",
       "Wolfram Mathematica": "Mathematica",
       "Wolfram Notebook": "Mathematica",
@@ -556,10 +629,18 @@ const columns = {
       "matlab": "Matlab",
       "MATLAB": "Matlab",
 
+      "Maple (is it's own REPL)": "Maple",
+
       "micro: https://micro-editor.github.io/": "Micro",
       "micro": "Micro",
-      "my own": "My own editor",
-      "own text editor": "My own editor",
+
+      "my own": "My own editor!",
+      "own text editor": "My own editor!",
+      "my own, unpublished editor": "My own editor!",
+      "My own editor": "My own editor!",
+      "my own unpublished Notepad clone": "My own editor!",
+      "my own Notepad clone (unpublished)": "My own editor!",
+
       "nano": "Nano",
 
       "neovim": "Neovim",
@@ -569,6 +650,10 @@ const columns = {
       "no IDE, just a shell": "No IDE",
       "no IDE": "No IDE",
       "None": "No IDE",
+      "none": "No IDE",
+      "None/a text editor": "No IDE",
+      "No IDE, just a stock text editor.": "No IDE",
+      "No IDE. Just a general purpose editor.": "No IDE",
 
       "Notepad.exe": "Notepad",
 
@@ -581,9 +666,21 @@ const columns = {
       "https://www.onlinegdb.com/": "OnlineGDB",
       "https://www.onlinegdb.com/online_c++_compiler": "OnlineGDB",
       "Online GDB": "OnlineGDB",
+      "Onlinegdb": "OnlineGDB",
+      "www.onlinegdb.com": "OnlineGDB",
+      "online-python.com": "Online-python",
+      "online Phyton IDE": "Online-python",
+      "https://www.online-python.com/": "Online-python",
+      "https://www.online-python.com": "Online-python",
       "Nova": "Panic Nova",
       "Pen and Paper probably": "Pen & Paper",
       "Pharo Smalltalk": "Pharo",
+      "Smalltalk (Pharo)": "Pharo",
+
+      "pluto": "Pluto",
+      "plutojl.org": "Pluto",
+      "Pluto Notebooks": "Pluto",
+      "Pluto.jl": "Pluto",
 
       "PowerShell CLI": "PowerShell",
       "Powershell ISE": "PowerShell",
@@ -596,6 +693,8 @@ const columns = {
       "Pythonista 3 on iPad Pro": "Pythonista",
       "pythonista": "Pythonista",
 
+      "Does the Python REPL (ptpython) count as an IDE?": "Ptpython REPL",
+
       "qt creator": "Qt",
       "Qt Creator": "Qt",
       "QT Creator": "Qt",
@@ -604,28 +703,52 @@ const columns = {
 
       "repl.it": "Repl.it",
       "Replit": "Repl.it",
+      "'repl.it' - a website based thingy. For a first few tasks I didn't need anything special and was too lazy to boot up an IDE :D": "Repl.it",
+      "repl.it": "Repl.it",
       "Jetbrains Rider": "Rider",
       "JetBrains Rider": "Rider",
       "Roblox Studio (yes i actually used it)": "Roblox Studio",
+
+      "Rust Rover": "RustRover",
+      "RustRover EAP": "RustRover",
+      "RustRover from Jetbrains": "RustRover",
+      "IntelliJ RustRover": "RustRover",
+
+      "SAP workbench": "SAP",
+
       "SAPIEN Powershell Studio": "Sapien PowerShell Studio",
       "spacemacs": "Spacemacs",
+      "Swift playground": "Swift Playgrounds",
 
       "Anaconda/spyder": "Spyder",
       "Spyder, included in anaconda python3 distributio": "Spyder",
       "Spyder, included in anaconda python3 distribution": "Spyder",
 
+      "Microsoft SQL Managerment Studio": "SQL Server Management Studio",
+      "Microsoft SQL Server Studio": "SQL Server Management Studio",
+      "SSMS": "SQL Server Management Studio",
+
       "StackBlitz Web Editor": "StackBlitz",
+      "The 3DS game: SmileBasic 4": "SmileBASIC for 3DS",
+      "SmileBasic for 3DS": "SmileBASIC for 3DS",
+      "Squeak Smalltalk IDE": "Squeak",
 
       "Swift playground iOS": "Swift playground",
       "Swift Playgrounds for iPad": "Swift playground",
       "Swift Playgrounds on iPad/Mac": "Swift playground",
 
+      "text editor": "Text Editor",
+      "Text editor": "Text Editor",
+      "text Editor": "Text Editor",
       "Terminal emulator": "Terminal",
       "tio.run": "TIO.run",
+      "https://www.typescriptlang.org": "Typescript Playground",
       "Unreal Engine 4 Blueprint Graph": "Unreal Engine",
       "Unreal Engine 4": "Unreal Engine",
       "vim and a shell": "Vim",
       "Visual Studio Code": "VS Code",
+
+      "vis": "Vis",
 
       "Codium": "VSCodium",
       "Specifially VSCodium": "VSCodium",
@@ -634,13 +757,20 @@ const columns = {
       "VSCodium (marked VSCode too for simplicity)": "VSCodium",
       "vscodium": "VSCodium",
       "VSCodium": "VSCodium",
+      "VsCodium": "VSCodium",
+      "VSCodium not full fat VSCode": "VSCodium",
 
+      "what is even an IDE?": "What is even an IDE?",
+      "what's an IDE?": "What is even an IDE?",
       "webstorm": "WebStorm",
       "Webstorm": "WebStorm",
+      "Web Storm": "WebStorm",
       "Wing 101": "Wing",
       "Wing IDE": "Wing",
       "Wolfram Notebook / Mathematica Notebook": "Wolfram Notebook;Mathematica Notebook",
+      "xed + gnome terminal": "xed",
       "ZeroBrane Studio": "ZeroBrane",
+      "zed": "Zed",
     },
     preProcess: answer => {
       // Manually fixing some cases is dumb, but still scalable currently
@@ -653,11 +783,32 @@ const columns = {
       answer = answer.replace("MATLAB, Spyder", "MATLAB;Spyder");
       answer = answer.replace("NEdit, QPython", "NEdit;QPython");
       answer = answer.replace("nvim, geany", "nvim;geany");
+      answer = answer.replace("Powershell ISE and Code::Blocks", "Powershell ISE;Code::Blocks");
+      answer = answer.replace("Python IDLE, Powershell", "Python IDLE;Powershell");
+      answer = answer.replace("Pythonista on iPhone, at least for now (might switch to PC later)", "Pythonista");
       answer = answer.replace("Qt, gedit + console", "Qt;gedit + console");
       answer = answer.replace("Spacemacs, drracket", "Spacemacs;drracket");
+      answer = answer.replace("Excel;Notepad++;Visual Studio Code;Qt Creator, Godbolt", "Excel;Notepad++;Visual Studio Code;Qt Creator;Godbolt");
+      answer = answer.replace("PowerShell ISE, SWISH online for Prolog, LINQPad for C#", "PowerShell ISE;SWISH-Prolog;LINQPad");
+      answer = answer.replace("codium, it's a vsc copy, but without bs", "VsCodium");
+      answer = answer.replace("RunJS and Thonny", "RunJS;Thonny");
+      answer = answer.replace("jgrasp ;)", "jgrasp");
+      answer = answer.replace("Notrpad exe", "Notepad");
+      answer = answer.replace("CodePen + Chrome", "CodePen;Chrome");
+      answer = answer.replace("IDLE / Nano", "IDLE;Nano");
+      answer = answer.replace("vim and a shell, super comfy", "vim;shell");
+      answer = answer.replace("Not to sure, just a text editor on my Chromebook", "Text editor");
+      answer = answer.replace("Xcode but ONLY as a text editor. BBEdit was fighting me on indentation.", "Xcode;BBedit");
+      answer = answer.replace("GHCi (directly in the Haskell REPL ;)", "GHCi");
+      answer = answer.replace("Godot Engine, some JS IDE i found while traveling without laptop", "Godot Engine;Some JS IDE I found while traveling without laptop");
+      answer = answer.replace("Not using one (firefox console / notepad)", "FireFox Console;Notepad");
+      answer = answer.replace("No IDE. (A generic text editor ain't an IDE)", "Generic text editor");
 
       if (answer.includes(', ')) {
         console.warn("  => DANGER! IDE with ', ':", answer);
+      }
+      if (answer.includes(';)')) {
+        console.warn("  => DANGER! IDE with ';)' smiley:", answer);
       }
 
       return answer;

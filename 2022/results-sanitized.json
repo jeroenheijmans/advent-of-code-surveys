@@ -253,7 +253,7 @@
       "Smalltalk"
     ],
     "IDEs": [
-      "Squeak Smalltalk IDE"
+      "Squeak"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -1135,7 +1135,7 @@
       "My own language!"
     ],
     "IDEs": [
-      "my own, unpublished editor"
+      "My own editor!"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -2994,7 +2994,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Notepad (vanilla)/gedit"
+      "Gedit"
     ],
     "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -7207,7 +7207,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "https://www.online-python.com/"
+      "Online-python"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -9135,7 +9135,7 @@
     ],
     "IDEs": [
       "GoLand",
-      "Jetbrains Fleet"
+      "Fleet"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -9922,7 +9922,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "KDB Studio"
@@ -20842,7 +20842,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "My own language - Chi to test its usefulness (https://github.com/marad/chi-compiler-kotlin)"
+      "My own language: Chi"
     ],
     "IDEs": [
       "VS Code"
@@ -38206,7 +38206,7 @@
       "Haskell"
     ],
     "IDEs": [
-      "My own editor"
+      "My own editor!"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -40795,7 +40795,7 @@
     ],
     "IDEs": [
       "Neovim",
-      "acme"
+      "Acme"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -44881,7 +44881,7 @@
       "ABAP"
     ],
     "IDEs": [
-      "SAP workbench"
+      "SAP"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -46728,7 +46728,7 @@
     "Languages": [
       "C++",
       "Haskell",
-      "might try learning rust also"
+      "Rust"
     ],
     "IDEs": [
       "VS Code"
@@ -50755,7 +50755,7 @@
     "Participates_in_2021": "Dec",
     "Languages": [
       "K",
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "VS Code"
@@ -59296,7 +59296,7 @@
     "Participates_in_2020": "No",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "mcfunction (Minecraft)"
+      "Minecraft"
     ],
     "IDEs": [
       "VS Code"
@@ -60328,7 +60328,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Not to sure, just a text editor on my Chromebook"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -62760,8 +62760,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "jgrasp",
-      ")"
+      "jGRASP"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -62976,7 +62975,8 @@
     "Participates_in_2021": "Dec",
     "Languages": [
       "Java",
-      "trying to use it to learn Rust this year, but submitting with Java"
+      "Rust",
+      "Java"
     ],
     "IDEs": [
       "CLion",
@@ -65571,7 +65571,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "zed"
+      "Zed"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -68173,7 +68173,7 @@
     ],
     "IDEs": [
       "PyCharm",
-      "Alteryx Designer"
+      "Alteryx"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -85845,7 +85845,7 @@
       "Julia"
     ],
     "IDEs": [
-      "Pluto Notebooks"
+      "Pluto"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, always need at least 30 min.",
@@ -86819,7 +86819,7 @@
       "Lua"
     ],
     "IDEs": [
-      "text editor"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -89995,7 +89995,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Frink (100%)"
+      "Frink"
     ],
     "IDEs": [
       "Emacs"
@@ -90024,7 +90024,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Miranda / Miranda2 (precursor to Haskell)"
+      "Miranda"
     ],
     "IDEs": [
       "Emacs"
@@ -95735,7 +95735,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Notrpad exe"
+      "Notepad"
     ],
     "OS": "Notepad.exe",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -102981,7 +102981,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Codepen.io"
+      "CodePen"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -103624,7 +103624,7 @@
     "IDEs": [
       "Visual Studio",
       "VS Code",
-      "JetBrains Fleet"
+      "Fleet"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",

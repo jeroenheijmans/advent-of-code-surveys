@@ -499,7 +499,10 @@
     "Languages": [
       "C++",
       "Python 3",
-      "Various esoteric languages including Piet, BF, Befunge"
+      "Various esoteric languages",
+      "Piet",
+      "BF",
+      "Befunge"
     ],
     "IDEs": [
       "Notepad++"
@@ -1394,7 +1397,8 @@
       "JavaScript"
     ],
     "IDEs": [
-      "CodePen + Chrome"
+      "CodePen",
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -8127,7 +8131,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Cloud9"
+      "AWS Cloud9"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -8242,7 +8246,7 @@
       "Alteryx"
     ],
     "IDEs": [
-      "N/A Alteryx is not a coding language"
+      "Alteryx"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -12033,7 +12037,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "AWS Cloud9 IDE"
+      "AWS Cloud9"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -12791,7 +12795,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "'repl.it' - a website based thingy. For a first few tasks I didn't need anything special and was too lazy to boot up an IDE :D"
+      "Repl.it"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -19056,7 +19060,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "None/a text editor"
+      "No IDE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -22684,7 +22688,7 @@
       "Julia"
     ],
     "IDEs": [
-      "vis"
+      "Vis"
     ],
     "OS": "OpenBSD",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -23983,7 +23987,7 @@
     "Participates_in_2017": "Dec",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "VS Code"
@@ -25226,7 +25230,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "Python 3",
-      "also used a tiny bit of Maxima"
+      "Maxima"
     ],
     "IDEs": [
       "VS Code"
@@ -28393,7 +28397,7 @@
     "Participates_in_2018": "No",
     "Languages": [
       "C#",
-      "SLAFL, my custom language interpreter (you can search on github)"
+      "My own language: SLAFL"
     ],
     "IDEs": [
       "Notepad++",
@@ -29064,7 +29068,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "joe on CLI"
+      "joe"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",

@@ -865,7 +865,7 @@
       "My own language!"
     ],
     "IDEs": [
-      "my own Notepad clone (unpublished)"
+      "My own editor!"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -2925,7 +2925,7 @@
       "Perl 5"
     ],
     "IDEs": [
-      "No IDE. Just a general purpose editor."
+      "No IDE"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -20342,7 +20342,7 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "Rust",
-      "https://github.com/cessnao3/solariumprocessor"
+      "SolariumProcessor"
     ],
     "IDEs": [
       "VS Code"
@@ -23522,7 +23522,7 @@
       "SQL"
     ],
     "IDEs": [
-      "SSMS"
+      "SQL Server Management Studio"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -24124,7 +24124,7 @@
       "Maple"
     ],
     "IDEs": [
-      "Maple (is it's own REPL)"
+      "Maple"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -30865,7 +30865,7 @@
       "SQL"
     ],
     "IDEs": [
-      "SSMS"
+      "SQL Server Management Studio"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -41074,7 +41074,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "KDB Studio"
@@ -41988,7 +41988,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Browser's console"
+      "Browser (Console)"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -48337,7 +48337,7 @@
     "Participates_in_2019": "No",
     "Participates_in_2020": "Later",
     "Languages": [
-      "Self-made toy language"
+      "My own language!"
     ],
     "IDEs": [
       "VS Code"
@@ -52743,7 +52743,8 @@
       "Godot Engine"
     ],
     "IDEs": [
-      "Godot Engine, some JS IDE i found while traveling without laptop"
+      "Godot Engine",
+      "Some JS IDE I found while traveling without laptop"
     ],
     "OS": "(Blank)",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -65128,7 +65129,7 @@
     "Languages": [
       "Java",
       "R",
-      "Atari Basic / 6502 assembler for 2016"
+      "Atari Basic"
     ],
     "IDEs": [
       "Eclipse",
@@ -65398,7 +65399,9 @@
       "Python 3",
       "Raku",
       "Rust",
-      "sed gurklang postscript"
+      "sed",
+      "gurklang",
+      "postscript"
     ],
     "IDEs": [
       "IDLE",
@@ -69109,7 +69112,7 @@
       "IntelliJ",
       "IPython / Jupyter",
       "VS Code",
-      "Pluto.jl"
+      "Pluto"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -72845,7 +72848,7 @@
       "SQL"
     ],
     "IDEs": [
-      "Microsoft SQL Server Studio"
+      "SQL Server Management Studio"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -78367,7 +78370,7 @@
       "Julia"
     ],
     "IDEs": [
-      "Pluto.jl"
+      "Pluto"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -84802,7 +84805,7 @@
     "Participates_in_2020": "Later",
     "Languages": [
       "Go",
-      "Rockstar (just one day, to see if I could)"
+      "Rockstar"
     ],
     "IDEs": [
       "IntelliJ"
@@ -86202,7 +86205,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "Text editor"
+      "Text Editor"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "I’m learning a new language",
@@ -86418,7 +86421,8 @@
       "Python 2"
     ],
     "IDEs": [
-      "Xcode but ONLY as a text editor. BBEdit was fighting me on indentation."
+      "Xcode",
+      "BBEdit"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not good or fast enough",
@@ -89118,7 +89122,7 @@
     "Participates_in_2019": "No",
     "Participates_in_2020": "Later",
     "Languages": [
-      "G (a.k.a. LabVIEW)"
+      "LabVIEW"
     ],
     "IDEs": [
       "LabVIEW"
@@ -91798,7 +91802,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "The 3DS game: SmileBasic 4"
+      "SmileBASIC for 3DS"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -91930,7 +91934,7 @@
     ],
     "IDEs": [
       "Visual Studio",
-      "SmileBasic for 3DS"
+      "SmileBASIC for 3DS"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -94998,7 +95002,7 @@
       "Java"
     ],
     "IDEs": [
-      "Jgrasp"
+      "jGRASP"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -101812,7 +101816,7 @@
       "Matlab"
     ],
     "IDEs": [
-      "what is even an IDE?"
+      "What is even an IDE?"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -104177,7 +104181,7 @@
     "Participates_in_2020": "Dec",
     "Languages": [
       "Python 3",
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "VS Code"
@@ -105472,7 +105476,7 @@
     ],
     "IDEs": [
       "https://pythontutor.com",
-      "https://www.online-python.com/",
+      "Online-python",
       "https://regex101.com/",
       "Python's own compiler"
     ],
