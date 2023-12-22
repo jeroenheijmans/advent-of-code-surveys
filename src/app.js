@@ -240,7 +240,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  alldata.sort((a, b) => b.nr.localeCompare(a.nr));
+  alldata.sort((a, b) => a.nr.localeCompare(b.nr));
 
   // Amend data
   alldata.forEach(year => 
