@@ -191,7 +191,7 @@ function wireUpDataTableFor(chartData, title, subject) {
     
     const rows = {};
   
-    chartData.datasets.forEach(ds => ds.data.forEach(i => {
+    chartData.datasets.toSorted((a, b) => b.label.localeCompare(a.label)).forEach(ds => ds.data.forEach(i => {
       if (!rows.hasOwnProperty(i.x)) {
         let row = { tr: tbody.appendChild(createElement("tr")) };
         let rowTh = row.tr.appendChild(createElement("th", i.x));
