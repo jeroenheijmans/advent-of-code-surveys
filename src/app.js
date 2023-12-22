@@ -177,7 +177,17 @@ function wireUpDataTableFor(chartData, title, subject) {
     let tr = thead.appendChild(createElement("tr"));
     let th = tr.appendChild(createElement("th", title));
   
-    years.forEach(year => tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : ""))));
+    years.forEach(year => {
+      let thYear = tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : "")));
+      const responseCount = chartData.datasets.find(ds => ds.label === year.nr)?.responseCount;
+      if (responseCount) {
+        let responseCountSpan = thYear.appendChild(createElement("p", `N=${responseCount}`))
+        responseCountSpan.style.fontSize = "0.7rem";
+        responseCountSpan.style.whiteSpace = "nowrap";
+        responseCountSpan.style.opacity = 0.6;
+        responseCountSpan.style.marginTop = 0;
+      }
+    });
     
     const rows = {};
   
@@ -257,6 +267,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("Languages"), [])
@@ -287,6 +298,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("IDEs"), [])
@@ -317,6 +329,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("OS"), [])
@@ -347,6 +360,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("Reason_for_participating"), [])
@@ -374,6 +388,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
@@ -401,6 +416,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("Private_Leaderboard_Count"), [])
@@ -491,6 +507,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       hidden: false,
       showLine: true,
       borderWidth: 2,
@@ -538,6 +555,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.filter(year => year.nr === "2023").map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("Year_specific_2023_AI_and_LLM_thoughts"), [])
