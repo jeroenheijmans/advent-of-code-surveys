@@ -950,7 +950,21 @@ const columns = {
       'No, too stressful': 'No, too stressful',
       'No, not interested': 'No, not interested',
       'Prefer not to say': 'Prefer not to say',
-      '': '',
+      "": "(Blank)",
+
+      // Other answers grouping
+      "No, skill issue": "No, not skilled enough",
+      "No, I'm not skilled enough to have a shot": "No, not skilled enough",
+      "Skill issue": "No, not skilled enough",
+      "No, I have literally no chance with my current skill level": "No, not skilled enough",
+      "No, not anywhere near skilled enough": "No, not skilled enough",
+      "not skilled enough": "No, not skilled enough",
+      "No, not at that skill level": "No, not skilled enough",
+      "No, not skillful enough.": "No, not skilled enough",
+      "Not skilled enough": "No, not skilled enough",
+      "Don't have the skills": "No, not skilled enough",
+      "No, not enough skill": "No, not skilled enough",
+      "No, I'm not skilled enough to make it there 🙃": "No, not skilled enough",
     },
   },
   'How many *private* leaderboards are you active in?': {
