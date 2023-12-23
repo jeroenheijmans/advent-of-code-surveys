@@ -156,7 +156,7 @@
     "Participates_in_2019": "Dec",
     "Participates_in_2020": "Dec",
     "Languages": [
-      "Postscript"
+      "PostScript"
     ],
     "IDEs": [
       "Vim"
@@ -65401,7 +65401,7 @@
       "Rust",
       "sed",
       "gurklang",
-      "postscript"
+      "PostScript"
     ],
     "IDEs": [
       "IDLE",
