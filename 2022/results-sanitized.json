@@ -3291,7 +3291,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Windows + WSL (Debian) for the programming part of it, feel free to recategorize me :)",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -5027,7 +5027,7 @@
       "Vim",
       "VS Code"
     ],
-    "OS": "Windows running Linux via WSL in VSCode",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -21192,7 +21192,7 @@
     "IDEs": [
       "Emacs"
     ],
-    "OS": "Cygwin",
+    "OS": "Windows with Cygwin",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -47106,7 +47106,7 @@
     "IDEs": [
       "Repl.it"
     ],
-    "OS": "ChromeOS (Linux, but not really)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -53697,7 +53697,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Android 12 (on smartphone: Termux + JAndroid)",
+    "OS": "Android",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -77584,7 +77584,7 @@
       "Emacs",
       "Visual Studio"
     ],
-    "OS": "About even split between Linux and Windows",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -84220,7 +84220,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "used to be windows but since 2021 ive changed to linux",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "No: too stressfull, my timesone makes it problematic and I'm not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -90353,7 +90353,7 @@
     "IDEs": [
       "Repl.it"
     ],
-    "OS": "iOS (ipad)",
+    "OS": "iPadOS",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -93469,7 +93469,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "WSL on windows",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
@@ -96586,7 +96586,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Ubuntu in WSL2 under Windows",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [

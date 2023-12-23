@@ -822,14 +822,28 @@ const columns = {
   'Primary OS for AoC {YEAR}?': {
     header: 'OS',
     answers: {
+      'android on tablet': 'Android',
+      'Termux on Android': 'Android',
+      'Android 12 (on smartphone: Termux + JAndroid)': 'Android',
+
       'Chrome os (chromebook) ': 'ChromeOS',
       'Chrome OS': 'ChromeOS',
       'Chromebook': 'ChromeOS',
+      'ChromeOS (Linux)': 'ChromeOS',
+      'ChromeOS (Linux)': 'ChromeOS',
       'ChromeOS (technically a linux distro, but not really)': 'ChromeOS',
-
-      'Linux on Chrome OS': 'ChromeOS (Linux)',
+      'ChromeOS (Linux, but not really)': 'ChromeOS',
+      'Chrome os (chromebook)': 'ChromeOS',
+      'ChromeOS (I do it in google colab on my school chromebook)': 'ChromeOS',
+      'Linux on Chrome OS': 'ChromeOS',
 
       'openbsd': 'OpenBSD',
+
+      'unix': 'Unix',
+
+      'Remote/Linux': 'Linux',
+      'used to be windows but since 2021 ive changed to linux': 'Linux',
+      'Running a linux command line VM in windows... Mark that how you want.': 'Linux',
 
       '50/50 Linux and Windows': 'Combi of Windows/Linux',
       'Combi of Windows/Linux': 'Combi of Windows/Linux',
@@ -839,6 +853,15 @@ const columns = {
       'Windows and Linux': 'Combi of Windows/Linux',
       'windows for development, commodore 64 (emulator) for running the programs': 'Windows', // So sorry for stripping this cool answer (just to make the data viz look okay)! Will promise next year to include "Cool remarks about your setup?" question for this shizzl...
       'Windows+Linux': 'Combi of Windows/Linux',
+      'Windows and linux': 'Combi of Windows/Linux',
+      'Both windows and Linux': 'Combi of Windows/Linux',
+      'About even split between Linux and Windows': 'Combi of Windows/Linux',
+      'Switch between Windows and Linux': 'Combi of Windows/Linux',
+
+      'Cygwin': 'Windows with Cygwin',
+      'Windows with Cygwin': 'Windows with Cygwin',
+      'Windows with Cygwin.': 'Windows with Cygwin',
+      'cygwin terminal on windows. Works like a linux shell.': 'Windows with Cygwin',
 
       // A bunch of WSL variants:
       'Ubuntu in WSL2 on windows': 'WSL',
@@ -873,6 +896,7 @@ const columns = {
       'WSL in windows': 'WSL',
       'WSL in Windows': 'WSL',
       'WSL on Windows': 'WSL',
+      'WSL on windows': 'WSL',
       'WSL on Windows (Windows/Linux combo)': 'WSL',
       'WSL on Windows. So both lol': 'WSL',
       'WSL ubuntu': 'WSL',
@@ -884,9 +908,17 @@ const columns = {
       'WSL2 Ubuntu': 'WSL',
       'WSL2': 'WSL',
       'WSL2': 'WSL',
+      'Windows running Linux via WSL in VSCode': 'WSL',
+      'Windows + WSL (Debian) for the programming part of it, feel free to recategorize me :)': 'WSL',
+      'Ubuntu in WSL2 under Windows': 'WSL',
+      'IDE running on windows, executing inside WSL2': 'WSL',
+      'I\'m on Windows 10 but I run the scripts with WSL Ubuntu': 'WSL',
 
-      'Ipad os': 'iPad OS',
-      'IPadOS': 'iPad OS',
+      'iPad OS': 'iPadOS',
+      'Ipad os': 'iPadOS',
+      'IPadOS': 'iPadOS',
+      'iPad OS': 'iPadOS',
+      'iOS (ipad)': 'iPadOS',
 
       'both Windows & macOS': 'Combi of Windows/macOS',
       'Combi of Windows/macOS': 'Combi of Windows/macOS',
@@ -895,8 +927,15 @@ const columns = {
       'macOS and Windows': 'Combi of Windows/macOS',
       'macOS and Windows': 'Combi of Windows/macOS',
       'Windows and MacOS': 'Combi of Windows/macOS',
+      'Mac and Windows': 'Combi of Windows/macOS',
 
+      'macOS + Linux (toolchain in docker)': 'Combi of Linux/macOS',
+      'Linux at home -> macOS for travel': 'Combi of Linux/macOS',
+      'macOS and Linux': 'Combi of Linux/macOS',
+
+      'IOS': 'iOS',
       'ios': 'iOS',
+      'iOs': 'iOS',
       'Linux or Chrome OS': 'Combi of Linux/ChromeOS',
       '': '(Blank)',
     },
@@ -959,6 +998,8 @@ export const getParseCallback = (year) => function callback(err, records) {
         const newProp = typeof info === 'string' ? info : info.header;
         const preProcess = info.preProcess || (a => a.trim());
         const postProcess = info.postProcess || (a => a.trim());
+
+        record[prop] = record[prop].trim().replace(/ +/g, ' '); // Fold multiple spaces into one.
 
         item[newProp] = info.hasOwnProperty('answers') ? info.answers[record[prop]] || record[prop] : record[prop];
 

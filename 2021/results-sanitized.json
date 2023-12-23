@@ -6848,7 +6848,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "ChromeOS (Linux)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -27261,7 +27261,7 @@
     "IDEs": [
       "Atom"
     ],
-    "OS": "Using WSL (so Windows). Ideally Linux.",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "Yes. Havent yet, but first time doing tis in December. Will try just for fun.",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -34321,7 +34321,7 @@
     "IDEs": [
       "Neovim"
     ],
-    "OS": "macOS + Linux (toolchain in docker)",
+    "OS": "Combi of Linux/macOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -37135,7 +37135,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "I'm on Windows 10 but I run the scripts with WSL Ubuntu",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -43924,7 +43924,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "Friendly competition  at school (promoted by school)"
+      "Friendly competition at school (promoted by school)"
     ]
   },
   {
@@ -45289,7 +45289,7 @@
     "IDEs": [
       "IPython / Jupyter"
     ],
-    "OS": "ChromeOS (I do it in google colab on my school chromebook)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -51655,7 +51655,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Termux on Android",
+    "OS": "Android",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -59053,7 +59053,7 @@
       "COBOL"
     ],
     "IDEs": [
-      "IDE?  I have a text editor and a terminal window"
+      "IDE? I have a text editor and a terminal window"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -68313,7 +68313,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Linux at home -> macOS for travel",
+    "OS": "Combi of Linux/macOS",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -68513,7 +68513,7 @@
     "IDEs": [
       "Nano"
     ],
-    "OS": "ChromeOS (Linux)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -80701,7 +80701,7 @@
     "IDEs": [
       "Emacs"
     ],
-    "OS": "android on tablet",
+    "OS": "Android",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -83047,7 +83047,7 @@
       "for a challenge",
       "for leaderboards",
       "improve skills",
-      "To find common useful functions to add to my programming language Frink.  Also for practice for other programming competitions."
+      "To find common useful functions to add to my programming language Frink. Also for practice for other programming competitions."
     ]
   },
   {
@@ -89021,7 +89021,7 @@
     "IDEs": [
       "Pythonista"
     ],
-    "OS": "iPad OS",
+    "OS": "iPadOS",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -94192,7 +94192,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Remote/Linux",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [

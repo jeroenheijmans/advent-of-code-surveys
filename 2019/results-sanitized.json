@@ -4632,7 +4632,7 @@
       "Vim",
       "VS Code"
     ],
-    "OS": "Windows running Linux through the WSL?  So, is that both?  If not, put me down for Windows.",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -5961,7 +5961,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "macOS and Linux",
+    "OS": "Combi of Linux/macOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -10660,7 +10660,7 @@
     "IDEs": [
       "Spyder"
     ],
-    "OS": "Switch between Windows and Linux",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -25546,7 +25546,7 @@
       "VS Code",
       "Pythonista"
     ],
-    "OS": "IOS",
+    "OS": "iOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
