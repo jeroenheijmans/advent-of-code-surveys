@@ -579,7 +579,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     neutral: "rgb(188, 188, 86, 0.3)",
     negative: "rgb(188, 40, 86, 0.3)",
     negativePlus: "rgb(208, 60, 106, 0.75)",
-    other: "rgb(60, 106, 208, 0.3)",
+    other: "rgb(60, 106, 208, 0.75)",
   }
   data = {
     datasets: alldata.filter(year => year.nr === "2023").map(year => ({
