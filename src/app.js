@@ -573,9 +573,32 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   ////////////////////////////////////////////////////////////////////////////////
   // 2023 Specific Question
+  const colors = {
+    positivePlus: "rgb(60, 208, 106, 0.75)",
+    positive: "rgb(40, 188, 86, 0.3)",
+    neutral: "rgb(188, 188, 86, 0.3)",
+    negative: "rgb(188, 40, 86, 0.3)",
+    negativePlus: "rgb(208, 60, 106, 0.75)",
+    other: "rgb(60, 106, 208, 0.3)",
+  }
   data = {
     datasets: alldata.filter(year => year.nr === "2023").map(year => ({
       ...yearDatasetDefaults(year),
+      borderColor: "rgba(0, 0, 0, 0.8)",
+      backgroundColor: [
+        // Hard-coded, the 2023 data won't change anymore anyways
+        colors.neutral, // zero ai
+        colors.negative, // not again
+        colors.negative, // ai is bad
+        colors.negativePlus, // ai is horrible
+        colors.positive, // use some
+        colors.positive, // ai is good
+        colors.neutral, // submitted
+        colors.positivePlus, // ai is great
+        colors.neutral, // what does it mean
+        colors.positivePlus, // use lots
+        colors.other, // other
+      ],
       responseCount: year.responses.length,
       data: year
         .responses
@@ -585,7 +608,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
   
   wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2023");
-  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.1);
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
