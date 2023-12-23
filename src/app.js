@@ -147,6 +147,14 @@ function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
   }, []));
 }
 
+// We sort datasets LTR from lowest year to most recent year. This causes
+// bars to appear in the order they are given in the lowest year, but it
+// might be hidden by default so we prefer forcing a sort by explicitly
+// setting labels from the most recent year.
+function mutateDataAddLabelsToForceOrderForMostRecentYear(data) {
+  data.labels = data.datasets.at(-1).data.map(point => point.x)
+}
+
 // It's nice to have nearly no dependencies, but wow building some html
 // without a framework or templating library is cumbersome. Anyways, it
 // keeps things simple for now, so...
@@ -274,10 +282,12 @@ window.addEventListener("DOMContentLoaded", async () => {
         .map(percentageMapperFor(year))
     }))
   };
-
+  
   wireUpDataTableFor(data, "Language", "language");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
+
 
   charts["language"] = new Chart(getById("language").getContext("2d"), {
     type: "bar",
@@ -309,6 +319,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "IDE", "ide");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["ide"] = new Chart(getById("ide").getContext("2d"), {
     type: "bar",
@@ -371,6 +382,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "Reason for participating", "participationReason");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["participationReason"] = new Chart(getById("participationReason").getContext("2d"), {
     type: "bar",
@@ -399,6 +411,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["leaderboardsGlobal"] = new Chart(getById("leaderboardsGlobal").getContext("2d"), {
     type: "bar",
@@ -566,6 +579,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2023");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.1);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["yearSpecificQuestion2023"] = new Chart(getById("yearSpecificQuestion2023").getContext("2d"), {
     type: "bar",
