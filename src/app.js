@@ -1,12 +1,12 @@
 const baseUrl = "";
 const currentYear = "2023";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", pointStyle: 'circle' },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106, 0.75)", pointStyle: 'star' },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192, 0.75)", pointStyle: 'rect' },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255, 0.75)", pointStyle: 'triangle' },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", pointStyle: 'rectRot' },
-  { nr: "2023", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", pointStyle: 'crossRot' },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192, 0.75)", borderColorDimmed: "rgb(75, 192, 192, 0.25)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255, 0.75)", borderColorDimmed: "rgb(153, 102, 255, 0.25)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
+  { nr: "2023", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -527,6 +527,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      borderColor: year.nr === "2023" ? year.borderColor : year.borderColorDimmed,
       responseCount: year.responses.length,
       hidden: false,
       showLine: true,
