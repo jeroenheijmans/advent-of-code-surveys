@@ -63,7 +63,7 @@
         <div class="chart-container">
           <canvas id="language" aria-describedby="languageDescription"><p>Chart showing (top) used languages</p></canvas>
           <p id="languageDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing that <strong>the top 2 remains Python 3 (>40%) followed by Rust (>17%)</strong>. Javascript is in third but closely trailed by C++ and C#. Python 2 is now at 0.7% (down from 7.0% in 2018). However, a ton of folks indicate using an "Other..." language: 23.5%! Expand the data table to see all the good stuff: folks using <strong>Excel</strong> or <strong>their own programming languages</strong>, or check out the biggest newcomer <strong>Uiua</strong> at 7 responses!
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="languageDump"></div>
@@ -71,7 +71,7 @@
         <div class="chart-container">
           <canvas id="ide" aria-describedby="ideDescription"><p>Chart showing the (top) used IDEs</p></canvas>
           <p id="ideDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing IDE's used. Up another couple percentage points but still below 50%, <strong>VSCode</strong> supremely sits on top. <strong>Surprise of 2023 is Neovim</strong>, which surpassed IntelliJ and Vim in popularity. The data table can be expanded for great stuff! There are interesting choices like game engines, impressive ones like "My own editor", to downright <em>crazy</em> choices.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="ideDump"></div>
@@ -79,17 +79,18 @@
         <div class="chart-container">
           <canvas id="operatingSystem" aria-describedby="operatingSystemDescription"><p>Chart showing used (primary) operating systems</p></canvas>
           <p id="operatingSystemDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing a roughly unchanged situation for Operating Systems used over the years. WSL is a bit higher in 2023 but mostly because it became an explicit, separate option this year. Expand the data table to read some good stories and responses (shout out to the person using a Nintendo DS!!).
             Toggle data table for <em>all</em> the data.
           </p>
-          <p class="chart-note">Note: In 2023 'WSL' (along with 'Android', 'iOS', and 'IPadOs') became built-in options increasing their representation\.</p>
+          <p class="chart-note">⚠ Note: In 2023 'WSL' (along with 'Android', 'iOS', and 'IPadOs') became built-in options, heavily increasing their representation.</p>
           <div class="chart-dump" id="operatingSystemDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="participationReason" aria-describedby="participationReasonDescription"><p>Chart showing the reason for participating</p></canvas>
           <p id="participationReasonDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing "Reasons for participating": it's <strong>extremely curious and interesting that the top responses are <em>this</em> stable over the years!</strong> The value is not in the chart here, really: but in the data table.
             Toggle data table for <em>all</em> the data.
+            And gasp at the heartwarming, disconcerting, pleasing, fun, and lovely responses folks wrote!
           </p>
           <p class="chart-note">Note: "For Santa!" was not a default answer in the survey until 2020 onwards.</p>
           <div class="chart-dump" id="participationReasonDump"></div>
@@ -97,7 +98,7 @@
         <div class="chart-container">
           <canvas id="leaderboardsGlobal" aria-describedby="leaderboardsGlobalDescription"><p>Chart showing participation in global leaderboard</p></canvas>
           <p id="leaderboardsGlobalDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing a clear trend over the years: <strong>more respondents are "not interested" in global leaderboard participation</strong>, but less people seem to attribute this to the timezone being problematic. The individual responses in the data table below show a ton of interesting (as well as concerning) responses.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="leaderboardsGlobalDump"></div>
@@ -105,7 +106,7 @@
         <div class="chart-container">
           <canvas id="leaderboardsPrivate" aria-describedby="leaderboardsPrivateDescription"><p>Chart showing number of private leaderboards one is involved in</p></canvas>
           <p id="leaderboardsPrivateDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Bar chart showing no big surprises: number of private leaderboards stays the same over the years. Most folks sit in 0 or 1 private leaderboard, about 15% in 2 leaderboards, 7% in 3 leaderboards, 2% in 4 leaderboards, and 3% in 5 or more leaderboards.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="leaderboardsPrivateDump"></div>
@@ -113,15 +114,14 @@
         <div class="chart-container">
           <canvas id="participationTiming" aria-describedby="participationTimingDescription"><p>Chart showing when respondents completed each of the AoC years</p></canvas>
           <p id="participationTimingDescription" class="chart-description">
-            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in 2023 in December itself.
-            TODO: Create accessible graph description for 2023 variant of the data.
+            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in 2023 in December itself. This year each question had a link to your stars for that year, so data might be a little more accurate. It's fun to see that more folks went back to do 2015 than 2016 and 2017: "you've gotta start at the beginning"?
           </p>
           <div class="chart-dump" id="participationTimingDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="responsesPerDay" aria-describedby="responsesPerDayDescription"><p>Line chart showing cumulative number of responses to the survey</p></canvas>
           <p id="responsesPerDayDescription" class="chart-description">
-            TODO: Create accessible graph description for 2023 variant of the data.
+            Line chart with 2023 highlighted, showing the number of survey responses per day (cumulative). We did not reach 2021 or even 2022 numbers, but still have a respectable 3000+ responses. Thank you to everyone filling out the survey, you're the best!!
           </p>
           <div class="chart-dump" id="responsesPerDayDump"></div>
         </div>
