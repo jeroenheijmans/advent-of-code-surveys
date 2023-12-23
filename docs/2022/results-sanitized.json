@@ -253,7 +253,7 @@
       "Smalltalk"
     ],
     "IDEs": [
-      "Squeak Smalltalk IDE"
+      "Squeak"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -1135,7 +1135,7 @@
       "My own language!"
     ],
     "IDEs": [
-      "my own, unpublished editor"
+      "My own editor!"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -2994,7 +2994,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Notepad (vanilla)/gedit"
+      "Gedit"
     ],
     "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -3291,7 +3291,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Windows + WSL (Debian) for the programming part of it, feel free to recategorize me :)",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -5027,7 +5027,7 @@
       "Vim",
       "VS Code"
     ],
-    "OS": "Windows running Linux via WSL in VSCode",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -7207,7 +7207,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "https://www.online-python.com/"
+      "Online-python"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -9135,7 +9135,7 @@
     ],
     "IDEs": [
       "GoLand",
-      "Jetbrains Fleet"
+      "Fleet"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -9764,7 +9764,7 @@
       "for a challenge",
       "for Santa!",
       "for leaderboards",
-      "for the story line"
+      "For the story"
     ]
   },
   {
@@ -9922,7 +9922,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "KDB Studio"
@@ -10926,7 +10926,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "to compete with friends"
+      "To compete with friends"
     ]
   },
   {
@@ -20842,7 +20842,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "My own language - Chi to test its usefulness (https://github.com/marad/chi-compiler-kotlin)"
+      "My own language: Chi"
     ],
     "IDEs": [
       "VS Code"
@@ -21192,7 +21192,7 @@
     "IDEs": [
       "Emacs"
     ],
-    "OS": "Cygwin",
+    "OS": "Windows with Cygwin",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -26424,7 +26424,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -29908,7 +29908,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -32052,7 +32052,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "for the plot!"
+      "For the story"
     ]
   },
   {
@@ -36800,7 +36800,7 @@
       "for fun",
       "for Santa!",
       "improve skills",
-      "competing with friends"
+      "To compete with friends"
     ]
   },
   {
@@ -38206,7 +38206,7 @@
       "Haskell"
     ],
     "IDEs": [
-      "My own editor"
+      "My own editor!"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -39752,7 +39752,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, I have literally no chance with my current skill level",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -40795,7 +40795,7 @@
     ],
     "IDEs": [
       "Neovim",
-      "acme"
+      "Acme"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -41521,7 +41521,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not anywhere near skilled enough",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -42440,7 +42440,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "compete with my friends"
+      "To compete with friends"
     ]
   },
   {
@@ -44881,7 +44881,7 @@
       "ABAP"
     ],
     "IDEs": [
-      "SAP workbench"
+      "SAP"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -45459,7 +45459,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -46728,7 +46728,7 @@
     "Languages": [
       "C++",
       "Haskell",
-      "might try learning rust also"
+      "Rust"
     ],
     "IDEs": [
       "VS Code"
@@ -47106,7 +47106,7 @@
     "IDEs": [
       "Repl.it"
     ],
-    "OS": "ChromeOS (Linux, but not really)",
+    "OS": "ChromeOS",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -49529,7 +49529,7 @@
       "Neovim"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "not skilled enough",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for Santa!",
@@ -50755,7 +50755,7 @@
     "Participates_in_2021": "Dec",
     "Languages": [
       "K",
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "VS Code"
@@ -53697,7 +53697,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Android 12 (on smartphone: Termux + JAndroid)",
+    "OS": "Android",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -55197,8 +55197,7 @@
       "for Santa!",
       "improve skills",
       "add to resumé",
-      "To have a reason to support Eric's sushi addiction",
-      ")"
+      "To have a reason to support Eric's sushi addiction :)"
     ]
   },
   {
@@ -58955,7 +58954,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -59296,7 +59295,7 @@
     "Participates_in_2020": "No",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "mcfunction (Minecraft)"
+      "Minecraft"
     ],
     "IDEs": [
       "VS Code"
@@ -60328,7 +60327,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "Not to sure, just a text editor on my Chromebook"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -62519,7 +62518,7 @@
       "for Santa!",
       "learn to code",
       "improve skills",
-      "because I'm masochistic?"
+      "Because I'm masochistic"
     ]
   },
   {
@@ -62760,8 +62759,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "jgrasp",
-      ")"
+      "jGRASP"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -62976,7 +62974,8 @@
     "Participates_in_2021": "Dec",
     "Languages": [
       "Java",
-      "trying to use it to learn Rust this year, but submitting with Java"
+      "Rust",
+      "Java"
     ],
     "IDEs": [
       "CLion",
@@ -65571,7 +65570,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "zed"
+      "Zed"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -67862,7 +67861,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To compete with my friends"
+      "To compete with friends"
     ]
   },
   {
@@ -68173,7 +68172,7 @@
     ],
     "IDEs": [
       "PyCharm",
-      "Alteryx Designer"
+      "Alteryx"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -71868,7 +71867,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -72085,8 +72084,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "it's a great way to procrastinate on work",
-      ")"
+      "it's a great way to procrastinate on work :)"
     ]
   },
   {
@@ -72159,7 +72157,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -73849,7 +73847,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -74539,7 +74537,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -75632,7 +75630,7 @@
       "KATE"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, skill issue",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -75762,7 +75760,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -76403,7 +76401,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -77252,7 +77250,7 @@
       "Neovim"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -77584,7 +77582,7 @@
       "Emacs",
       "Visual Studio"
     ],
-    "OS": "About even split between Linux and Windows",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "Yes, I might get points",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -84220,7 +84218,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "used to be windows but since 2021 ive changed to linux",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "No: too stressfull, my timesone makes it problematic and I'm not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -85845,7 +85843,7 @@
       "Julia"
     ],
     "IDEs": [
-      "Pluto Notebooks"
+      "Pluto"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, always need at least 30 min.",
@@ -86819,7 +86817,7 @@
       "Lua"
     ],
     "IDEs": [
-      "text editor"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -88071,7 +88069,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -89302,7 +89300,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "For the memes"
+      "For the memes!"
     ]
   },
   {
@@ -89995,7 +89993,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Frink (100%)"
+      "Frink"
     ],
     "IDEs": [
       "Emacs"
@@ -90024,7 +90022,7 @@
     "Participates_in_2020": "Dec",
     "Participates_in_2021": "Dec",
     "Languages": [
-      "Miranda / Miranda2 (precursor to Haskell)"
+      "Miranda"
     ],
     "IDEs": [
       "Emacs"
@@ -90353,7 +90351,7 @@
     "IDEs": [
       "Repl.it"
     ],
-    "OS": "iOS (ipad)",
+    "OS": "iPadOS",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -91347,7 +91345,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -92649,7 +92647,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -93469,7 +93467,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "WSL on windows",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
@@ -94134,7 +94132,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -95735,7 +95733,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Notrpad exe"
+      "Notepad"
     ],
     "OS": "Notepad.exe",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -96263,7 +96261,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "For the plot"
+      "For the story"
     ]
   },
   {
@@ -96586,7 +96584,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Ubuntu in WSL2 under Windows",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -102981,7 +102979,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Codepen.io"
+      "CodePen"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -103624,7 +103622,7 @@
     "IDEs": [
       "Visual Studio",
       "VS Code",
-      "JetBrains Fleet"
+      "Fleet"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",

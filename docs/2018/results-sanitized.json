@@ -1220,7 +1220,7 @@
       "My own language!"
     ],
     "IDEs": [
-      "My own editor"
+      "My own editor!"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -4408,7 +4408,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "Vim"
@@ -4500,7 +4500,8 @@
       "Python 3"
     ],
     "IDEs": [
-      "IDLE / Nano"
+      "IDLE",
+      "Nano"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -7458,8 +7459,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To fiddle with my own extended stats",
-      ")"
+      "To fiddle with my own extended stats :)"
     ]
   },
   {
@@ -7522,7 +7522,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "No IDE, just a stock text editor."
+      "No IDE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -8270,7 +8270,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -8815,7 +8815,7 @@
       "J"
     ],
     "IDEs": [
-      "J built-in IDE (see jsoftware.com)"
+      "J IDE"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -9377,7 +9377,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "competing with friends"
+      "To compete with friends"
     ]
   },
   {
@@ -11395,7 +11395,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "to compete with friends also doing AoC."
+      "To compete with friends"
     ]
   },
   {
@@ -18217,9 +18217,9 @@
       "AWK"
     ],
     "IDEs": [
-      "what's an IDE?"
+      "What is even an IDE?"
     ],
-    "OS": "unix",
+    "OS": "Unix",
     "Global_Leaderboard_Participation": "No, I'm too dumb",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -19225,7 +19225,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, I'm not skilled enough to make it there 🙃",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -19579,7 +19579,7 @@
     "Participates_in_2016": "Dec",
     "Participates_in_2017": "Dec",
     "Languages": [
-      "Q"
+      "Q/KDB+"
     ],
     "IDEs": [
       "KDB Studio"
@@ -21343,7 +21343,7 @@
       "Code::Blocks"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "I'd like to once in future,  but for now I try to improve my coding in Python :)",
+    "Global_Leaderboard_Participation": "I'd like to once in future, but for now I try to improve my coding in Python :)",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -21663,7 +21663,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -21842,7 +21842,7 @@
       "J"
     ],
     "IDEs": [
-      "J Ide"
+      "J IDE"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Prefer not to say",
@@ -22411,7 +22411,8 @@
     ],
     "IDEs": [
       "Vim",
-      "vim and a shell, super comfy"
+      "vim",
+      "shell"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
