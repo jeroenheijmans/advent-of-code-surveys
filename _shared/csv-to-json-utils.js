@@ -972,9 +972,36 @@ const columns = {
       'to add to my resumé': 'add to resumé',
       'because I\'m forced to participate': 'forced to participate',
       '(prefer not to say)': 'prefer not to say',
+
+      // Grouping 'other' answers
+      'Addiction': 'Addicted',
+      'for story': 'For the story',
+      'because I\'m masochistic?': 'Because I\'m masochistic',
+      'because I\'m masochistic': 'Because I\'m masochistic',
+      'Masochism': 'Because I\'m masochistic',
+
+      "For the plot": "For the story",
+      "for the plot!": "For the story",
+      "for the story line": "For the story",
+      "and for story!": "For the story",
+      "for the STORY": "For the story",
+      "I enjoy the story": "For the story",
+      "Like the story": "For the story",
+      "Funny storylines": "For the story",
+      
+      "For the memes": "For the memes!",
+      "for the memes": "For the memes!",
+
+      "to compete with friends": "To compete with friends",
+      "To compete with my friends": "To compete with friends",
+      "to compete with my friends": "To compete with friends",
+      "to compete with friends also doing AoC.": "To compete with friends",
+      "compete with my friends": "To compete with friends",
+      "competing with friends": "To compete with friends",
     },
     preProcess: answer => {
       if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
+      answer = answer.replace(";)", ":)") // quick fix to avoid ;-splitting
       return answer;
     },
   },
