@@ -13,7 +13,7 @@ Chart.register(ChartDataLabels);
 
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
-Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1.25 : 1.75; // TODO: Evaluate this on screen resize
 Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
   let label = context.dataset.label || "";
   if (label) label += ": ";
