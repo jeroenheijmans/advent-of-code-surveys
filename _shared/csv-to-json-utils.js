@@ -117,7 +117,7 @@ const columns = {
     header: 'Year_specific_2023_AI_and_LLM_thoughts',
     multi: true,
     answers: {
-      "Ugh, not again with the AI related stuff... just let me help Santa and be on my way!!!": "Not again with AI/LLM's",
+      "Ugh, not again with the AI related stuff... just let me help Santa and be on my way!!!": "Not again with AI",
       "I don't know what \"AI and/or LLM stuff\" means": "Don't know what AI/LLM means",
       "I will use (almost) *zero* AI and/or LLM stuff": "Uses zero AI",
       "I will use *some* AI and/or LLM stuff": "Uses some AI",
@@ -130,6 +130,7 @@ const columns = {
     },
     preProcess: answer => {
       if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
+      answer = answer.replace(/http:\/\/memegen\/\S*/g, "")
       return answer;
     },
   },
