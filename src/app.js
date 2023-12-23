@@ -6,7 +6,7 @@ const years = [
   { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192, 0.75)", pointStyle: 'rect' },
   { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255, 0.75)", pointStyle: 'triangle' },
   { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", pointStyle: 'rectRot' },
-  { nr: "2023", bgColor: "rgba(182, 70, 9, 0.2)", borderColor: "rgb(182, 70, 9, 0.75)", pointStyle: 'crossRot' },
+  { nr: "2023", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", pointStyle: 'crossRot' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -571,7 +571,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: 3,
+      aspectRatio: Math.min(screen.width, window.innerWidth) < 960 ? 1.5 : 3,
       plugins: {
         ...chartTitle("2023-specific question: thoughts about AI and LLM's", "Multi-select: anno 2023 in context of AoC, what are your thoughts on AI and LLM's?"),
         ...datalabelsYFormatter(),

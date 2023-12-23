@@ -246,6 +246,10 @@ footer {
   #charts {
     grid-template-columns: 1fr;
   }
+
+  .chart-container.year-specific-question {
+    grid-column: 1 / 1;
+  }
 }
 
 @media (max-width: 960px) {
