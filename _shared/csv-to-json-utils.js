@@ -161,6 +161,7 @@ const columns = {
       'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
       'No': 'No',
       'Yes, (mostly) in december 2022': 'Dec',
+      'Yes, but (mostly) only later on': 'Later',
       'Yes, (mostly) after 2022': 'Later',
     }
   },
