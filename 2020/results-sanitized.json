@@ -754,7 +754,7 @@
       "Rust"
     ],
     "IDEs": [
-      "vis"
+      "Vis"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -2124,7 +2124,7 @@
     "Participates_in_2018": "Dec",
     "Participates_in_2019": "Dec",
     "Languages": [
-      "emacs lisp inside emacs"
+      "emacs lisp"
     ],
     "IDEs": [
       "Emacs"
@@ -7213,7 +7213,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "Discussion of different solutions with others is the most fun part!  Judging solutions on beauty, speed, esoteric-ness or whatever else!"
+      "Discussion of different solutions with others is the most fun part! Judging solutions on beauty, speed, esoteric-ness or whatever else!"
     ]
   },
   {
@@ -8871,7 +8871,7 @@
     "IDEs": [
       "Pythonista"
     ],
-    "OS": "iPad OS",
+    "OS": "iPadOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -9490,7 +9490,7 @@
       "Perl 5"
     ],
     "IDEs": [
-      "No IDE. (A generic text editor ain't an IDE)"
+      "Generic text editor"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -11484,7 +11484,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -12236,7 +12236,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Cygwin",
+    "OS": "Windows with Cygwin",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -16863,8 +16863,7 @@
       "Haskell"
     ],
     "IDEs": [
-      "GHCi (directly in the Haskell REPL",
-      ")"
+      "GHCi"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -17057,7 +17056,7 @@
     "IDEs": [
       "PHPStorm"
     ],
-    "OS": "IDE running on windows, executing inside WSL2",
+    "OS": "WSL",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -18794,7 +18793,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "for the memes"
+      "For the memes!"
     ]
   },
   {
@@ -23696,7 +23695,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -26566,7 +26565,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To compete with my friends"
+      "To compete with friends"
     ]
   },
   {
@@ -27467,7 +27466,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "online Phyton IDE"
+      "Online-python"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -28888,7 +28887,7 @@
       "learn to code",
       "learn new language",
       "improve skills",
-      "Because I'm one of the beta testers.  And beta testing this stuff is really fun."
+      "Because I'm one of the beta testers. And beta testing this stuff is really fun."
     ]
   },
   {
@@ -32793,7 +32792,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not trying to make global.  Do hope to make top 1,000 at least once",
+    "Global_Leaderboard_Participation": "No, not trying to make global. Do hope to make top 1,000 at least once",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
       "for fun",
@@ -33318,7 +33317,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -36365,7 +36364,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -37035,7 +37034,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -38744,7 +38743,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -39662,7 +39661,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -41284,7 +41283,7 @@
     ],
     "IDEs": [
       "Vim",
-      "Does the Python REPL (ptpython) count as an IDE?"
+      "Ptpython REPL"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -43095,7 +43094,8 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Not using one (firefox console / notepad)"
+      "FireFox Console",
+      "Notepad"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -44288,9 +44288,9 @@
       "Swift"
     ],
     "IDEs": [
-      "Swift playground"
+      "Swift Playgrounds"
     ],
-    "OS": "iPad OS",
+    "OS": "iPadOS",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -47280,7 +47280,7 @@
       "AWK"
     ],
     "IDEs": [
-      "acme"
+      "Acme"
     ],
     "OS": "Plan 9",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -48652,7 +48652,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "not skilled enough",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -52865,7 +52865,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "to compete with friends"
+      "To compete with friends"
     ]
   },
   {
@@ -53106,7 +53106,7 @@
       "JavaScript"
     ],
     "IDEs": [
-      "Web Storm"
+      "WebStorm"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not good enough!",
@@ -56003,7 +56003,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "to compete with friends"
+      "To compete with friends"
     ]
   },
   {
@@ -56143,7 +56143,7 @@
       "PyCharm"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Don't have the skills",
+    "Global_Leaderboard_Participation": "No, not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -56286,7 +56286,7 @@
     "Languages": [],
     "IDEs": [],
     "OS": "(Blank)",
-    "Global_Leaderboard_Participation": "",
+    "Global_Leaderboard_Participation": "(Blank)",
     "Private_Leaderboard_Count": "",
     "Reason_for_participating": []
   },
@@ -56500,7 +56500,7 @@
     "IDEs": [
       "PyCharm",
       "VS Code",
-      "Web Storm"
+      "WebStorm"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -57181,7 +57181,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "If I'm available that night and  understand the problem quickly enough I'll try to do it quickly, but almost no expectation of actually making leaderboard",
+    "Global_Leaderboard_Participation": "If I'm available that night and understand the problem quickly enough I'll try to do it quickly, but almost no expectation of actually making leaderboard",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -57202,7 +57202,8 @@
     "Languages": [
       "C",
       "Perl 5",
-      "lex,yacc"
+      "lex",
+      "yacc"
     ],
     "IDEs": [
       "Vim"

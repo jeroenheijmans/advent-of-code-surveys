@@ -13,4 +13,4 @@ Since 2021 all results from all years have been rolled up into [one live online 
 
 Here's a screenshot of the rendered dashboard:
 
-[FORTHCOMING!]
+![Dashboard](dashboard-01.png)

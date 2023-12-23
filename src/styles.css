@@ -140,6 +140,10 @@ footer {
   background: var(--bg-dark);
 }
 
+.chart-container.year-specific-question {
+  grid-column: 1 / 3;
+}
+
 .chart-note {
   margin: 10px 0;
   padding-top: 10px;
@@ -241,6 +245,10 @@ footer {
 @media (max-width: 1400px) {
   #charts {
     grid-template-columns: 1fr;
+  }
+
+  .chart-container.year-specific-question {
+    grid-column: 1 / 1;
   }
 }
 

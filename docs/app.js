@@ -1,19 +1,19 @@
 const baseUrl = ".";
-const currentYear = "2022";
+const currentYear = "2023";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60)", pointStyle: 'circle' },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106)", pointStyle: 'star' },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192)", pointStyle: 'rect' },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255)", pointStyle: 'triangle' },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88)", pointStyle: 'rectRot' },
-  { nr: "2023", bgColor: "rgba(182, 70, 9, 0.2)", borderColor: "rgb(182, 70, 9)", pointStyle: 'crossRot' },
+  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
+  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
+  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192, 0.75)", borderColorDimmed: "rgb(75, 192, 192, 0.25)", pointStyle: 'rect' },
+  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255, 0.75)", borderColorDimmed: "rgb(153, 102, 255, 0.25)", pointStyle: 'triangle' },
+  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
+  { nr: "2023", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
 ];
 
 Chart.register(ChartDataLabels);
 
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
-Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1.25 : 1.75; // TODO: Evaluate this on screen resize
 Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
   let label = context.dataset.label || "";
   if (label) label += ": ";
@@ -26,11 +26,19 @@ Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
 const getById = (id) => document.getElementById(id);
 const createElement = (tag, text = "") => { const el = document.createElement(tag); el.innerText = text; return el; }
 
-function datalabelsYFormatter(options = { withLabel: false }) {
+function datalabelsYFormatter(options = { withLabel: false, alwaysShow: false }) {
   return {
     datalabels: {
+      anchor: (context) => context.chart.getVisibleDatasetCount() <= 1 ? "end" : "center",
+      align: (context) => context.chart.getVisibleDatasetCount() <= 1 ? "end" : "center",
+      display: (context) => options.alwaysShow || context.chart.getVisibleDatasetCount() <= 3,
       color: "rgba(255, 255, 255, 0.8)",
       textAlign: "center",
+      rotation: (context) => {
+        if (options.alwaysShow) return 0;
+        const visibleDataSets = context.chart.getVisibleDatasetCount()
+        return visibleDataSets <= 1 ? 0 : visibleDataSets <= 3 ? -90 : 0
+      },
       formatter: (value, ctx) => value.y
         ? (value.isPercentage ? value.y.toFixed(1) + "%" : value.y) 
           + (options.withLabel ? `\n(${ctx.dataset.label})` : "")
@@ -147,6 +155,14 @@ function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
   }, []));
 }
 
+// We sort datasets LTR from lowest year to most recent year. This causes
+// bars to appear in the order they are given in the lowest year, but it
+// might be hidden by default so we prefer forcing a sort by explicitly
+// setting labels from the most recent year.
+function mutateDataAddLabelsToForceOrderForMostRecentYear(data) {
+  data.labels = data.datasets.at(-1).data.map(point => point.x)
+}
+
 // It's nice to have nearly no dependencies, but wow building some html
 // without a framework or templating library is cumbersome. Anyways, it
 // keeps things simple for now, so...
@@ -177,11 +193,21 @@ function wireUpDataTableFor(chartData, title, subject) {
     let tr = thead.appendChild(createElement("tr"));
     let th = tr.appendChild(createElement("th", title));
   
-    years.forEach(year => tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : ""))));
+    years.forEach(year => {
+      let thYear = tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : "")));
+      const responseCount = chartData.datasets.find(ds => ds.label === year.nr)?.responseCount;
+      if (responseCount) {
+        let responseCountSpan = thYear.appendChild(createElement("p", `N=${responseCount}`))
+        responseCountSpan.style.fontSize = "0.7rem";
+        responseCountSpan.style.whiteSpace = "nowrap";
+        responseCountSpan.style.opacity = 0.6;
+        responseCountSpan.style.marginTop = 0;
+      }
+    });
     
     const rows = {};
   
-    chartData.datasets.forEach(ds => ds.data.forEach(i => {
+    chartData.datasets.toSorted((a, b) => b.label.localeCompare(a.label)).forEach(ds => ds.data.forEach(i => {
       if (!rows.hasOwnProperty(i.x)) {
         let row = { tr: tbody.appendChild(createElement("tr")) };
         let rowTh = row.tr.appendChild(createElement("th", i.x));
@@ -240,7 +266,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  alldata.sort((a, b) => b.nr.localeCompare(a.nr));
+  alldata.sort((a, b) => a.nr.localeCompare(b.nr));
 
   // Amend data
   alldata.forEach(year => 
@@ -257,16 +283,18 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("Languages"), [])
         .map(percentageMapperFor(year))
     }))
   };
-
+  
   wireUpDataTableFor(data, "Language", "language");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["language"] = new Chart(getById("language").getContext("2d"), {
     type: "bar",
@@ -287,6 +315,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("IDEs"), [])
@@ -297,6 +326,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "IDE", "ide");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["ide"] = new Chart(getById("ide").getContext("2d"), {
     type: "bar",
@@ -317,6 +347,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("OS"), [])
@@ -347,6 +378,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(multiAnswerReducer("Reason_for_participating"), [])
@@ -357,6 +389,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "Reason for participating", "participationReason");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 2);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["participationReason"] = new Chart(getById("participationReason").getContext("2d"), {
     type: "bar",
@@ -374,6 +407,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("Global_Leaderboard_Participation"), [])
@@ -384,6 +418,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["leaderboardsGlobal"] = new Chart(getById("leaderboardsGlobal").getContext("2d"), {
     type: "bar",
@@ -401,6 +436,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      responseCount: year.responses.length,
       data: year
         .responses
         .reduce(singleAnswerReducer("Private_Leaderboard_Count"), [])
@@ -476,7 +512,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     options: {
       plugins: {
         ...chartTitle("Previous years: did you participate?", ` ⚠ Showing data from ${currentYear} only!`),
-        ...datalabelsYFormatter({ withLabel: true }),
+        ...datalabelsYFormatter({ withLabel: true, alwaysShow: true }),
       },
       scales: {
         x: { stacked: true, },
@@ -491,6 +527,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
+      borderColor: year.nr === "2023" ? year.borderColor : year.borderColorDimmed,
+      responseCount: year.responses.length,
       hidden: false,
       showLine: true,
       borderWidth: 2,
@@ -528,6 +566,60 @@ window.addEventListener("DOMContentLoaded", async () => {
             callback: val => !!val ? val : "",
           },
         }
+      },
+    },
+  });
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // 2023 Specific Question
+  const colors = {
+    positivePlus: "rgb(60, 208, 106, 0.75)",
+    positive: "rgb(40, 188, 86, 0.3)",
+    neutral: "rgb(188, 188, 86, 0.3)",
+    negative: "rgb(188, 40, 86, 0.3)",
+    negativePlus: "rgb(208, 60, 106, 0.75)",
+    other: "rgb(60, 106, 208, 0.75)",
+  }
+  data = {
+    datasets: alldata.filter(year => year.nr === "2023").map(year => ({
+      ...yearDatasetDefaults(year),
+      borderColor: "rgba(0, 0, 0, 0.8)",
+      backgroundColor: [
+        // Hard-coded, the 2023 data won't change anymore anyways
+        colors.neutral, // zero ai
+        colors.negative, // not again
+        colors.negative, // ai is bad
+        colors.negativePlus, // ai is horrible
+        colors.positive, // use some
+        colors.positive, // ai is good
+        colors.neutral, // submitted
+        colors.positivePlus, // ai is great
+        colors.neutral, // what does it mean
+        colors.positivePlus, // use lots
+        colors.other, // other
+      ],
+      responseCount: year.responses.length,
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Year_specific_2023_AI_and_LLM_thoughts"), [])
+        .map(percentageMapperFor(year))
+    }))
+  };
+  
+  wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2023");
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
+
+  charts["yearSpecificQuestion2023"] = new Chart(getById("yearSpecificQuestion2023").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: Math.min(screen.width, window.innerWidth) < 960 ? 1.5 : 3,
+      plugins: {
+        ...chartTitle("2023-specific question: thoughts about AI and LLM's", "Multi-select: anno 2023 in context of AoC, what are your thoughts on AI and LLM's?"),
+        ...datalabelsYFormatter(),
       },
     },
   });
