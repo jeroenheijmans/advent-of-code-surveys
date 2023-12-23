@@ -26,11 +26,19 @@ Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
 const getById = (id) => document.getElementById(id);
 const createElement = (tag, text = "") => { const el = document.createElement(tag); el.innerText = text; return el; }
 
-function datalabelsYFormatter(options = { withLabel: false }) {
+function datalabelsYFormatter(options = { withLabel: false, alwaysShow: false }) {
   return {
     datalabels: {
+      anchor: (context) => context.chart.getVisibleDatasetCount() <= 1 ? "end" : "center",
+      align: (context) => context.chart.getVisibleDatasetCount() <= 1 ? "end" : "center",
+      display: (context) => options.alwaysShow || context.chart.getVisibleDatasetCount() <= 3,
       color: "rgba(255, 255, 255, 0.8)",
       textAlign: "center",
+      rotation: (context) => {
+        if (options.alwaysShow) return 0;
+        const visibleDataSets = context.chart.getVisibleDatasetCount()
+        return visibleDataSets <= 1 ? 0 : visibleDataSets <= 3 ? -90 : 0
+      },
       formatter: (value, ctx) => value.y
         ? (value.isPercentage ? value.y.toFixed(1) + "%" : value.y) 
           + (options.withLabel ? `\n(${ctx.dataset.label})` : "")
@@ -288,7 +296,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
-
   charts["language"] = new Chart(getById("language").getContext("2d"), {
     type: "bar",
     data,
@@ -505,7 +512,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     options: {
       plugins: {
         ...chartTitle("Previous years: did you participate?", ` ⚠ Showing data from ${currentYear} only!`),
-        ...datalabelsYFormatter({ withLabel: true }),
+        ...datalabelsYFormatter({ withLabel: true, alwaysShow: true }),
       },
       scales: {
         x: { stacked: true, },
