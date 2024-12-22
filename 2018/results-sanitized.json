@@ -1810,7 +1810,6 @@
       "Mathematica"
     ],
     "IDEs": [
-      "Mathematica",
       "Mathematica"
     ],
     "OS": "macOS",
@@ -3717,7 +3716,8 @@
     ],
     "IDEs": [
       "Vim",
-      "https://play.golang.org and also Google chrome console"
+      "GoLang Playground",
+      "Chrome"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -5952,7 +5952,7 @@
       "for a challenge",
       "improve skills",
       "add to resumé",
-      "to practice for interviews"
+      "interview prep"
     ]
   },
   {
@@ -7531,7 +7531,7 @@
       "for fun",
       "for a challenge",
       "for leaderboards",
-      "to race my friends"
+      "to compete with friends"
     ]
   },
   {
@@ -9004,7 +9004,7 @@
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for a challenge",
-      "Cause Topaz is a friend of mine and tricked me into beta testing"
+      "Because I'm on the beta testing team"
     ]
   },
   {
@@ -9377,7 +9377,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -9713,7 +9713,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "Ubuntu",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
@@ -10085,7 +10085,7 @@
       "Processing"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -10792,7 +10792,7 @@
     "IDEs": [
       "Vim"
     ],
-    "OS": "OpenBSD",
+    "OS": "BSD (OpenBSD)",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -10882,7 +10882,7 @@
       "Vim"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, I'm not good enough for it",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -11127,7 +11127,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "mousepad"
+      "Mousepad"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Prefer not to say",
@@ -11395,7 +11395,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -11689,7 +11689,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "competition with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -12139,7 +12139,7 @@
     "Global_Leaderboard_Participation": "Yes, I might get points",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
-      "to beat my friends lol"
+      "to compete with friends"
     ]
   },
   {
@@ -15615,7 +15615,7 @@
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
       "for fun",
-      "Because my friends are doing it"
+      "for fun with friends"
     ]
   },
   {
@@ -16721,7 +16721,8 @@
       "Python 3"
     ],
     "IDEs": [
-      "ideone.com and trinket.io"
+      "IDE One",
+      "Trinket"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -17171,7 +17172,7 @@
     "Reason_for_participating": [
       "for fun",
       "improve skills",
-      "Interview prep"
+      "interview prep"
     ]
   },
   {
@@ -19225,7 +19226,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -19926,7 +19927,7 @@
       "for fun",
       "for a challenge",
       "learn new language",
-      "Because I'm one of the beta testers :)"
+      "Because I'm on the beta testing team"
     ]
   },
   {
@@ -21182,7 +21183,7 @@
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
-      "because friends participate as well"
+      "for fun with friends"
     ]
   },
   {
@@ -22411,8 +22412,8 @@
     ],
     "IDEs": [
       "Vim",
-      "vim",
-      "shell"
+      "Vim",
+      "Shell"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -23062,7 +23063,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, I'm way too slow!",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",

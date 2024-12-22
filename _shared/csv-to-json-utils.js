@@ -819,6 +819,8 @@ const columns = {
       "Pharo Smalltalk": "Pharo",
       "Smalltalk (Pharo)": "Pharo",
 
+      "https://pythontutor.com": "Python Tutor",
+
       "pluto": "Pluto",
       "plutojl.org": "Pluto",
       "Pluto Notebooks": "Pluto",
@@ -864,9 +866,13 @@ const columns = {
 
       "RunJs https://runjs.app/": "RunJS",
 
+      "https://regex101.com/": "Regex101",
+
       "SAP workbench": "SAP",
 
       "SAPIEN Powershell Studio": "Sapien PowerShell Studio",
+      "just a shell": "Shell",
+      "shell": "Shell",
       "spacemacs": "Spacemacs",
       "Swift playground": "Swift Playgrounds",
 
@@ -905,6 +911,7 @@ const columns = {
       "https://www.typescriptlang.org": "Typescript Playground",
       "Unreal Engine 4 Blueprint Graph": "Unreal Engine",
       "Unreal Engine 4": "Unreal Engine",
+      "Unreal Engine Blueprints": "Unreal Engine",
 
       "Uiua pad": "Uiua Pad",
 
@@ -932,6 +939,7 @@ const columns = {
       "Web Storm": "WebStorm",
       "Wing 101": "Wing",
       "Wing IDE": "Wing",
+      "wing": "Wing",
       "Wolfram Notebook / Mathematica Notebook": "Mathematica",
       "Wolfram Desktop": "Mathematica",
       "xed + gnome terminal": "xed",

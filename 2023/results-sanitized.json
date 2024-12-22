@@ -617,7 +617,7 @@
       "RustRover"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -1592,7 +1592,7 @@
       "Neovim"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -2009,7 +2009,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "compete vs friends (for fun)"
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI"
@@ -3859,7 +3859,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -5550,7 +5550,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "For the story"
+      "for the story"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses some AI",
@@ -5907,7 +5907,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "I'm one of the beta testers"
+      "Because I'm on the beta testing team"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI"
@@ -5994,7 +5994,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows and Garuda Linux",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "5+",
     "Reason_for_participating": [
@@ -6569,7 +6569,7 @@
     ],
     "IDEs": [],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -7226,7 +7226,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -9351,7 +9351,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "kate"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -9842,7 +9842,7 @@
       "Neovim"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -11776,7 +11776,7 @@
       "Xcode"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -11896,7 +11896,7 @@
       "Unreal Engine Blueprints"
     ],
     "IDEs": [
-      "Unreal Engine Blueprints"
+      "Unreal Engine"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -14301,7 +14301,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not fast enough!",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -15153,7 +15153,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "I am simply not fast enough",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -19147,7 +19147,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Linux dev server accessible from my mac and PC",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
@@ -21493,7 +21493,7 @@
       "GDScript"
     ],
     "IDEs": [
-      "Godot Engine"
+      "Godot"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -21658,7 +21658,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "to be faster than my friends"
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -28092,7 +28092,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, just not good enough.",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -29683,7 +29683,7 @@
       "Lua"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -29946,7 +29946,7 @@
       "for fun",
       "for a challenge",
       "for Santa!",
-      "social aspect with friends."
+      "for fun with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses zero AI"
@@ -31738,7 +31738,7 @@
       "for fun",
       "for Santa!",
       "improve skills",
-      "for private leaderboard bragging rights"
+      "for the private leaderboard(s)"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -33517,7 +33517,7 @@
     "Participates_in_2021": "Dec",
     "Participates_in_2022": "Dec",
     "Languages": [
-      "Intersystems Cache Object Script (COS)"
+      "Intersystems Objectscript"
     ],
     "IDEs": [
       "Intersystems IDE"
@@ -34712,7 +34712,7 @@
     "Participates_in_2022": "Dec",
     "Languages": [
       "C#",
-      "PowerQuery M/DAX"
+      "Power Query"
     ],
     "IDEs": [
       "Visual Studio",
@@ -35257,7 +35257,7 @@
     "Participates_in_2021": "No",
     "Participates_in_2022": "Dec",
     "Languages": [
-      "Sack (own work)"
+      "My own language: Sack"
     ],
     "IDEs": [
       "VS Code"
@@ -41023,7 +41023,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "Because I'm masochistic"
+      "because I'm masochistic"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses some AI",
@@ -43916,7 +43916,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "Midnight Commander (mcedit)"
+      "mcedit"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -45463,10 +45463,10 @@
       "Perl 5"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "I am too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -50174,7 +50174,7 @@
       "for Santa!",
       "improve skills",
       "add to resumé",
-      "To beat my friends"
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "AI is horrible for AoC"
@@ -51315,7 +51315,7 @@
       "No IDE"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not fast enough to make it",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -51466,7 +51466,7 @@
     "IDEs": [
       "Emacs"
     ],
-    "OS": "OpenBSD",
+    "OS": "BSD (OpenBSD)",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -53554,7 +53554,7 @@
       "LINQPad"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough.",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -54930,7 +54930,7 @@
       "Adobe Dreamweaver"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, i have no chance.",
+    "Global_Leaderboard_Participation": "No chance",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -55018,7 +55018,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "gnome text editor"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -55949,7 +55949,7 @@
       "for a challenge",
       "learn to code",
       "improve skills",
-      "To beat my friends"
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses zero AI",
@@ -58421,7 +58421,7 @@
       "improve skills",
       "forced to participate",
       "prefer not to say",
-      "for the reddit memes ♥"
+      "for the memes!"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -62658,7 +62658,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -65055,7 +65055,7 @@
       "for a challenge",
       "improve skills",
       "add to resumé",
-      "for the sense of community"
+      "for the community"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -66484,7 +66484,7 @@
       "Crystal"
     ],
     "IDEs": [
-      "Lite-XL"
+      "Lite XL"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -66754,7 +66754,7 @@
       "Uiua"
     ],
     "IDEs": [
-      "Uiua pad"
+      "Uiua Pad"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -67371,7 +67371,7 @@
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
-      "with friends"
+      "for fun with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses some AI",
@@ -68686,7 +68686,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "I'd love to, but I know I'm too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -75104,7 +75104,7 @@
       "for a challenge",
       "learn to code",
       "improve skills",
-      "To compete against friends"
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses some AI",
@@ -76401,7 +76401,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, I am not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -77009,7 +77009,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Windows, with VS Code connecting to a remote session on a Linux server",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -80008,7 +80008,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "Not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -80330,7 +80330,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -82919,7 +82919,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not a chance",
+    "Global_Leaderboard_Participation": "No chance",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -83862,7 +83862,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Not good enough to even come close",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -84433,7 +84433,7 @@
       "NetBeans"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough for that",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "learn to code"
@@ -85188,7 +85188,7 @@
     ],
     "IDEs": [],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "I am not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -88583,7 +88583,7 @@
     "Reason_for_participating": [
       "for fun",
       "learn new language",
-      "Private leaderboard with friends."
+      "to compete with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -88901,7 +88901,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "Private competition"
+      "for the private leaderboard(s)"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -90097,7 +90097,7 @@
     "Participates_in_2021": "No",
     "Participates_in_2022": "No",
     "Languages": [
-      "M (Microsoft Power Query)"
+      "Power Query"
     ],
     "IDEs": [
       "Excel"
@@ -91755,7 +91755,7 @@
       "for a challenge",
       "for leaderboards",
       "improve skills",
-      "My company has a private leaderboard with a money prize for the top"
+      "company prizes"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses zero AI",
@@ -93154,7 +93154,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "wing"
+      "Wing"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -93908,7 +93908,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "Fun with friends"
+      "for fun with friends"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "AI is bad for AoC"
@@ -95383,7 +95383,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -96081,7 +96081,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, I’m nowhere near good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -96546,7 +96546,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "Because I'm masochistic"
+      "because I'm masochistic"
     ],
     "Year_specific_2023_AI_and_LLM_thoughts": [
       "Uses zero AI",
