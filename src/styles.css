@@ -140,10 +140,6 @@ footer {
   background: var(--bg-dark);
 }
 
-.chart-container.year-specific-question {
-  grid-column: 1 / 3;
-}
-
 .chart-note {
   margin: 10px 0;
   padding-top: 10px;

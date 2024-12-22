@@ -637,9 +637,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: Math.min(screen.width, window.innerWidth) < 960 ? 1.5 : 3,
       plugins: {
-        ...chartTitle("2024-specific question: thoughts about AI and LLM's", "Multi-select: anno 2024 in context of AoC, what are your thoughts on AI and LLM's?"),
+        ...chartTitle("[2024] Thoughts on AI and LLM's", "Multi-select: anno 2024 in context of AoC, what are your thoughts on AI and LLM's?"),
         ...datalabelsYFormatter(),
         legend: false,
       },
@@ -685,9 +684,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
-      aspectRatio: Math.min(screen.width, window.innerWidth) < 960 ? 1.5 : 3,
       plugins: {
-        ...chartTitle("2023-specific question: thoughts about AI and LLM's", "Multi-select: anno 2023 in context of AoC, what are your thoughts on AI and LLM's?"),
+        ...chartTitle("[2023] Thoughts on AI and LLM's", "Multi-select: anno 2023 in context of AoC, what are your thoughts on AI and LLM's?"),
         ...datalabelsYFormatter(),
         legend: false,
       },
