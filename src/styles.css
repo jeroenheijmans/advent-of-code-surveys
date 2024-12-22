@@ -104,7 +104,7 @@ header label:hover {
 }
 
 footer {
-  padding: 10px;
+  padding: 10px 40px;
   margin-top: 10px;
   background: var(--bg-darker);
   border-top: 1px solid var(--bg-darkest);
