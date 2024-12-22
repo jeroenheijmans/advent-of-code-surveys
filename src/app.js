@@ -129,6 +129,27 @@ function ySorterWithFixedEndItems(endItems = []) {
   };
 }
 
+function llmQuestionSorter() {
+  const order = [
+    "AI is horrible for AoC",
+    "AI is bad for AoC",
+    "Not again with AI",
+    "Uses zero AI",
+    "Uses some AI",
+    "AI is good for AoC",
+    "Uses lots of AI",
+    "AI is great for AoC",
+    "Submitted to our new AI overlords",
+    "Don't know what AI/LLM means",
+    "Other...",
+  ];
+
+  return (a, b) => {
+    if (a.x === b.x) return 0;
+    return order.indexOf(a.x) - order.indexOf(b.x);
+  };
+}
+
 function ySorter() {
   return ySorterWithFixedEndItems([]);
 }
@@ -575,12 +596,10 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   ////////////////////////////////////////////////////////////////////////////////
   // 2024 Specific Question
-  const colors2024 = {
-    positivePlus: "rgb(60, 208, 106, 0.75)",
-    positive: "rgb(40, 188, 86, 0.3)",
-    neutral: "rgb(188, 188, 86, 0.3)",
-    negative: "rgb(188, 40, 86, 0.3)",
-    negativePlus: "rgb(208, 60, 106, 0.75)",
+  const colorsForLLMQuestion = {
+    positive: "rgb(40, 188, 86, 0.75)",
+    neutral: "rgb(188, 188, 86, 0.75)",
+    negative: "rgb(188, 40, 86, 0.75)",
     other: "rgb(60, 106, 208, 0.75)",
   }
   data = {
@@ -589,17 +608,17 @@ window.addEventListener("DOMContentLoaded", async () => {
       borderColor: "rgba(0, 0, 0, 0.8)",
       backgroundColor: [
         // Hard-coded, the 2024 data won't change anymore anyways
-        colors2024.neutral, // zero ai
-        colors2024.negative, // not again
-        colors2024.negative, // ai is bad
-        colors2024.negativePlus, // ai is horrible
-        colors2024.positive, // use some
-        colors2024.positive, // ai is good
-        colors2024.neutral, // submitted
-        colors2024.positivePlus, // ai is great
-        colors2024.neutral, // what does it mean
-        colors2024.positivePlus, // use lots
-        colors2024.other, // other
+        colorsForLLMQuestion.negative, // ai is horrible
+        colorsForLLMQuestion.negative, // ai is bad
+        colorsForLLMQuestion.negative, // not again
+        colorsForLLMQuestion.neutral, // zero ai
+        colorsForLLMQuestion.positive, // use some
+        colorsForLLMQuestion.positive, // ai is good
+        colorsForLLMQuestion.positive, // use lots
+        colorsForLLMQuestion.positive, // ai is great
+        colorsForLLMQuestion.other, // what does it mean
+        colorsForLLMQuestion.other, // submitted
+        colorsForLLMQuestion.other, // other
       ],
       responseCount: year.responses.length,
       data: year
@@ -611,7 +630,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   
   wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2024");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  data.datasets.forEach(ds => ds.data.sort(llmQuestionSorter()));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["yearSpecificQuestion2024"] = new Chart(getById("yearSpecificQuestion2024").getContext("2d"), {
@@ -630,32 +649,24 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   ////////////////////////////////////////////////////////////////////////////////
   // 2023 Specific Question
-  const colors = {
-    positivePlus: "rgb(60, 208, 106, 0.75)",
-    positive: "rgb(40, 188, 86, 0.3)",
-    neutral: "rgb(188, 188, 86, 0.3)",
-    negative: "rgb(188, 40, 86, 0.3)",
-    negativePlus: "rgb(208, 60, 106, 0.75)",
-    other: "rgb(60, 106, 208, 0.75)",
-  }
   data = {
     datasets: alldata.filter(year => year.nr === "2023").map(year => ({
       ...yearDatasetDefaults(year),
       hidden: false,
       borderColor: "rgba(0, 0, 0, 0.8)",
       backgroundColor: [
-        // Hard-coded, the 2023 data won't change anymore anyways
-        colors.neutral, // zero ai
-        colors.negative, // not again
-        colors.negative, // ai is bad
-        colors.negativePlus, // ai is horrible
-        colors.positive, // use some
-        colors.positive, // ai is good
-        colors.neutral, // submitted
-        colors.positivePlus, // ai is great
-        colors.neutral, // what does it mean
-        colors.positivePlus, // use lots
-        colors.other, // other
+        // Hard-coded, the 2024 data won't change anymore anyways
+        colorsForLLMQuestion.negative, // ai is horrible
+        colorsForLLMQuestion.negative, // ai is bad
+        colorsForLLMQuestion.negative, // not again
+        colorsForLLMQuestion.neutral, // zero ai
+        colorsForLLMQuestion.positive, // use some
+        colorsForLLMQuestion.positive, // ai is good
+        colorsForLLMQuestion.positive, // use lots
+        colorsForLLMQuestion.positive, // ai is great
+        colorsForLLMQuestion.other, // what does it mean
+        colorsForLLMQuestion.other, // submitted
+        colorsForLLMQuestion.other, // other
       ],
       responseCount: year.responses.length,
       data: year
@@ -667,7 +678,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   
   wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2023");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
-  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  data.datasets.forEach(ds => ds.data.sort(llmQuestionSorter()));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
 
   charts["yearSpecificQuestion2023"] = new Chart(getById("yearSpecificQuestion2023").getContext("2d"), {
