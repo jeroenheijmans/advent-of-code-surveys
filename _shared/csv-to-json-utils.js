@@ -113,6 +113,27 @@ const columns = {
 
   /////////////////////////////////
   // Year-specific questions, 2023 and beyond:
+  'Anno 2024, in context of Advent of Code: your thoughts on AI and LLM\'s?': {
+    header: 'Year_specific_2024_AI_and_LLM_thoughts',
+    multi: true,
+    answers: {
+      "Ugh, not again with the AI related stuff... just let me help Santa and be on my way!!!": "Not again with AI",
+      "I don't know what \"AI and/or LLM stuff\" means": "Don't know what AI/LLM means",
+      "I will use (almost) *zero* AI and/or LLM stuff": "Uses zero AI",
+      "I will use *some* AI and/or LLM stuff": "Uses some AI",
+      "I will *extensively* use AI and/or LLM stuff": "Uses lots of AI",
+      "It's *great* that puzzles are being solved with help from AI and/or LLM stuff": "AI is great for AoC",
+      "It's *good* that puzzles are being solved with help from AI and/or LLM stuff": "AI is good for AoC",
+      "It's *bad* that puzzles are being solved with help from AI and/or LLM stuff": "AI is bad for AoC",
+      "It's *horrible* that puzzles are being solved with help from AI and/or LLM stuff": "AI is horrible for AoC",
+      "I submit to our new AI overlords: happy to become part of the new world order!!!": "Submitted to our new AI overlords",
+    },
+    preProcess: answer => {
+      if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
+      answer = answer.replace(/http:\/\/memegen\/\S*/g, "")
+      return answer;
+    },
+  },
   'Anno 2023, in context of Advent of Code: your thoughts on AI and LLM\'s?': {
     header: 'Year_specific_2023_AI_and_LLM_thoughts',
     multi: true,
@@ -137,6 +158,15 @@ const columns = {
 
   /////////////////////////////////
   // 2022 and beyond:
+  'Have/will you get at least one ⭐ in Advent of Code 2024?': {
+    header: 'Participates_in_2024',
+    answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
+      'No': 'No',
+      'Yes, (mostly) in december 2024': 'Dec',
+      'Yes, (mostly) after 2024': 'Later',
+    }
+  },
   'Have/will you get at least one ⭐ in Advent of Code 2023?': {
     header: 'Participates_in_2023',
     answers: {
@@ -153,6 +183,16 @@ const columns = {
       'No': 'No',
       'Yes, (mostly) in december 2022': 'Dec',
       'Yes, (mostly) after 2022': 'Later',
+    }
+  },
+  'Did you participate in 2023? ("Floating Islands")': {
+    header: 'Participates_in_2023',
+    answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
+      'No': 'No',
+      'Yes, (mostly) in december 2023': 'Dec',
+      'Yes, but (mostly) only later on': 'Later',
+      'Yes, (mostly) after 2023': 'Later',
     }
   },
   'Did you participate in 2022? ("Jungle")': {

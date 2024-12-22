@@ -1,12 +1,13 @@
 const baseUrl = "";
-const currentYear = "2023";
+const currentYear = "2024";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
-  { nr: "2019", bgColor: "rgba(60, 208, 106, 0.2)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
-  { nr: "2020", bgColor: "rgba(75, 192, 192, 0.2)", borderColor: "rgb(75, 192, 192, 0.75)", borderColorDimmed: "rgb(75, 192, 192, 0.25)", pointStyle: 'rect' },
-  { nr: "2021", bgColor: "rgba(153, 102, 255, 0.2)", borderColor: "rgb(153, 102, 255, 0.75)", borderColorDimmed: "rgb(153, 102, 255, 0.25)", pointStyle: 'triangle' },
-  { nr: "2022", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
-  { nr: "2023", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
+  { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
+  { nr: "2019", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
+  { nr: "2020", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
+  { nr: "2021", bgColor: "rgba(60, 208, 106, 0.20)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
+  { nr: "2022", bgColor: "rgba(75, 192, 232, 0.2)", borderColor: "rgb(75, 192, 232, 0.75)", borderColorDimmed: "rgb(75, 192, 232, 0.25)", pointStyle: 'rect' },
+  { nr: "2023", bgColor: "rgba(60, 102, 255, 0.2)", borderColor: "rgb(60, 102, 255, 0.75)", borderColorDimmed: "rgb(60, 102, 255, 0.25)", pointStyle: 'cross' },
+  { nr: "2024", bgColor: "rgba(173, 122, 255, 0.2)", borderColor: "rgb(173, 122, 255, 0.75)", borderColorDimmed: "rgb(173, 122, 255, 0.25)", pointStyle: 'triangle' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -471,6 +472,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     { key: "Participates_in_2021", label: "2021" },
     { key: "Participates_in_2022", label: "2022" },
     { key: "Participates_in_2023", label: "2023" },
+    { key: "Participates_in_2024", label: "2024" },
   ];
 
   const participationOptions = [
@@ -527,7 +529,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.map(year => ({
       ...yearDatasetDefaults(year),
-      borderColor: year.nr === "2023" ? year.borderColor : year.borderColorDimmed,
+      borderColor: year.nr === currentYear ? year.borderColor : year.borderColorDimmed,
       responseCount: year.responses.length,
       hidden: false,
       showLine: true,
@@ -572,6 +574,60 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 
   ////////////////////////////////////////////////////////////////////////////////
+  // 2024 Specific Question
+  const colors2024 = {
+    positivePlus: "rgb(60, 208, 106, 0.75)",
+    positive: "rgb(40, 188, 86, 0.3)",
+    neutral: "rgb(188, 188, 86, 0.3)",
+    negative: "rgb(188, 40, 86, 0.3)",
+    negativePlus: "rgb(208, 60, 106, 0.75)",
+    other: "rgb(60, 106, 208, 0.75)",
+  }
+  data = {
+    datasets: alldata.filter(year => year.nr === "2024").map(year => ({
+      ...yearDatasetDefaults(year),
+      borderColor: "rgba(0, 0, 0, 0.8)",
+      backgroundColor: [
+        // Hard-coded, the 2024 data won't change anymore anyways
+        colors2024.neutral, // zero ai
+        colors2024.negative, // not again
+        colors2024.negative, // ai is bad
+        colors2024.negativePlus, // ai is horrible
+        colors2024.positive, // use some
+        colors2024.positive, // ai is good
+        colors2024.neutral, // submitted
+        colors2024.positivePlus, // ai is great
+        colors2024.neutral, // what does it mean
+        colors2024.positivePlus, // use lots
+        colors2024.other, // other
+      ],
+      responseCount: year.responses.length,
+      data: year
+        .responses
+        .reduce(multiAnswerReducer("Year_specific_2024_AI_and_LLM_thoughts"), [])
+        .map(percentageMapperFor(year))
+    }))
+  };
+  
+  wireUpDataTableFor(data, "Thoughts about AI and LLM's", "yearSpecificQuestion2024");
+  mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
+  data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
+  mutateDataAddLabelsToForceOrderForMostRecentYear(data);
+
+  charts["yearSpecificQuestion2024"] = new Chart(getById("yearSpecificQuestion2024").getContext("2d"), {
+    type: "bar",
+    data,
+    options: {
+      aspectRatio: Math.min(screen.width, window.innerWidth) < 960 ? 1.5 : 3,
+      plugins: {
+        ...chartTitle("2024-specific question: thoughts about AI and LLM's", "Multi-select: anno 2024 in context of AoC, what are your thoughts on AI and LLM's?"),
+        ...datalabelsYFormatter(),
+      },
+    },
+  });
+
+
+  ////////////////////////////////////////////////////////////////////////////////
   // 2023 Specific Question
   const colors = {
     positivePlus: "rgb(60, 208, 106, 0.75)",
@@ -584,6 +640,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.filter(year => year.nr === "2023").map(year => ({
       ...yearDatasetDefaults(year),
+      hidden: false,
       borderColor: "rgba(0, 0, 0, 0.8)",
       backgroundColor: [
         // Hard-coded, the 2023 data won't change anymore anyways
