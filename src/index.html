@@ -58,7 +58,7 @@
         <div class="chart-container">
           <canvas id="language" aria-describedby="languageDescription"><p>Chart showing (top) used languages</p></canvas>
           <p id="languageDescription" class="chart-description">
-            Bar chart showing that <strong>the top 2 remains Python 3 (>40%) followed by Rust (>17%)</strong>. Javascript is in third but closely trailed by C++ and C#. Python 2 is now at 0.7% (down from 7.0% in 2018). However, a ton of folks indicate using an "Other..." language: 23.5%! Expand the data table to see all the good stuff: folks using <strong>Excel</strong> or <strong>their own programming languages</strong>, or check out the biggest newcomer <strong>Uiua</strong> at 7 responses!
+            Bar chart showing that <strong>the top 2 remains Python 3 (>42%) followed by Rust (>17%)</strong>. JavaScript dropped several spots from 2023, after (in order) C++, C#, Go, and even Java. TypeScript is just behind JavaScript at 5.0%. A whopping 22.6% of "Other..." answers. Python 2 is shown in the graph at a tiny %, only because the earliest survey years gave it a much larger percentage.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="languageDump"></div>
@@ -66,7 +66,7 @@
         <div class="chart-container">
           <canvas id="ide" aria-describedby="ideDescription"><p>Chart showing the (top) used IDEs</p></canvas>
           <p id="ideDescription" class="chart-description">
-            Bar chart showing IDE's used. Up another couple percentage points but still below 50%, <strong>VSCode</strong> supremely sits on top. <strong>Surprise of 2023 is Neovim</strong>, which surpassed IntelliJ and Vim in popularity. The data table can be expanded for great stuff! There are interesting choices like game engines, impressive ones like "My own editor", to downright <em>crazy</em> choices.
+            Bar chart showing IDE's used. VSCode dropped 4% down to 44.2% since 2023. Neovim keeps rising and is in firm second place, further taking away from vim's share. When enabling older years, especially 2018, a stark change is seen, amongst which the demise of "Atom". And, 18.4% of "Other..." IDE's were used.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="ideDump"></div>
@@ -74,7 +74,7 @@
         <div class="chart-container">
           <canvas id="operatingSystem" aria-describedby="operatingSystemDescription"><p>Chart showing used (primary) operating systems</p></canvas>
           <p id="operatingSystemDescription" class="chart-description">
-            Bar chart showing a roughly unchanged situation for Operating Systems used over the years. WSL is a bit higher in 2023 but mostly because it became an explicit, separate option this year. Expand the data table to read some good stories and responses (shout out to the person using a Nintendo DS!!).
+            Bar chart showing a small decline in Windows usage in 2023 and 2024, but an equal uptake in WSL usage in those years. On the whole, Windows, Linux, and macOS have roughly equal shares. Oh, and the data table has plenty of cool "Other..." answers too!
             Toggle data table for <em>all</em> the data.
           </p>
           <p class="chart-note">⚠ Note: In 2023 'WSL' (along with 'Android', 'iOS', and 'IPadOs') became built-in options, heavily increasing their representation.</p>
@@ -83,7 +83,7 @@
         <div class="chart-container">
           <canvas id="participationReason" aria-describedby="participationReasonDescription"><p>Chart showing the reason for participating</p></canvas>
           <p id="participationReasonDescription" class="chart-description">
-            Bar chart showing "Reasons for participating": it's <strong>extremely curious and interesting that the top responses are <em>this</em> stable over the years!</strong> The value is not in the chart here, really: but in the data table.
+            Bar chart showing "Reasons for participating": unchanged again from 2023, it's <strong>extremely curious and interesting that the top responses are <em>this</em> stable over the years!</strong> The value is not in the chart here, really: but in the data table.
             Toggle data table for <em>all</em> the data.
             And gasp at the heartwarming, disconcerting, pleasing, fun, and lovely responses folks wrote!
           </p>
@@ -93,7 +93,7 @@
         <div class="chart-container">
           <canvas id="leaderboardsGlobal" aria-describedby="leaderboardsGlobalDescription"><p>Chart showing participation in global leaderboard</p></canvas>
           <p id="leaderboardsGlobalDescription" class="chart-description">
-            Bar chart showing a clear trend over the years: <strong>more respondents are "not interested" in global leaderboard participation</strong>, but less people seem to attribute this to the timezone being problematic. The individual responses in the data table below show a ton of interesting (as well as concerning) responses.
+            Bar chart showing a clear trend over the years: <strong>more respondents are "not interested" in global leaderboard participation</strong>, but less people seem to attribute this to the timezone being problematic. As might be expected (and can be seen in the full data table), in 2024 many "Other..." answers quote the rise of AI tools as a reason for not participating in the Global Leaderboard.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="leaderboardsGlobalDump"></div>
@@ -101,7 +101,7 @@
         <div class="chart-container">
           <canvas id="leaderboardsPrivate" aria-describedby="leaderboardsPrivateDescription"><p>Chart showing number of private leaderboards one is involved in</p></canvas>
           <p id="leaderboardsPrivateDescription" class="chart-description">
-            Bar chart showing no big surprises: number of private leaderboards stays the same over the years. Most folks sit in 0 or 1 private leaderboard, about 15% in 2 leaderboards, 7% in 3 leaderboards, 2% in 4 leaderboards, and 3% in 5 or more leaderboards.
+            Bar chart showing no big surprises: number of private leaderboards stays the same over the years. Same as last year, most folks sit in 0 or 1 private leaderboard, about 15% in 2 leaderboards, 6% in 3 leaderboards, 2% in 4 leaderboards, and 3% in 5 or more leaderboards.
             Toggle data table for <em>all</em> the data.
           </p>
           <div class="chart-dump" id="leaderboardsPrivateDump"></div>
@@ -109,14 +109,14 @@
         <div class="chart-container">
           <canvas id="participationTiming" aria-describedby="participationTimingDescription"><p>Chart showing when respondents completed each of the AoC years</p></canvas>
           <p id="participationTimingDescription" class="chart-description">
-            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in 2023 in December itself. This year each question had a link to your stars for that year, so data might be a little more accurate. It's fun to see that more folks went back to do 2015 than 2016 and 2017: "you've gotta start at the beginning"?
+            This stacked bar chart clearly shows that (logically) this survey is biased towards people who participate in 2024 in December itself. This year each question had a link to your stars for that year, so data might be a little more accurate. It's fun to see that more folks went back to do 2015 than 2016 and 2017: "you've gotta start at the beginning"?
           </p>
           <div class="chart-dump" id="participationTimingDump"></div>
         </div>
         <div class="chart-container">
           <canvas id="responsesPerDay" aria-describedby="responsesPerDayDescription"><p>Line chart showing cumulative number of responses to the survey</p></canvas>
           <p id="responsesPerDayDescription" class="chart-description">
-            Line chart with 2023 highlighted, showing the number of survey responses per day (cumulative). We did not reach 2021 or even 2022 numbers, but still have a respectable 3000+ responses. Thank you to everyone filling out the survey, you're the best!!
+            Line chart with 2024 highlighted, showing the number of survey responses per day (cumulative). The huge boost around December 14 can probably be attributed to the boosts on Social Media from Eric Wastl, who has a rather large reach (cheers! :D). And: thank you to everyone filling out the survey, you're the best!!
           </p>
           <div class="chart-dump" id="responsesPerDayDump"></div>
         </div>
@@ -125,15 +125,16 @@
           <p id="yearSpecificQuestion2023Description" class="chart-description">
             Bar chart showing feelings survey respondents felt aligned with. About 62% of y'all indicate not using AI at all. The tongue-in-cheek option "<em>Ugh, not again with the AI</em>" attracted a whopping 41% of y'all. Almost 10% of you "<em>Will submit to our new AI Overlords</em>". On the more serious end the subject is polarizing, but still weighing a tad towards "it's bad for AoC". <strong>Toggle the data table to be amazed</strong> at the hundreds of custom responses folks gave!
           </p>
-          <p class="chart-note">Note: brighter color indicate the "stronger" responses. Yellow are neutral responses, red negative, green positive, and blue "other".</p>
+          <p class="chart-note">Note: red indicates negative sentiments, yellow neutral sentiment, and green positive sentiment. The blues are "Other..." style answers.</p>
           <div class="chart-dump" id="yearSpecificQuestion2023Dump"></div>
         </div>
         <div class="chart-container">
           <canvas id="yearSpecificQuestion2024" aria-describedby="yearSpecificQuestion2024Description"><p>Bar chart and table with opinions around AI and LLM's</p></canvas>
           <p id="yearSpecificQuestion2024Description" class="chart-description">
-            Bar chart showing feelings survey respondents felt aligned with. About 62% of y'all indicate not using AI at all. The tongue-in-cheek option "<em>Ugh, not again with the AI</em>" attracted a whopping 41% of y'all. Almost 10% of you "<em>Will submit to our new AI Overlords</em>". On the more serious end the subject is polarizing, but still weighing a tad towards "it's bad for AoC". <strong>Toggle the data table to be amazed</strong> at the hundreds of custom responses folks gave!
+            Bar chart showing sentiments towards AI, quite similar to results from 2023. (Because of personal circumstances and time constraints, the 2024-specific question ended up being the same as 2023.)<br><br>
+            ⚠️ Just like the Advent of Code organizers, I was unprepared for how (much) AI would be involved this year, or how vocal some folks would get in their discourse and the "Other..." answers. Moderating the "Other..." answers a bit to keep things civil will require quite a bit of time, so the initial 2024-results will release without detailed "Other..." options. Hope y'all understand!
           </p>
-          <p class="chart-note">Note: brighter color indicate the "stronger" responses. Yellow are neutral responses, red negative, green positive, and blue "other".</p>
+          <p class="chart-note">Note: red indicates negative sentiments, yellow neutral sentiment, and green positive sentiment. The blues are "Other..." style answers.</p>
           <div class="chart-dump" id="yearSpecificQuestion2024Dump"></div>
         </div>
       </section>
