@@ -126472,5 +126472,1704 @@
       "AI is good for AoC",
       "Other..."
     ]
+  },
+  {
+    "Id": 103841,
+    "Timestamp": "2024-12-22T11:52:12.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for a challenge",
+      "for Santa!",
+      "for leaderboards",
+      "improve skills",
+      "add to resumé"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103842,
+    "Timestamp": "2024-12-22T12:02:09.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Uiua"
+    ],
+    "IDEs": [
+      "IntelliJ",
+      "Vim",
+      "Uiua pad (web editor)"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "4",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn new language",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103843,
+    "Timestamp": "2024-12-22T12:06:15.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "Later",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Uiua"
+    ],
+    "IDEs": [
+      "VS Code",
+      "Uiua Pad"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, learning experience",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn to code",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103844,
+    "Timestamp": "2024-12-22T12:40:29.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "Java"
+    ],
+    "IDEs": [],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103845,
+    "Timestamp": "2024-12-22T12:45:26.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103846,
+    "Timestamp": "2024-12-22T13:02:41.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "WSL",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "5+",
+    "Reason_for_participating": [],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103847,
+    "Timestamp": "2024-12-22T13:51:34.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "C#"
+    ],
+    "IDEs": [
+      "Visual Studio",
+      "VS Code"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI",
+      "AI is good for AoC",
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103848,
+    "Timestamp": "2024-12-22T14:13:11.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Dec",
+    "Participates_in_2016": "Dec",
+    "Participates_in_2017": "Dec",
+    "Participates_in_2018": "Dec",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "C#"
+    ],
+    "IDEs": [
+      "Visual Studio"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is good for AoC",
+      "Submitted to our new AI overlords"
+    ]
+  },
+  {
+    "Id": 103849,
+    "Timestamp": "2024-12-22T14:54:03.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103850,
+    "Timestamp": "2024-12-22T14:56:45.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "5+",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103851,
+    "Timestamp": "2024-12-22T14:59:40.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "Emacs"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "AI is good for AoC"
+    ]
+  },
+  {
+    "Id": 103852,
+    "Timestamp": "2024-12-22T15:25:44.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "WSL",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "3",
+    "Reason_for_participating": [
+      "for fun",
+      "for Santa!",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI"
+    ]
+  },
+  {
+    "Id": 103853,
+    "Timestamp": "2024-12-22T16:09:18.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "C++"
+    ],
+    "IDEs": [
+      "Neovim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103854,
+    "Timestamp": "2024-12-22T16:16:58.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103855,
+    "Timestamp": "2024-12-22T17:00:04.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI",
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103856,
+    "Timestamp": "2024-12-22T17:29:20.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Rust"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103857,
+    "Timestamp": "2024-12-22T18:44:51.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Uiua"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103858,
+    "Timestamp": "2024-12-22T18:59:05.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "Later",
+    "Participates_in_2018": "Dec",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103859,
+    "Timestamp": "2024-12-22T20:36:20.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "learn to code"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103860,
+    "Timestamp": "2024-12-22T21:05:45.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "WSL",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103861,
+    "Timestamp": "2024-12-22T21:50:39.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "Neovim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103862,
+    "Timestamp": "2024-12-22T21:51:16.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "PyCharm"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103863,
+    "Timestamp": "2024-12-22T21:56:44.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "C#"
+    ],
+    "IDEs": [
+      "Visual Studio"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103864,
+    "Timestamp": "2024-12-22T22:51:20.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103865,
+    "Timestamp": "2024-12-23T01:14:43.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "Emacs"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103866,
+    "Timestamp": "2024-12-23T01:44:14.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Go"
+    ],
+    "IDEs": [
+      "Kate"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103867,
+    "Timestamp": "2024-12-23T03:07:11.000Z",
+    "Participates_in_2024": "Later",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Rust"
+    ],
+    "IDEs": [
+      "Vim",
+      "VS Code"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "learn new language",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI",
+      "AI is good for AoC"
+    ]
+  },
+  {
+    "Id": 103868,
+    "Timestamp": "2024-12-23T04:59:21.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "Later",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Swift"
+    ],
+    "IDEs": [
+      "Xcode"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103869,
+    "Timestamp": "2024-12-23T06:55:52.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "No",
+    "Languages": [
+      "JavaScript"
+    ],
+    "IDEs": [
+      "Cursor"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses lots of AI",
+      "AI is good for AoC",
+      "Submitted to our new AI overlords"
+    ]
+  },
+  {
+    "Id": 103870,
+    "Timestamp": "2024-12-23T07:37:30.000Z",
+    "Participates_in_2024": "Later",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "Neovim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103871,
+    "Timestamp": "2024-12-23T07:37:52.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "learn new language",
+      "improve skills",
+      "add to resumé"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI",
+      "Submitted to our new AI overlords"
+    ]
+  },
+  {
+    "Id": 103872,
+    "Timestamp": "2024-12-23T07:39:15.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "",
+    "Languages": [
+      "Java"
+    ],
+    "IDEs": [
+      "NetBeans"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103873,
+    "Timestamp": "2024-12-23T07:40:53.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "",
+    "Languages": [
+      "C++"
+    ],
+    "IDEs": [
+      "Vim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103874,
+    "Timestamp": "2024-12-23T07:42:13.000Z",
+    "Participates_in_2024": "Later",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "",
+    "Languages": [
+      "Assembly",
+      "C"
+    ],
+    "IDEs": [
+      "Nano",
+      "Vim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103875,
+    "Timestamp": "2024-12-23T07:42:54.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Later",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Uiua"
+    ],
+    "IDEs": [
+      "VS Code",
+      "Uiua online pad"
+    ],
+    "OS": "WSL",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn to code",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is good for AoC",
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103876,
+    "Timestamp": "2024-12-23T07:43:32.000Z",
+    "Participates_in_2024": "Later",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Kotlin"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "for leaderboards"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103877,
+    "Timestamp": "2024-12-23T07:45:17.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "",
+    "Languages": [
+      "Rust"
+    ],
+    "IDEs": [
+      "RustRover"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "learn new language"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI"
+    ]
+  },
+  {
+    "Id": 103878,
+    "Timestamp": "2024-12-23T07:56:31.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "PyCharm"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No Chance",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "learn new language",
+      "improve skills",
+      "Teacher motivated me"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses some AI"
+    ]
+  },
+  {
+    "Id": 103879,
+    "Timestamp": "2024-12-23T08:01:47.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "Later",
+    "Participates_in_2017": "Later",
+    "Participates_in_2018": "Dec",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "IPython / Jupyter",
+      "Vim"
+    ],
+    "OS": "Android",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "3",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills",
+      "Jay!"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is bad for AoC",
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103880,
+    "Timestamp": "2024-12-23T10:55:34.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "Later",
+    "Participates_in_2017": "Later",
+    "Participates_in_2018": "Later",
+    "Participates_in_2019": "Later",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Later",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Kotlin"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC",
+      "Submitted to our new AI overlords"
+    ]
+  },
+  {
+    "Id": 103881,
+    "Timestamp": "2024-12-23T10:59:41.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Kotlin"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103882,
+    "Timestamp": "2024-12-23T11:10:03.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "Later",
+    "Participates_in_2017": "Later",
+    "Participates_in_2018": "Later",
+    "Participates_in_2019": "Later",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Later",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Python 3",
+      "Rust"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "Yes, I might get points",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for leaderboards",
+      "learn new language"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103883,
+    "Timestamp": "2024-12-23T11:13:00.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "Later",
+    "Participates_in_2017": "Dec",
+    "Participates_in_2018": "Dec",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "Dec",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Bash/Shell",
+      "Python 3",
+      "Rust"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "3",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "learn to code",
+      "learn new language",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103884,
+    "Timestamp": "2024-12-23T11:52:26.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Go"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "learn new language"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103885,
+    "Timestamp": "2024-12-23T12:27:02.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Later",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Lua"
+    ],
+    "IDEs": [
+      "Vim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "impossible with my skill, I'm happy when I complete all tasks",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI"
+    ]
+  },
+  {
+    "Id": 103886,
+    "Timestamp": "2024-12-23T12:28:33.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "",
+    "Languages": [
+      "Python 3"
+    ],
+    "IDEs": [
+      "PyCharm"
+    ],
+    "OS": "Fedora KDE",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for Santa!"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103887,
+    "Timestamp": "2024-12-23T12:29:39.000Z",
+    "Participates_in_2024": "Later",
+    "Participates_in_2015": "",
+    "Participates_in_2016": "",
+    "Participates_in_2017": "",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "",
+    "Participates_in_2020": "",
+    "Participates_in_2021": "",
+    "Participates_in_2022": "",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "C"
+    ],
+    "IDEs": [
+      "Emacs"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103888,
+    "Timestamp": "2024-12-23T13:54:26.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Rust"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103889,
+    "Timestamp": "2024-12-23T14:00:51.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "Later",
+    "Participates_in_2016": "Later",
+    "Participates_in_2017": "Later",
+    "Participates_in_2018": "Later",
+    "Participates_in_2019": "Later",
+    "Participates_in_2020": "Later",
+    "Participates_in_2021": "Later",
+    "Participates_in_2022": "Later",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Scala"
+    ],
+    "IDEs": [
+      "VS Code"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, global leaderboards should be disabled due to LLM cheating",
+    "Private_Leaderboard_Count": "1",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC",
+      "Other..."
+    ]
+  },
+  {
+    "Id": 103890,
+    "Timestamp": "2024-12-23T15:23:36.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "Dec",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Go",
+      "Python 3"
+    ],
+    "IDEs": [
+      "Sublime Text",
+      "VS Code",
+      "Zed"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "Yes, but no points expected",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "learn to code",
+      "learn new language",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is horrible for AoC"
+    ]
+  },
+  {
+    "Id": 103891,
+    "Timestamp": "2024-12-23T15:35:00.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "Java"
+    ],
+    "IDEs": [
+      "Visual Studio"
+    ],
+    "OS": "Windows",
+    "Global_Leaderboard_Participation": "No, timezone is problematic",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI"
+    ]
+  },
+  {
+    "Id": 103892,
+    "Timestamp": "2024-12-23T16:31:29.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "Dec",
+    "Participates_in_2017": "Dec",
+    "Participates_in_2018": "",
+    "Participates_in_2019": "Dec",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "Dec",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Dec",
+    "Languages": [
+      "C",
+      "Python 3"
+    ],
+    "IDEs": [
+      "Vim"
+    ],
+    "OS": "Linux",
+    "Global_Leaderboard_Participation": "No, too stressful",
+    "Private_Leaderboard_Count": "0",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Not again with AI",
+      "Uses zero AI",
+      "AI is bad for AoC"
+    ]
+  },
+  {
+    "Id": 103893,
+    "Timestamp": "2024-12-23T19:31:02.000Z",
+    "Participates_in_2024": "Dec",
+    "Participates_in_2015": "No",
+    "Participates_in_2016": "No",
+    "Participates_in_2017": "No",
+    "Participates_in_2018": "No",
+    "Participates_in_2019": "No",
+    "Participates_in_2020": "No",
+    "Participates_in_2021": "No",
+    "Participates_in_2022": "No",
+    "Participates_in_2023": "Later",
+    "Languages": [
+      "Kotlin"
+    ],
+    "IDEs": [
+      "IntelliJ"
+    ],
+    "OS": "macOS",
+    "Global_Leaderboard_Participation": "No, not interested",
+    "Private_Leaderboard_Count": "2",
+    "Reason_for_participating": [
+      "for fun",
+      "for a challenge",
+      "improve skills"
+    ],
+    "Year_specific_2024_AI_and_LLM_thoughts": [
+      "Uses zero AI",
+      "AI is bad for AoC",
+      "AI is horrible for AoC"
+    ]
   }
 ]
