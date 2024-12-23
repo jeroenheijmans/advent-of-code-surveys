@@ -36673,7 +36673,11 @@
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
-      "<anonymized>"
+      "for fun",
+      "for a challenge",
+      "for Santa!",
+      "improve skills",
+      "<redacted>"
     ]
   },
   {
@@ -79353,7 +79357,7 @@
       "Rider"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "Slow as fuck",
+    "Global_Leaderboard_Participation": "Way too slow!",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",

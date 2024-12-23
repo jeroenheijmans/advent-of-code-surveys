@@ -6,6 +6,41 @@ export const csvOptions = {
   columns: true,
 };
 
+// See /REDACTION.md for more info
+// This is a (very short) list of things that will be redacted, and where publicizing
+// the actual rule might leak PII or otherwise hurt participants. We err on the side
+// of safety and remove those answers, even though some of them may have been intentional
+// (we have no way of getting in touch to ensure it was intentional).
+const redactFilePath = '_shared/answer-omit-list.json';
+let answersToFullyOmit = [];
+if (fs.existsSync(redactFilePath)) {
+  const fileContent = fs.readFileSync(redactFilePath, 'utf-8');
+  answersToFullyOmit = JSON.parse(fileContent);
+}
+function omit(answer) {
+  const result = answersToFullyOmit.includes(answer.trim());
+  if (result) console.warn("  OMITTING ANSWER (erring on the side of safety)");
+  return result;
+}
+
+// See /REDACTION.md for more info
+function redact(answer) {
+  // Answers with potentially an (perhaps accidental) e-mail address
+  if (/\S+@\w+\.\w+/.test(answer)) {
+    return "<redacted>";
+  }
+
+  // A (well-tested) smoke test to avoid overly non-PG answers:
+  if (/(?<!brain)fuck/i.test(answer)) {
+    if (answer === "Slow as fuck") return "Way too slow!";
+    answer = answer.replace("a fucking nerd", "an absolute nerd");
+    if (/(?<!brain)fuck/i.test(answer)) return "<redacted>";
+    return answer;
+  }
+  
+  return answer; // Or so we assume/hope...
+}
+
 const columns = {
   'Timestamp': {
     header: 'Timestamp',
@@ -129,10 +164,36 @@ const columns = {
       "I submit to our new AI overlords: happy to become part of the new world order!!!": "Submitted to our new AI overlords",
     },
     preProcess: answer => {
-      if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
       answer = answer.replace(/http:\/\/memegen\/\S*/g, "")
+      if (answer?.trim() === "A") answer = ""; // Typo? Not a useful answer I believe.
       return answer;
     },
+    postProcess: answer => {
+      // The 2024 answers contain a TON of custom answers, some very long. A quick scan
+      // shows that there's a lot of careful moderation needed to keep things PG-rated,
+      // nice and somewhat friendly, professional, and in general in line with the Code
+      // of Conduct from the subreddit Community that I try to follow.
+      //
+      // Because I want to release results before Christmas, and I don't have personal
+      // time and space available to do all this work in time, we will have to do an
+      // initial 2024-survey-results release with only base answers. Sorry!
+      const whiteListedAnswers = [
+        "Not again with AI",
+        "Don't know what AI/LLM means",
+        "Uses zero AI",
+        "Uses some AI",
+        "Uses lots of AI",
+        "AI is great for AoC",
+        "AI is good for AoC",
+        "AI is bad for AoC",
+        "AI is horrible for AoC",
+        "Submitted to our new AI overlords",
+      ];
+      if (!whiteListedAnswers.includes(answer)) {
+        answer = "Other...";
+      }
+      return answer;
+    }
   },
   'Anno 2023, in context of Advent of Code: your thoughts on AI and LLM\'s?': {
     header: 'Year_specific_2023_AI_and_LLM_thoughts',
@@ -150,7 +211,6 @@ const columns = {
       "I submit to our new AI overlords: happy to become part of the new world order!!!": "Submitted to our new AI overlords",
     },
     preProcess: answer => {
-      if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
       answer = answer.replace(/http:\/\/memegen\/\S*/g, "")
       return answer;
     },
@@ -1431,7 +1491,6 @@ const columns = {
       "Cause Topaz is a friend of mine and tricked me into beta testing": "Because I'm on the beta testing team",
     },
     preProcess: answer => {
-      if (/\S+@\w+\.\w+/.test(answer)) return "<anonymized>"; // answers with e-mail addresses I'd rather anonimize
       answer = answer.replace(";)", ":)") // quick fix to avoid ;-splitting
       return answer;
     },
@@ -1469,10 +1528,13 @@ export const getParseCallback = (year) => function callback(err, records) {
             .map(x => x.trim())
             .map(x => info.hasOwnProperty('answers') ? info.answers[x] || x : x)
             .map(x => x.trim())
+            .map(x => redact(x))
+            .filter(x => !omit(x))
             .map(x => postProcess(x))
             .filter(x => !!x && x.length > 0);
         } else {
-          item[newProp] = postProcess(item[newProp].trim());
+          item[newProp] = redact(postProcess(item[newProp].trim()));
+          if (omit(item[newProp])) item[newProp] = "";
         }
       });
     return item;
