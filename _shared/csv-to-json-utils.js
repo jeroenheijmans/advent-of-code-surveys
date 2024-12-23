@@ -1344,6 +1344,19 @@ const columns = {
       "know I don't have a chance": "No chance",
       "No, I don't have any chance on getting on it": "No chance",
 
+      "Hard to compete with the LLM guys": "No, too much AI/LLM on leaderboard",
+      "its all llm cheaters": "No, too much AI/LLM on leaderboard",
+      "no point to with LLM cheaters": "No, too much AI/LLM on leaderboard",
+      "so many ai cheaters, plus i'm doing a challenge with a different lang every day": "No, too much AI/LLM on leaderboard",
+      "I'm not an LLM so lol no": "No, too much AI/LLM on leaderboard",
+      "No global leaderboard is clearly not human players - cf 9 second solve winner of day 1 2024": "No, too much AI/LLM on leaderboard",
+      "No, AI ruins it.": "No, too much AI/LLM on leaderboard",
+      "no, people cheating with LLMs (maybe I will try for the harder problems)": "No, too much AI/LLM on leaderboard",
+      "no, the sub one minute AI answers seem to have poisoned it": "No, too much AI/LLM on leaderboard",
+      "No, too many LLMs": "No, too much AI/LLM on leaderboard",
+      "Too much AI": "No, too much AI/LLM on leaderboard",
+      "Yes, used to regularly appear on them, but LLM cheaters had made it impossible. :(": "No, too much AI/LLM on leaderboard",
+
       "to difficult": "No, too difficult",
       "Too difficult": "No, too difficult",
     },
@@ -1534,7 +1547,7 @@ export const getParseCallback = (year) => function callback(err, records) {
             .filter(x => !!x && x.length > 0);
         } else {
           item[newProp] = redact(postProcess(item[newProp].trim()));
-          if (omit(item[newProp])) item[newProp] = "";
+          if (omit(item[newProp])) item[newProp] = "(Blank)";
         }
       });
     return item;
