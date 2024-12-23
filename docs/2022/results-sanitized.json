@@ -442,7 +442,7 @@
     "IDEs": [
       "Notepad++"
     ],
-    "OS": "Writing code on Windows; Compiling and running on Linux.",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -5033,7 +5033,7 @@
     "Reason_for_participating": [
       "for fun",
       "improve skills",
-      "Because I'm on the Beta testing team"
+      "Because I'm on the beta testing team"
     ]
   },
   {
@@ -9764,7 +9764,7 @@
       "for a challenge",
       "for Santa!",
       "for leaderboards",
-      "For the story"
+      "for the story"
     ]
   },
   {
@@ -10661,7 +10661,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -10926,7 +10926,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -13137,7 +13137,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "to do so with friends"
+      "for fun with friends"
     ]
   },
   {
@@ -18532,7 +18532,7 @@
       "Repl.it"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No I am not fast enough",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
       "for fun",
@@ -19516,7 +19516,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "Prepare for interview"
+      "interview prep"
     ]
   },
   {
@@ -21389,7 +21389,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "to be a part of the AOC community"
+      "for the community"
     ]
   },
   {
@@ -22084,7 +22084,7 @@
       "IntelliJ"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -24441,7 +24441,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "For the story"
+      "for the story"
     ]
   },
   {
@@ -26848,7 +26848,7 @@
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
-      "To share an experience with friends"
+      "for fun with friends"
     ]
   },
   {
@@ -31072,7 +31072,7 @@
       "PyCharm"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun"
@@ -32052,7 +32052,7 @@
     "Reason_for_participating": [
       "for fun",
       "for a challenge",
-      "For the story"
+      "for the story"
     ]
   },
   {
@@ -32606,7 +32606,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "I wouldn't stand a chance",
+    "Global_Leaderboard_Participation": "No chance",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
       "for fun",
@@ -34599,7 +34599,7 @@
       "Nim"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -34927,7 +34927,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "Visual Studio Code (Windows) remote to Linux (Ubuntu)",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -36800,7 +36800,7 @@
       "for fun",
       "for Santa!",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -37356,7 +37356,7 @@
     "IDEs": [
       "Sublime Text"
     ],
-    "OS": "Windowss client, Linux server",
+    "OS": "Combi of Windows/Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -39752,7 +39752,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -41521,7 +41521,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -41573,7 +41573,7 @@
       "IntelliJ"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -41581,7 +41581,7 @@
       "for Santa!",
       "learn to code",
       "improve skills",
-      "together with friends"
+      "for fun with friends"
     ]
   },
   {
@@ -42321,7 +42321,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Codeanywhere.com"
+      "Codeanywhere"
     ],
     "OS": "Windows",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -42440,7 +42440,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -43352,7 +43352,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Nowhere near good enough for that",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -44314,7 +44314,7 @@
     ],
     "IDEs": [],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -44486,7 +44486,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "I run an event at work with prizes for earning stars."
+      "company prizes"
     ]
   },
   {
@@ -45382,7 +45382,7 @@
       "Koka"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -47355,7 +47355,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "I’m not good enough.",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -49529,7 +49529,7 @@
       "Neovim"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for Santa!",
@@ -50176,7 +50176,7 @@
       "Rust",
       "TypeScript",
       "VB .NET",
-      "Wing (my own)"
+      "My own language: Wing"
     ],
     "IDEs": [
       "Excel",
@@ -53214,7 +53214,7 @@
       "for fun",
       "for a challenge",
       "add to resumé",
-      "for the community hype"
+      "for the community"
     ]
   },
   {
@@ -53858,7 +53858,7 @@
       "VS Code"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, not good enough.",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "4",
     "Reason_for_participating": [
       "for fun",
@@ -62518,7 +62518,7 @@
       "for Santa!",
       "learn to code",
       "improve skills",
-      "Because I'm masochistic"
+      "because I'm masochistic"
     ]
   },
   {
@@ -62787,7 +62787,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "default text editor in ubuntu"
+      "Text Editor"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "Yes, but no points expected",
@@ -63014,7 +63014,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "Camaraderie with friends"
+      "for fun with friends"
     ]
   },
   {
@@ -64733,7 +64733,7 @@
       "Sublime Text"
     ],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "No, I'm not that fast",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -64894,7 +64894,7 @@
       "Sublime Text"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, not good enough to compete at that level.",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
       "for fun",
@@ -65893,7 +65893,7 @@
     "IDEs": [
       "sam"
     ],
-    "OS": "plan9",
+    "OS": "Plan 9",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -67861,7 +67861,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -71033,7 +71033,7 @@
       "for a challenge",
       "improve skills",
       "add to resumé",
-      "To compete on my private leaderboard"
+      "for the private leaderboard(s)"
     ]
   },
   {
@@ -73500,7 +73500,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, I'm not that fast",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -75627,10 +75627,10 @@
       "Rust"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -77313,7 +77313,7 @@
       "learn to code",
       "learn new language",
       "improve skills",
-      "because my friends are doing it :-)"
+      "for fun with friends"
     ]
   },
   {
@@ -78439,7 +78439,7 @@
     "IDEs": [
       "Neovim"
     ],
-    "OS": "OpenBSD",
+    "OS": "BSD (OpenBSD)",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -82155,7 +82155,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Elixir Livebook"
+      "Livebook"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, I might get points",
@@ -83217,7 +83217,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "Challenge in private Leaderboard with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -84134,7 +84134,7 @@
       "Windows PowerShell ISE"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, I’m definitely not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -86453,7 +86453,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough :(",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -88304,7 +88304,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, too slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -89272,7 +89272,7 @@
       "for a challenge",
       "learn to code",
       "learn new language",
-      "friends!"
+      "for fun with friends"
     ]
   },
   {
@@ -89300,7 +89300,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "For the memes!"
+      "for the memes!"
     ]
   },
   {
@@ -89571,7 +89571,7 @@
       "learn to code",
       "learn new language",
       "improve skills",
-      "to post dank memes"
+      "for the memes!"
     ]
   },
   {
@@ -92857,7 +92857,7 @@
       "PyCharm"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -93712,7 +93712,7 @@
     "IDEs": [
       "Sublime Text"
     ],
-    "OS": "FreeBSD",
+    "OS": "BSD (FreeBSD)",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -94940,7 +94940,7 @@
       "learn to code",
       "learn new language",
       "improve skills",
-      "To compete with friends"
+      "to compete with friends"
     ]
   },
   {
@@ -95523,7 +95523,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, not good enough :-)",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
       "for fun",
@@ -95627,7 +95627,7 @@
       "PHP"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
@@ -96011,7 +96011,7 @@
       "VS Code"
     ],
     "OS": "Linux",
-    "Global_Leaderboard_Participation": "No, to slow",
+    "Global_Leaderboard_Participation": "No, I'm too slow",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -96261,7 +96261,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "For the story"
+      "for the story"
     ]
   },
   {
@@ -98326,7 +98326,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "to engage in friendly competition with friends :)"
+      "to compete with friends"
     ]
   },
   {
@@ -98872,7 +98872,7 @@
       "for leaderboards",
       "learn new language",
       "improve skills",
-      "for the community interaction"
+      "for the community"
     ]
   },
   {
@@ -99028,7 +99028,7 @@
       "Visual Studio"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "Not fast enough",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -99569,7 +99569,7 @@
       "for fun",
       "for a challenge",
       "learn new language",
-      "My company has a private laederboard full of nice prices"
+      "company prizes"
     ]
   },
   {
@@ -101503,7 +101503,7 @@
       "learn new language",
       "improve skills",
       "add to resumé",
-      "For the memes! (on reddit)"
+      "for the memes!"
     ]
   },
   {
@@ -103567,7 +103567,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "All of the above (varies by day)",
+    "OS": "All of them",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [

@@ -1072,7 +1072,7 @@
       "Eclipse"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not skilled enough",
+    "Global_Leaderboard_Participation": "No, I'm not skilled enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -2374,7 +2374,7 @@
     "Reason_for_participating": [
       "for fun",
       "improve skills",
-      "For the story"
+      "for the story"
     ]
   },
   {
@@ -2771,7 +2771,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough at coding",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -4320,7 +4320,7 @@
     "IDEs": [
       "Emacs"
     ],
-    "OS": "FreeBSD",
+    "OS": "BSD (FreeBSD)",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "3",
     "Reason_for_participating": [
@@ -4640,7 +4640,7 @@
       "for a challenge",
       "learn new language",
       "improve skills",
-      "Because I'm one of the beta testers :D"
+      "Because I'm on the beta testing team"
     ]
   },
   {
@@ -7613,7 +7613,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, can't solve it that fast",
+    "Global_Leaderboard_Participation": "No, I'm not fast enough",
     "Private_Leaderboard_Count": "4",
     "Reason_for_participating": [
       "for fun",
@@ -7923,7 +7923,7 @@
       "Eclipse"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun"
@@ -10437,7 +10437,7 @@
       "for a challenge",
       "learn to code",
       "improve skills",
-      "for cool prizes my company offers for stars"
+      "company prizes"
     ]
   },
   {
@@ -11893,7 +11893,7 @@
       "Lua"
     ],
     "IDEs": [
-      "just a shell"
+      "Shell"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "Yes, I will likely get points",
@@ -14013,7 +14013,7 @@
       "VS Code"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No not good enough",
+    "Global_Leaderboard_Participation": "No, I'm not good enough",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
       "for fun",
@@ -18006,7 +18006,7 @@
       "IntelliJ"
     ],
     "OS": "Windows",
-    "Global_Leaderboard_Participation": "No, I don't have any chance on getting on it",
+    "Global_Leaderboard_Participation": "No chance",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -18992,7 +18992,7 @@
     "IDEs": [
       "Notepad++"
     ],
-    "OS": "FreeBSD",
+    "OS": "BSD (FreeBSD)",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -22690,7 +22690,7 @@
     "IDEs": [
       "Vis"
     ],
-    "OS": "OpenBSD",
+    "OS": "BSD (OpenBSD)",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
@@ -23872,7 +23872,7 @@
     "IDEs": [
       "VS Code"
     ],
-    "OS": "All of them equally. Windows in desktop. Linux in personal laptop. MacOS in work laptop.",
+    "OS": "All of them",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
     "Private_Leaderboard_Count": "2",
     "Reason_for_participating": [
@@ -27779,7 +27779,7 @@
     "Participates_in_2017": "No",
     "Participates_in_2018": "Dec",
     "Languages": [
-      "Lox (custom language from https://craftinginterpreters.com)"
+      "My own language: Lox, using 'craftinginterpreters'"
     ],
     "IDEs": [
       "IntelliJ",
