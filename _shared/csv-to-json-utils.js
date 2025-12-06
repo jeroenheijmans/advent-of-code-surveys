@@ -6,6 +6,19 @@ export const csvOptions = {
   columns: true,
 };
 
+const scaleOf10Answers = {
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "6": "6",
+  "7": "7",
+  "8": "8",
+  "9": "9",
+  "10": "10",
+};
+
 // See /REDACTION.md for more info
 // This is a (very short) list of things that will be redacted, and where publicizing
 // the actual rule might leak PII or otherwise hurt participants. We err on the side
@@ -148,6 +161,69 @@ const columns = {
 
   /////////////////////////////////
   // Year-specific questions, 2023 and beyond:
+  'Ecstasy and/or Joy': {
+    header: 'Emotions_EcstasyJoy',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Admiration and/or Trust': {
+    header: 'Emotions_AdmirationTrust',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Terror and/or Fear': {
+    header: 'Emotions_TerrorFear',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Amazement and/or Surprise': {
+    header: 'Emotions_AmazementSurprise',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Grief and/or Sadness': {
+    header: 'Emotions_GriefSadnessc',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Loathing and/or Disgust': {
+    header: 'Emotions_LoathingDisgust',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Rage and/or Anger': {
+    header: 'Emotions_RageAnger',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Vigilance and/or Anticipation': {
+    header: 'Emotions_VigilanceAnticipation',
+    multi: false,
+    answers: scaleOf10Answers,
+    preProcess: x => x,
+    postProcess: x => x,
+  },
+  'Other.... (comma-separated emotions you want to mention which you experience significantly while doing Advent of Code?)': {
+    header: 'Emotions_Other',
+    multi: false,
+    answers: {},
+    preProcess: x => x,
+    postProcess: x => x,
+  },
   'Anno 2024, in context of Advent of Code: your thoughts on AI and LLM\'s?': {
     header: 'Year_specific_2024_AI_and_LLM_thoughts',
     multi: true,
@@ -218,6 +294,15 @@ const columns = {
 
   /////////////////////////////////
   // 2022 and beyond:
+  'Have/will you get at least one ⭐ in Advent of Code 2025?': {
+    header: 'Participates_in_2025',
+    answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
+      'No': 'No',
+      'Yes, (mostly) in december 2025': 'Dec',
+      'Yes, (mostly) after 2025': 'Later',
+    }
+  },
   'Have/will you get at least one ⭐ in Advent of Code 2024?': {
     header: 'Participates_in_2024',
     answers: {
@@ -243,6 +328,16 @@ const columns = {
       'No': 'No',
       'Yes, (mostly) in december 2022': 'Dec',
       'Yes, (mostly) after 2022': 'Later',
+    }
+  },
+  'Did you participate in 2024? ("Historian Hysteria")': {
+    header: 'Participates_in_2024',
+    answers: {
+      'Not really, but I\'m involved in some other way, (e.g. moderating the Subreddit)': 'Involved otherwise',
+      'No': 'No',
+      'Yes, (mostly) in december 2024': 'Dec',
+      'Yes, but (mostly) only later on': 'Later',
+      'Yes, (mostly) after 2024': 'Later',
     }
   },
   'Did you participate in 2023? ("Floating Islands")': {
@@ -399,6 +494,7 @@ const columns = {
      multi: true,
      answers: {
       "also used a tiny bit of Maxima": "Maxima",
+      "arturo": "Arturo",
       "awk": "AWK",
       "Awk": "AWK",
       "Basic": "BASIC",
@@ -414,6 +510,7 @@ const columns = {
       "Dart!": "Dart",
       "dart": "Dart",
       "G (a.k.a. LabVIEW)": "LabVIEW",
+      "I aim at using a different language for each year": "Different language each year", // not a typo, someone answered around "each year"
       "25 different languages": "Different language every day",
       "25 Languages challenge": "Different language every day",
       "A different language every day, chosen on that day.": "Different language every day",
@@ -442,9 +539,11 @@ const columns = {
       "GameMaker Language (GML)": "GameMaker",
       "GameMaker Language": "GameMaker",
       "google spreadsheet": "Google Sheets",
+      "gdscript": "GDScript",
       "gdscript (Godot)": "GDScript",
       "GDScript / Godot": "GDScript",
       "GDscript": "GDScript",
+      "Gdscript": "GDScript",
       "Godot Engine": "GDScript",
       "GWBASIC": "GW-BASIC",
       "Idris2": "Idris",
@@ -456,6 +555,8 @@ const columns = {
       "Janet (janet-lang-org)": "Janet",
       "JQ": "jq",
       "k": "K",
+      "Korn Shell (ksh)": "Korn Shell",
+      "Labview": "LabVIEW",
       "Lean 4": "Lean",
       "Lean4": "Lean",
       "LLMs generated all my solutions this year but I didn't compete on the global leaderboard": "LLM's",
@@ -464,6 +565,7 @@ const columns = {
       "minecraft commands": "Minecraft",
       "minecraft function": "Minecraft",
       "mcfunction (Minecraft)": "Minecraft",
+      "My own language": "My own language!",
       "My own": "My own language!",
       "my own scripting language": "My own language!",
       "My own toy language": "My own language!",
@@ -473,12 +575,15 @@ const columns = {
       "My own programming language!": "My own language!",
       "My own programming language": "My own language!",
       "my own scripting language (unpublished)": "My own language!",
+      "my own interpreted language": "My own language!",
       "my own, unpublished language": "My own language!",
       "my own": "My own language!",
+      "own": "My own language!",
       "Self-made toy language": "My own language!",
       "own scripting language": "My own language!",
       "Newt (my own language)": "My own language: Newt",
       "Drain (custom toy Lang)": "My own language: Drain",
+      "Custom made assembly on a cpu I built on Turing Complete": "My own language: Assembly (custom) on a CPU built on Turing Complete",
       "Wing (my own)": "My own language: Wing",
       "Sack (mine)": "My own language: Sack",
       "Sack (own work)": "My own language: Sack",
@@ -543,7 +648,10 @@ const columns = {
       "Tcl for each + a different language each day": "Tcl",
       "tcl": "Tcl",
       "TCL": "Tcl",
+      "Turbo Pascal 7": "Turbo Pascal",
+      "Turbo Pascal 7": "Turbo Pascal",
       "Typescript": "TypeScript",
+      "uiua": "Uiua",
       "Unreal Engine 4 (Blueprints)": "Unreal Engine",
       "Unreal Engine 4": "Unreal Engine",
       "Undecided yet, will improvise": "Undecided",
@@ -620,7 +728,10 @@ const columns = {
        answer = answer.replace("JavaScript;Powerquery (M), Excel", "JavaScript;Power Query;Excel");
        answer = answer.replace("Haskell;Java;JavaScript;Kotlin;Lisp;Lua;Nim;Perl 5;Python 3;Raku;Racket;Ruby;Setanta, Uiua", "Haskell;Java;JavaScript;Kotlin;Lisp;Lua;Nim;Perl 5;Python 3;Raku;Racket;Ruby;Setanta;Uiua");
        answer = answer.replace("Go;Visual Basic 6, Turbo Pascal 7", "Go;Visual Basic 6;Turbo Pascal 7");
-
+       answer = answer.replace("JavaScript;My own PL, Zirco", "JavaScript;My own language: Zirco");
+       answer = answer.replace("Python 3;Rust;Uiua, Par", "Python 3;Rust;Uiua;Par");
+       answer = answer.replace("C;Fortran;Pascal and Forth", "C;Fortran;Pascal;Forth");
+       answer = answer.replace("Python 3;Rust;K, uiua", "Python 3;Rust;K;uiua");
        
        if (answer.includes(' and ')) {
          console.warn("  => DANGER! Language with 'and':", answer);
@@ -667,6 +778,7 @@ const columns = {
       "Browser's console": "Browser (Console)",
       "Web console": "Browser (Console)",
       "the chromium devtools console": "Browser (Console)",
+      "browser console. firefox.": "Browser (Console)",
 
       "chrome browser console": "Chrome",
       "chrome console": "Chrome",
@@ -737,6 +849,8 @@ const columns = {
       "Jetbrains Fleet": "Fleet",
       "JetBrains Fleet": "Fleet",
 
+      "gnat": "GNAT Studio",
+      "Gnat": "GNAT Studio",
       "Gnat studio": "GNAT Studio",
       "GPS (Gnat Programming Studio)": "GNAT Studio",
 
@@ -747,8 +861,10 @@ const columns = {
       "Notepad (vanilla)/gedit": "Gedit",
       "Goland": "GoLand",
       "Godot Engine": "Godot",
+      "godot": "Godot",
 
       "Colab": "Google Colab",
+      "Google Colab": "Google Colab",
       "Google colab": "Google Colab",
       "Google CoLab": "Google Colab",
       "Google Colaboratory": "Google Colab",
@@ -785,19 +901,22 @@ const columns = {
       "JSFiddle.net": "JSFiddle",
       "J Ide": "J IDE",
       "J built-in IDE (see jsoftware.com)": "J IDE",
-      "Kate": "KATE",
       "kakoune": "Kakoune",
       "joe on CLI": "joe",
       "Studio for kdb+": "KDB Studio",
       "kilo": "Kilo",
       "https://play.kotlinlang.org/": "Kotlin Playground",
       "LabVIEW 2018": "LabVIEW",
+      "Labview": "LabVIEW",
+      "LabView": "LabVIEW",
       "Lazarus/Free Pascal": "Lazarus",
       "lapce": "Lapce",
 
+      "linqpad": "LINQPad",
       "Linqpad": "LINQPad",
       "LinqPad": "LINQPad",
       "LinqPAD": "LINQPad",
+      "LINQpad": "LINQPad",
 
       "LiveBook.dev": "Livebook",
 
@@ -828,9 +947,11 @@ const columns = {
 
       "mousepad": "Mousepad",
 
+      "My own editor and Shell script that runs on save": "My own editor!",
       "my own": "My own editor!",
       "my own text editor": "My own editor!",
       "own text editor": "My own editor!",
+      "my own Notepad clone": "My own editor!",
       "my own, unpublished editor": "My own editor!",
       "My own editor": "My own editor!",
       "my own unpublished Notepad clone": "My own editor!",
@@ -864,6 +985,7 @@ const columns = {
       "Onivim2": "OniVim2",
       "https://www.onlinegdb.com/": "OnlineGDB",
       "Online GDB onlinegdb.com": "OnlineGDB",
+      "http://onlinegdb.com": "OnlineGDB",
       "https://www.onlinegdb.com/online_c++_compiler": "OnlineGDB",
       "Online GDB": "OnlineGDB",
       "Onlinegdb": "OnlineGDB",
@@ -877,6 +999,7 @@ const columns = {
       "Pen and Paper probably": "Pen & Paper",
       "pen&paper": "Pen & Paper",
       "Pharo Smalltalk": "Pharo",
+      "Positron (Rstudio replacement)": "Positron",
       "Smalltalk (Pharo)": "Pharo",
 
       "https://pythontutor.com": "Python Tutor",
@@ -968,12 +1091,15 @@ const columns = {
       "terminal with gcc and g++": "Terminal",
 
       "tio.run": "TIO.run",
+      "tio.run on my phone": "TIO.run",
       "https://www.typescriptlang.org": "Typescript Playground",
       "Unreal Engine 4 Blueprint Graph": "Unreal Engine",
       "Unreal Engine 4": "Unreal Engine",
       "Unreal Engine Blueprints": "Unreal Engine",
 
       "Uiua pad": "Uiua Pad",
+      "Uiua online pad": "Uiua Pad",
+      "Uiua pad (web editor)": "Uiua Pad",
 
       "vim and a shell": "Vim",
       "vim": "Vim",
@@ -981,6 +1107,7 @@ const columns = {
 
       "vis": "Vis",
 
+      "codium": "VSCodium",
       "Codium": "VSCodium",
       "Specifially VSCodium": "VSCodium",
       "Visual Studio Codium": "VSCodium",
@@ -1047,6 +1174,9 @@ const columns = {
       answer = answer.replace("Kate, Kakoune", "Kate;Kakoune");
       answer = answer.replace("https://play.golang.org and also Google chrome console", "GoLang Playground;Google Chrome Console");
       answer = answer.replace("ideone.com and trinket.io", "IDE One;Trinket");
+      answer = answer.replace("IPython / Jupyter;Brython, GitHub", "IPython / Jupyter;Brython;GitHub");
+      answer = answer.replace("Probably moving to Kakoune soon", "Kakoune");
+      answer = answer.replace("Typescriptlang.org onecompiler.com", "TypeScriptLang.org;OneCompiler");
     
 
       if (answer.includes(', ')) {
@@ -1090,7 +1220,8 @@ const columns = {
       'FreeBSD': 'BSD (FreeBSD)',
       'aquaBSD': 'BSD (aquaBSD)',
       'dragonfly bsd': 'BSD (DragonflyBSD)',
-      'BSD, but also Linux': 'BSD',
+      'BSD, but also Linux': 'Combi of BSD/Linux',
+      'BSD, Linux': 'Combi of BSD/Linux',
 
       'unix': 'Unix',
 
@@ -1100,6 +1231,7 @@ const columns = {
       'Arch BTW': 'Linux',
       'used to be windows but since 2021 ive changed to linux': 'Linux',
       'Running a linux command line VM in windows... Mark that how you want.': 'Linux',
+      'Fedora KDE': 'Linux',
 
       '50/50 Linux and Windows': 'Combi of Windows/Linux',
       'Combi of Windows/Linux': 'Combi of Windows/Linux',
@@ -1356,6 +1488,7 @@ const columns = {
       "No, too many LLMs": "No, too much AI/LLM on leaderboard",
       "Too much AI": "No, too much AI/LLM on leaderboard",
       "Yes, used to regularly appear on them, but LLM cheaters had made it impossible. :(": "No, too much AI/LLM on leaderboard",
+      "cheaters took it all": "No, too much AI/LLM on leaderboard",
 
       "to difficult": "No, too difficult",
       "Too difficult": "No, too difficult",
@@ -1426,6 +1559,7 @@ const columns = {
       "For the community and discussion topics.": "for the community",
       "For the great community here!": "for the community",
       "To be part of a big community of nerds!": "for the community",
+      "community": "for the community",
 
       "Private leaderboard": "for the private leaderboard(s)",
       "For the private boards": "for the private leaderboard(s)",
@@ -1439,6 +1573,7 @@ const columns = {
       "Interview prep": "interview prep",
       "Prepare for interview": "interview prep",
       "to practice for interviews": "interview prep",
+      "Interview prep (last year, at least)": "interview prep",
 
       "Company challenge offers prize": "company prizes",
       "My company has a private leaderboard with a money prize for the top": "company prizes",
@@ -1449,6 +1584,7 @@ const columns = {
       "To win the office prize": "company prizes",
       "for cool prizes my company offers for stars": "company prizes",
       "My company has a private laederboard full of nice prices": "company prizes",
+      "For company prizes/events": "company prizes",
 
       "friends!": "for fun with friends",
       "friends pool": "for fun with friends",
@@ -1471,6 +1607,10 @@ const columns = {
       "To socialize with friends": "for fun with friends",
       "because friends participate as well": "for fun with friends",
       "Because my friends are doing it": "for fun with friends",
+      "because my friends do it too": "for fun with friends",
+      "fun with best friend": "for fun with friends",
+      "to have fun with friends, who are also doing it": "for fun with friends",
+      "With the friends!": "for fun with friends",
 
       "To compete with friends": "to compete with friends",
       "To compete with my friends": "to compete with friends",
@@ -1493,6 +1633,7 @@ const columns = {
       "competition with friends": "to compete with friends",
       "to beat my friends lol": "to compete with friends",
       "to race my friends": "to compete with friends",
+      "Beat my roommates on the leaderboards": "to compete with friends",
 
       "Because I'm on the beta testing team": "Because I'm on the beta testing team",
       "I'm one of the beta testers": "Because I'm on the beta testing team",
@@ -1504,7 +1645,14 @@ const columns = {
       "Cause Topaz is a friend of mine and tricked me into beta testing": "Because I'm on the beta testing team",
     },
     preProcess: answer => {
+      answer = answer.trim();
+      answer = answer.replace("For the lore and memes", "for the lore;for the memes!");
+      answer = answer.replace("for cookies, for the community", "for cookies;for the community");
+      answer = answer.replace("For the community (mainly discussions on Reddit) and as practice for coding.", "for the community;practice for coding.");
+      answer = answer.replace("For the community and to post cool visualizations!", "for the community;to post visualizations!");
+      answer = answer.replace("To compete a little with friends, and for the charming narrative framing.", "to compete with friends;for the charming narrative framing.");
       answer = answer.replace(";)", ":)") // quick fix to avoid ;-splitting
+      answer = answer.trim();
       return answer;
     },
   },

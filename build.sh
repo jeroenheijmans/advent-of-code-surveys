@@ -6,7 +6,7 @@ if [ -d "./docs" ]; then
 fi
 
 # Create directory structure
-mkdir -p ./docs/{2018,2019,2020,2021,2022,2023,2024}
+mkdir -p ./docs/{2018,2019,2020,2021,2022,2023,2024,2025}
 
 # Copy files
 cp ./src/* ./docs/
@@ -17,6 +17,7 @@ cp ./2021/results-sanitized.json ./docs/2021/
 cp ./2022/results-sanitized.json ./docs/2022/
 cp ./2023/results-sanitized.json ./docs/2023/
 cp ./2024/results-sanitized.json ./docs/2024/
+cp ./2025/results-sanitized.json ./docs/2025/
 
 # Modify files
 sed -i 's/const baseUrl = "";/const baseUrl = ".";/g' ./docs/app.js

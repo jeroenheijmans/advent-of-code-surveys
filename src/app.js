@@ -1,5 +1,5 @@
 const baseUrl = "";
-const currentYear = "2024";
+const currentYear = "2025";
 const years = [
   { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
   { nr: "2019", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
@@ -8,6 +8,7 @@ const years = [
   { nr: "2022", bgColor: "rgba(75, 192, 232, 0.2)", borderColor: "rgb(75, 192, 232, 0.75)", borderColorDimmed: "rgb(75, 192, 232, 0.25)", pointStyle: 'rect' },
   { nr: "2023", bgColor: "rgba(60, 102, 255, 0.2)", borderColor: "rgb(60, 102, 255, 0.75)", borderColorDimmed: "rgb(60, 102, 255, 0.25)", pointStyle: 'cross' },
   { nr: "2024", bgColor: "rgba(173, 122, 255, 0.2)", borderColor: "rgb(173, 122, 255, 0.75)", borderColorDimmed: "rgb(173, 122, 255, 0.25)", pointStyle: 'triangle' },
+  { nr: "2025", bgColor: "rgba(252, 122, 210, 0.2)", borderColor: "rgb(252, 122, 210, 0.75)", borderColorDimmed: "rgb(252, 122, 210, 0.25)", pointStyle: 'triangle' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -494,6 +495,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     { key: "Participates_in_2022", label: "2022" },
     { key: "Participates_in_2023", label: "2023" },
     { key: "Participates_in_2024", label: "2024" },
+    { key: "Participates_in_2025", label: "2025" },
   ];
 
   const participationOptions = [
@@ -605,6 +607,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.filter(year => year.nr === "2024").map(year => ({
       ...yearDatasetDefaults(year),
+      hidden: false,
       borderColor: "rgba(0, 0, 0, 0.8)",
       backgroundColor: [
         // Hard-coded, the 2024 data won't change anymore anyways
