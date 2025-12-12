@@ -591,6 +591,7 @@ const columns = {
       "SLAFL, my custom language interpreter (you can search on github)": "My own language: SLAFL",
       "XallScript (my own scripting language))": "My own language: XallScript",
       "My own language - Chi to test its usefulness (https://github.com/marad/chi-compiler-kotlin)": "My own language: Chi",
+      "mojo": "Mojo",
       "N/A": "n/a",
       "nim": "Nim",
       "ocaml": "OCaml",
@@ -652,12 +653,15 @@ const columns = {
       "Turbo Pascal 7": "Turbo Pascal",
       "Typescript": "TypeScript",
       "uiua": "Uiua",
-      "Unreal Engine 4 (Blueprints)": "Unreal Engine",
-      "Unreal Engine 4": "Unreal Engine",
+      "Unreal Engine Blueprints": "Unreal Engine Blueprints",
+      "Blueprint (Unreal engine)": "Unreal Engine Blueprints",
+      "Unreal Engine 4 (Blueprints)": "Unreal Engine Blueprints",
+      "Unreal Engine 4": "Unreal Engine Blueprints",
       "Undecided yet, will improvise": "Undecided",
       "To be decided": "Undecided",
       "Vbscript": "VBScript",
       "V (vlang.io)": "V",
+      "v-lang": "V",
       "V (https://vlang.io/)": "V",
       "verilog": "Verilog",
       "Vim keystrokes": "Vim",
@@ -676,6 +680,8 @@ const columns = {
      preProcess: answer => {
        // Manually fixing some cases is dumb, but still scalable currently
        // so let's not try and be too smart about it. In the spirit of AoC:
+       answer = answer.replace("Alteryx, Knime", "Alteryx;Knime");
+       answer = answer.replace("APL, SNOBOL, Awk, Factor", "APL;SNOBOL;Awk;Factor");
        answer = answer.replace("Ada;D, Nim", "Ada;D;Nim");
        answer = answer.replace("also, Befunge-93, CMake, Idris, OCaml, and others TBD", "Befunge-93;CMake;Idris;OCaml");
        answer = answer.replace("APL, BQN, K, Lil", "APL;BQN;K;Lil");
@@ -732,6 +738,10 @@ const columns = {
        answer = answer.replace("Python 3;Rust;Uiua, Par", "Python 3;Rust;Uiua;Par");
        answer = answer.replace("C;Fortran;Pascal and Forth", "C;Fortran;Pascal;Forth");
        answer = answer.replace("Python 3;Rust;K, uiua", "Python 3;Rust;K;uiua");
+       answer = answer.replace("I change every year. So far I've done: Python, Rust (twice), Go, Scala, and now Haskell", "Haskell");
+       answer = answer.replace("LLVM IR, jq, PostScript, Uiua, JVM bytecode, LaTeX, sed, Noulith, Picat, Hy, GNU Octave, fasmg macros", "LLVM IR;jq;PostScript;Uiua;JVM bytecode;LaTeX;sed;Noulith;Picat;Hy;GNU Octave;fasmg macros");
+       answer = answer.replace("jq, dc, graphviz", "jq;dc;graphviz");
+       answer = answer.replace("Kenpali (language I created)", "My own language: Kenpali");
        
        if (answer.includes(' and ')) {
          console.warn("  => DANGER! Language with 'and':", answer);
@@ -756,6 +766,7 @@ const columns = {
     multi: true,
     answers: {
       "acme": "Acme",
+      "Atom!": "Atom",
       "Alteryx Designer": "Alteryx",
       "N/A Alteryx is not a coding language": "Alteryx",
       "Application Designer for 2018": "Application Designer",
@@ -779,6 +790,9 @@ const columns = {
       "Web console": "Browser (Console)",
       "the chromium devtools console": "Browser (Console)",
       "browser console. firefox.": "Browser (Console)",
+      "firefox's developer console": "Browser (Console)",
+      "Browser JavaScript Console": "Browser (Console)",
+      "snippets in google chrome dev tools": "Browser (Console)",
 
       "chrome browser console": "Chrome",
       "chrome console": "Chrome",
@@ -935,6 +949,7 @@ const columns = {
       "Mathematica Notebook": "Mathematica",
       "Wolfram Mathematica": "Mathematica",
       "Wolfram Notebook": "Mathematica",
+      "Mathematica notebook": "Mathematica",
 
       "matlab?": "Matlab",
       "matlab": "Matlab",
@@ -963,6 +978,8 @@ const columns = {
       "NeoVim": "Neovim",
       "Vscode neovim": "Neovim",
 
+      "Nice Editor (https://github.com/vigna/ne)": "Nice Editor",
+
       "Neither?": "No IDE",
       "none - Joe's editor + GDB": "No IDE",
       "no IDE, just a shell": "No IDE",
@@ -973,6 +990,8 @@ const columns = {
       "No IDE, just a stock text editor.": "No IDE",
       "No IDE. Just a general purpose editor.": "No IDE",
 
+      "None (or Resonite, I suppose)": "Resonite",
+
       "Notepad.exe": "Notepad",
       "notepad": "Notepad",
       "Notepad Texteditor": "Notepad",
@@ -981,6 +1000,8 @@ const columns = {
       "https://observablehq.com/": "Observable",
       "observablehq.com": "Observable",
       "ObservableHQ": "Observable",
+
+      "onecompiler.com": "OneCompiler",
 
       "Onivim2": "OniVim2",
       "https://www.onlinegdb.com/": "OnlineGDB",
@@ -1067,6 +1088,7 @@ const columns = {
       "Microsoft SQL Server Studio": "SQL Server Management Studio",
       "SSMS": "SQL Server Management Studio",
       "SQL Server management studio": "SQL Server Management Studio",
+      "SQL Server Management Studio (SSMS)": "SQL Server Management Studio",
 
       "StackBlitz Web Editor": "StackBlitz",
       "The 3DS game: SmileBasic 4": "SmileBASIC for 3DS",
@@ -1100,6 +1122,8 @@ const columns = {
       "Uiua pad": "Uiua Pad",
       "Uiua online pad": "Uiua Pad",
       "Uiua pad (web editor)": "Uiua Pad",
+      "https://www.uiua.org/pad": "Uiua Pad",
+      "uiua.org": "Uiua Pad",
 
       "vim and a shell": "Vim",
       "vim": "Vim",
@@ -1137,6 +1161,7 @@ const columns = {
     preProcess: answer => {
       // Manually fixing some cases is dumb, but still scalable currently
       // so let's not try and be too smart about it. In the spirit of AoC:
+      answer = answer.replace("Alteryx, Knime", "Alteryx;Knime");
       answer = answer.replace("Browser Console, Node REPL", "Browser Console;Node REPL");
       answer = answer.replace("CLion, Chrome DevTools", "CLion;Chrome DevTools");
       answer = answer.replace("https://pythontutor.com, https://www.online-python.com/, https://regex101.com/, and Python's own compiler", "https://pythontutor.com;https://www.online-python.com/;https://regex101.com/;Python's own compiler");
@@ -1199,6 +1224,7 @@ const columns = {
     answers: {
       'In browser (Firefox)': 'Browser',
       'chrome': 'Browser',
+      'onlineGDB.com': 'Browser',
 
       'android on tablet': 'Android',
       'Termux on Android': 'Android',
@@ -1214,6 +1240,8 @@ const columns = {
       'Chrome os (chromebook)': 'ChromeOS',
       'ChromeOS (I do it in google colab on my school chromebook)': 'ChromeOS',
       'Linux on Chrome OS': 'ChromeOS',
+
+      'macOS with Linux VS Code dev container': 'macOS',
 
       'openbsd': 'BSD (OpenBSD)',
       'OpenBSD': 'BSD (OpenBSD)',
@@ -1233,6 +1261,7 @@ const columns = {
       'Running a linux command line VM in windows... Mark that how you want.': 'Linux',
       'Fedora KDE': 'Linux',
 
+      'Windows/Linux': 'Combi of Windows/Linux',
       '50/50 Linux and Windows': 'Combi of Windows/Linux',
       'Combi of Windows/Linux': 'Combi of Windows/Linux',
       'Running a linux command line VM in windows...  Mark that how you want.': 'Linux', // Well don't mind if I do!
@@ -1559,6 +1588,8 @@ const columns = {
       "For the community and discussion topics.": "for the community",
       "For the great community here!": "for the community",
       "To be part of a big community of nerds!": "for the community",
+      "For the awesome community": "for the community",
+      "positive community": "for the community",
       "community": "for the community",
 
       "Private leaderboard": "for the private leaderboard(s)",
@@ -1587,6 +1618,7 @@ const columns = {
       "For company prizes/events": "company prizes",
 
       "friends!": "for fun with friends",
+      "As a group activity with friends.": "for fun with friends",
       "friends pool": "for fun with friends",
       "Friends are participating.": "for fun with friends",
       "friends do it": "for fun with friends",
@@ -1612,6 +1644,17 @@ const columns = {
       "to have fun with friends, who are also doing it": "for fun with friends",
       "With the friends!": "for fun with friends",
 
+      "Work competition": "to compete with colleagues",
+      "To beat my colleagues": "to compete with colleagues",
+      "Beat my colleagues": "to compete with colleagues",
+      "to compete with co-workers": "to compete with colleagues",
+      "fun competition with my colleagues": "to compete with colleagues",
+      "To battle with my colleagues": "to compete with colleagues",
+      "Competing with other colleagues": "to compete with colleagues",
+      "Compete with colleagues, opportunity for which is rare": "to compete with colleagues",
+      "to top my company's private leaderboard": "to compete with colleagues",
+
+      "as a competition between friends": "to compete with friends",
       "To compete with friends": "to compete with friends",
       "To compete with my friends": "to compete with friends",
       "to compete with my friends": "to compete with friends",
@@ -1643,10 +1686,23 @@ const columns = {
       "Because I'm one of the beta testers :D": "Because I'm on the beta testing team",
       "Because I'm one of the beta testers :)": "Because I'm on the beta testing team",
       "Cause Topaz is a friend of mine and tricked me into beta testing": "Because I'm on the beta testing team",
+
+      "To Create Visualization If Required.": "to create visualizations",
+      "make visualizations": "to create visualizations",
+      "to post visualizations!": "to create visualizations",
+      "To post visualizations": "to create visualizations",
+      "to make visualizations!": "to create visualizations",
+      "to make visualizations": "to create visualizations",
     },
     preProcess: answer => {
       answer = answer.trim();
+      answer = answer.replace("The awesome community and to learn by helping others.", "for the community;to learn by helping others");
+      answer = answer.replace("community and live streams", "for the community;for the live streams");
+      answer = answer.replace("Compete with friends and a former teacher >:]", "to compete with friends;to compete with a former teacher >:]");
       answer = answer.replace("For the lore and memes", "for the lore;for the memes!");
+      answer = answer.replace("To compete with friends and colleagues", "to compete with friends;to compete with colleagues");
+      answer = answer.replace("To compete against friends and colleagues", "to compete with friends;to compete with colleagues");
+      answer = answer.replace("to compete against/collaborate with friends/colleagues", "to compete with friends;to compete with colleagues");
       answer = answer.replace("for cookies, for the community", "for cookies;for the community");
       answer = answer.replace("For the community (mainly discussions on Reddit) and as practice for coding.", "for the community;practice for coding.");
       answer = answer.replace("For the community and to post cool visualizations!", "for the community;to post visualizations!");

@@ -1,14 +1,14 @@
 const baseUrl = "";
 const currentYear = "2025";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
+  { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'line' },
   { nr: "2019", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
   { nr: "2020", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
   { nr: "2021", bgColor: "rgba(60, 208, 106, 0.20)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
   { nr: "2022", bgColor: "rgba(75, 192, 232, 0.2)", borderColor: "rgb(75, 192, 232, 0.75)", borderColorDimmed: "rgb(75, 192, 232, 0.25)", pointStyle: 'rect' },
   { nr: "2023", bgColor: "rgba(60, 102, 255, 0.2)", borderColor: "rgb(60, 102, 255, 0.75)", borderColorDimmed: "rgb(60, 102, 255, 0.25)", pointStyle: 'cross' },
   { nr: "2024", bgColor: "rgba(173, 122, 255, 0.2)", borderColor: "rgb(173, 122, 255, 0.75)", borderColorDimmed: "rgb(173, 122, 255, 0.25)", pointStyle: 'triangle' },
-  { nr: "2025", bgColor: "rgba(255, 122, 200, 0.2)", borderColor: "rgb(255, 122, 200, 0.75)", borderColorDimmed: "rgb(255, 122, 200, 0.25)", pointStyle: 'triangle' },
+  { nr: "2025", bgColor: "rgba(255, 122, 200, 0.2)", borderColor: "rgb(255, 122, 200, 0.75)", borderColorDimmed: "rgb(255, 122, 200, 0.25)", pointStyle: 'rectRot' },
 ];
 
 Chart.register(ChartDataLabels);
