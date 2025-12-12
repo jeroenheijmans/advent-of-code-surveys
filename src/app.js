@@ -703,14 +703,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // Emotions Overview Graph
   const emotions = [
-    { questionKey: "Emotions_EcstasyJoy",             questionTitle: "😁 Ecstasy and/or Joy 😁",            },
-    { questionKey: "Emotions_AdmirationTrust",        questionTitle: "🤩 Admiration and/or Trust 🤩",       },
-    { questionKey: "Emotions_TerrorFear",             questionTitle: "😱 Terror and/or Fear 😱",            },
-    { questionKey: "Emotions_AmazementSurprise",      questionTitle: "😲 Amazement and/or Surprise 😲",     },
-    { questionKey: "Emotions_GriefSadnessc",          questionTitle: "😭 Grief and/or Sadness 😭",          },
-    { questionKey: "Emotions_LoathingDisgust",        questionTitle: "🤮 Loathing and/or Disgust 🤮",       },
-    { questionKey: "Emotions_RageAnger",              questionTitle: "😡 Rage and/or Anger 😡",             },
-    { questionKey: "Emotions_VigilanceAnticipation",  questionTitle: "😬 Vigilance and/or Anticipation 😬", },
+    { questionKey: "Emotions_EcstasyJoy",             questionTitle: "😁 [2025] Ecstasy and/or Joy 😁",            },
+    { questionKey: "Emotions_AdmirationTrust",        questionTitle: "🤩 [2025] Admiration and/or Trust 🤩",       },
+    { questionKey: "Emotions_TerrorFear",             questionTitle: "😱 [2025] Terror and/or Fear 😱",            },
+    { questionKey: "Emotions_AmazementSurprise",      questionTitle: "😲 [2025] Amazement and/or Surprise 😲",     },
+    { questionKey: "Emotions_GriefSadnessc",          questionTitle: "😭 [2025] Grief and/or Sadness 😭",          },
+    { questionKey: "Emotions_LoathingDisgust",        questionTitle: "🤮 [2025] Loathing and/or Disgust 🤮",       },
+    { questionKey: "Emotions_RageAnger",              questionTitle: "😡 [2025] Rage and/or Anger 😡",             },
+    { questionKey: "Emotions_VigilanceAnticipation",  questionTitle: "😬 [2025] Vigilance and/or Anticipation 😬", },
   ];
 
   const year2025Data = alldata.find(year => year.nr === "2025");
@@ -748,7 +748,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       options: {
         scales: { y: { suggestedMax: 80 } },
         plugins: {
-          ...chartTitle(questionTitle, "'How intensely do you typically experience this emotion during AoC puzzling?'"),
+          ...chartTitle(questionTitle, "'How intensely do you experience this while doing AoC?'"),
           datalabels: { display: false },
         },
       },
