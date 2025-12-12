@@ -193,7 +193,7 @@ function mutateDataAddLabelsToForceOrderForMostRecentYear(data) {
 // It's nice to have nearly no dependencies, but wow building some html
 // without a framework or templating library is cumbersome. Anyways, it
 // keeps things simple for now, so...
-function wireUpDataTableFor(chartData, title, subject) {
+function wireUpDataTableFor(chartData, title, subject, filterFn = () => false) {
   // Cheap clone setup, because we want our own private copy of this data:
   chartData = JSON.parse(JSON.stringify(chartData));
 
@@ -220,7 +220,7 @@ function wireUpDataTableFor(chartData, title, subject) {
     let tr = thead.appendChild(createElement("tr"));
     let th = tr.appendChild(createElement("th", title));
   
-    years.forEach(year => {
+    years.filter(filterFn).forEach(year => {
       let thYear = tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : "")));
       const responseCount = chartData.datasets.find(ds => ds.label === year.nr)?.responseCount;
       if (responseCount) {
@@ -245,7 +245,7 @@ function wireUpDataTableFor(chartData, title, subject) {
         // render nicely on small devices.
         if (i.x.match(/\S{16,}/)) rowTh.style.wordBreak = "break-all";
 
-        years.forEach(year => {
+        years.filter(filterFn).forEach(year => {
           row[year.nr] = row.tr.appendChild(createElement("td")).appendChild(createElement("div"));
           row[year.nr].classList.add("rawdata")
         });
@@ -432,7 +432,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // leaderboardsGlobal
   data = {
-    datasets: alldata.map(year => ({
+    datasets: alldata.filter(year => year.nr < "2025").map(year => ({
       ...yearDatasetDefaults(year),
       responseCount: year.responses.length,
       data: year
@@ -442,7 +442,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
-  wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal");
+  wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal", year => year.nr < "2025");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
@@ -452,7 +452,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     data,
     options: {
       plugins: {
-        ...chartTitle("Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
+        ...chartTitle("[2024 and before] Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
         ...datalabelsYFormatter(),
       },
     },
