@@ -154,6 +154,16 @@ footer {
   color: var(--fg-dark);
 }
 
+.chart-description.emotion {
+  margin-top: 0;
+  padding: 0 10px 0 40px;
+  font-size: 0.8rem;
+  
+  color: var(--fg-light);
+  display: flex;
+  justify-content: space-between;
+}
+
 .chart-dump {
   border-top: 1px solid var(--bg-darkest);
   padding-top: 10px;

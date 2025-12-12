@@ -8,7 +8,7 @@ const years = [
   { nr: "2022", bgColor: "rgba(75, 192, 232, 0.2)", borderColor: "rgb(75, 192, 232, 0.75)", borderColorDimmed: "rgb(75, 192, 232, 0.25)", pointStyle: 'rect' },
   { nr: "2023", bgColor: "rgba(60, 102, 255, 0.2)", borderColor: "rgb(60, 102, 255, 0.75)", borderColorDimmed: "rgb(60, 102, 255, 0.25)", pointStyle: 'cross' },
   { nr: "2024", bgColor: "rgba(173, 122, 255, 0.2)", borderColor: "rgb(173, 122, 255, 0.75)", borderColorDimmed: "rgb(173, 122, 255, 0.25)", pointStyle: 'triangle' },
-  { nr: "2025", bgColor: "rgba(252, 122, 210, 0.2)", borderColor: "rgb(252, 122, 210, 0.75)", borderColorDimmed: "rgb(252, 122, 210, 0.25)", pointStyle: 'triangle' },
+  { nr: "2025", bgColor: "rgba(255, 122, 200, 0.2)", borderColor: "rgb(255, 122, 200, 0.75)", borderColorDimmed: "rgb(255, 122, 200, 0.25)", pointStyle: 'triangle' },
 ];
 
 Chart.register(ChartDataLabels);
@@ -157,6 +157,10 @@ function ySorter() {
 
 function xSorter() {
   return (a, b) => a.x.localeCompare(b.x);
+}
+
+function xSorterNumeric() {
+  return (a, b) => parseInt(a.x) - parseInt(b.x);
 }
 
 // Apologies for this name, and apologies for such a "mutable" (mutant?) method
@@ -695,9 +699,69 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // Emotions Overview Graph
+  const emotions = [
+    { questionKey: "Emotions_EcstasyJoy",             questionTitle: "😁 Ecstasy and/or Joy 😁",            },
+    { questionKey: "Emotions_AdmirationTrust",        questionTitle: "🤩 Admiration and/or Trust 🤩",       },
+    { questionKey: "Emotions_TerrorFear",             questionTitle: "😱 Terror and/or Fear 😱",            },
+    { questionKey: "Emotions_AmazementSurprise",      questionTitle: "😲 Amazement and/or Surprise 😲",     },
+    { questionKey: "Emotions_GriefSadnessc",          questionTitle: "😭 Grief and/or Sadness 😭",          },
+    { questionKey: "Emotions_LoathingDisgust",        questionTitle: "🤮 Loathing and/or Disgust 🤮",       },
+    { questionKey: "Emotions_RageAnger",              questionTitle: "😡 Rage and/or Anger 😡",             },
+    { questionKey: "Emotions_VigilanceAnticipation",  questionTitle: "😬 Vigilance and/or Anticipation 😬", },
+  ];
+
+  const year2025Data = alldata.find(year => year.nr === "2025");
+
+  // TODO: Make filters dynamic. These are just examples for now.
+  const filters = [
+    { label: "Everyone",  backgroundColor: "rgba(80, 150, 250, 0.7)", func: () => true },
+    { label: "PHP",       backgroundColor: "rgba(255, 126, 0, 0.7)",  func: (response) => response["Languages"].includes("PHP") },
+  ];
+
+  emotions.forEach(({ questionKey, questionTitle }) => {
+    if (!year2025Data) return;
+
+    data = {
+      datasets: filters
+        .map(({label, backgroundColor, func}) => ({ label, backgroundColor, responses: year2025Data.responses.filter(func)}))
+        .map((set) => ({
+          label: set.label,
+          backgroundColor: set.backgroundColor,
+          borderColor: "rgba(0, 0, 0, 0.5)",
+          borderWidth: 1,
+          responseCount: set.responses.length,
+          data: set.responses
+            .filter(r => r[questionKey] !== "")
+            .reduce(singleAnswerReducer(questionKey), [])
+            .map(percentageMapperFor(set))
+        }))
+    };
+    
+    data.datasets.forEach(ds => ds.data.sort(xSorterNumeric()));
+
+    charts[`emotionsOverview_${questionKey}`] = new Chart(getById(`emotionsOverview_${questionKey}`).getContext("2d"), {
+      type: "bar",
+      data,
+      options: {
+        scales: { y: { suggestedMax: 80 } },
+        plugins: {
+          ...chartTitle(questionTitle, "'How intensely do you typically experience this emotion during AoC puzzling?'"),
+          datalabels: { display: false },
+        },
+      },
+    });
+  });
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+
   function toggleYear(year, visible) {
     for (let key in charts) {
       if (key === "responsesPerDay") continue; // Allows for indivindual toggling
+      if (key === "yearSpecificQuestion2023") continue; // Never toggle 2023-specific question
+      if (key === "yearSpecificQuestion2024") continue; // Never toggle 2024-specific question
       charts[key].data.datasets.forEach((dataset) =>{
         if (dataset.label === year) {
           const idx = charts[key].data.datasets.indexOf(dataset);
