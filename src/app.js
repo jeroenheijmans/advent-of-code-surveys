@@ -198,7 +198,7 @@ function mutateDataAddLabelsToForceOrderForMostRecentYear(data) {
 // It's nice to have nearly no dependencies, but wow building some html
 // without a framework or templating library is cumbersome. Anyways, it
 // keeps things simple for now, so...
-function wireUpDataTableFor(chartData, title, subject, filterFn = () => false) {
+function wireUpDataTableFor(chartData, title, subject, filterFn = () => true) {
   // Cheap clone setup, because we want our own private copy of this data:
   chartData = JSON.parse(JSON.stringify(chartData));
 
@@ -256,6 +256,8 @@ function wireUpDataTableFor(chartData, title, subject, filterFn = () => false) {
         });
         rows[i.x] = row;
       }
+      console.log(i.x, ds.label)
+      console.log(rows[i.x])
       rows[i.x][ds.label].appendChild(createElement("span", i.absolute));
       rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(1)}%`));
     }));
@@ -862,7 +864,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     filterDropdown.addEventListener("change", event => {
       const targetOption = event.target.value;
       toggleEmotionOption(targetOption, i);
-      setQueryParam(`ef${i}`, targetOption);
+      setQueryParam(`ef${i}`, targetOption, "section-emotions");
     });
 
     if (i === 0) filterDropdown.value = "Everyone"
@@ -877,13 +879,14 @@ window.addEventListener("DOMContentLoaded", async () => {
     return filterOptions.find(o => o.key === value) ? value : null;
   }
 
-  function setQueryParam(name, value) {
+  function setQueryParam(name, value, hashFragment = null) {
     const url = new URL(window.location);
     const params = url.searchParams;
     if (value === null || value === undefined) params.delete(name);
     else params.set(name, value);
+    if (hashFragment !== null && hashFragment !== undefined) url.hash = hashFragment.startsWith('#') ? hashFragment : `#${hashFragment}`;
     window.history.pushState({}, '', url.toString());
-  };
+  }
   
   const filter0 = getParam("ef0") || "everyone";
   const filter1 = getParam("ef1") || "hidden";

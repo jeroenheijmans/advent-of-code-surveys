@@ -598,6 +598,7 @@ const columns = {
       "Ocaml": "OCaml",
       "OCamL": "OCaml",
       "Octave (v. close to Matlab)": "Octave",
+      "GNU Octave": "Octave",
       "Lean 4": "Lean",
       "GNU Pascal": "Pascal",
       "Pen and Paper probably": "Pen & Paper",
@@ -742,6 +743,7 @@ const columns = {
        answer = answer.replace("LLVM IR, jq, PostScript, Uiua, JVM bytecode, LaTeX, sed, Noulith, Picat, Hy, GNU Octave, fasmg macros", "LLVM IR;jq;PostScript;Uiua;JVM bytecode;LaTeX;sed;Noulith;Picat;Hy;GNU Octave;fasmg macros");
        answer = answer.replace("jq, dc, graphviz", "jq;dc;graphviz");
        answer = answer.replace("Kenpali (language I created)", "My own language: Kenpali");
+       answer = answer.replace("V, Odin", "V;Odin");
        
        if (answer.includes(' and ')) {
          console.warn("  => DANGER! Language with 'and':", answer);
@@ -1120,6 +1122,7 @@ const columns = {
       "Unreal Engine Blueprints": "Unreal Engine",
 
       "Uiua pad": "Uiua Pad",
+      "Uiua Pad website (uiua.org/pad)": "Uiua Pad",
       "Uiua online pad": "Uiua Pad",
       "Uiua pad (web editor)": "Uiua Pad",
       "https://www.uiua.org/pad": "Uiua Pad",
