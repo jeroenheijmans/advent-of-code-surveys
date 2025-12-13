@@ -289,7 +289,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     }));
   } catch (error) {
     getById("error").style.display = "block";
-    getById("charts").style.display = "none";
+    getById("charts1").style.display = "none";
+    getById("charts2").style.display = "none";
+    getById("charts3").style.display = "none";
     return;
   }
 
