@@ -844,6 +844,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     wrapperForDropdown.appendChild(filterDropdown);
     wrapperForDropdown.classList = "emotions-wrapper";
 
+    filterDropdown.classList ="glowing";
     filterDropdown.id = `emotionFilter${i}`;
     filterLabel.setAttribute("for", `emotionFilter${i}`);
 
@@ -860,6 +861,10 @@ window.addEventListener("DOMContentLoaded", async () => {
       
       if (option.group === "") filterDropdown.appendChild(optionElement);
       else optGroup.appendChild(optionElement);
+    });
+
+    filterDropdown.addEventListener("focus", _ => {
+      setTimeout(() => document.querySelectorAll(".glowing").forEach(el => el.classList.remove("glowing")), 2000);
     });
 
     filterDropdown.addEventListener("change", event => {

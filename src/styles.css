@@ -74,7 +74,7 @@ select {
   color: var(--fg-light);
   background-color: var(--bg-darkest);
   padding: 5px 10px 5px 10px;
-  border: 1px solid var(--bg-dark);
+  border: 1px solid var(--bg-dark-min-1);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -119,6 +119,16 @@ header label:hover {
 .source-link:hover {
   background: rgba(60, 60, 60, 0.95);
   text-decoration: none;
+}
+
+.glowing {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+  to { box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); }
 }
 
 footer {
