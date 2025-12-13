@@ -28,6 +28,11 @@ Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
 const getById = (id) => document.getElementById(id);
 const createElement = (tag, text = "") => { const el = document.createElement(tag); el.innerText = text; return el; }
 
+function sluggify() {
+  if (arguments.length === 0) throw new Error("Function requires at least one argument.");
+  return [...arguments].map(a => `${a}`.toLowerCase().replace(/\s+/g, '-')).join('-');
+}
+
 function datalabelsYFormatter(options = { withLabel: false, alwaysShow: false }) {
   return {
     datalabels: {
@@ -730,6 +735,7 @@ window.addEventListener("DOMContentLoaded", async () => {
             count: 0,
             group,
             label,
+            key: sluggify(group, label),
             func: (response) => Array.isArray(response[group]) ? response[group].includes(key) : response[group] === key,
           };
           result.push(wrapper);
@@ -745,6 +751,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   filterOptions.unshift({
     label: "Everyone",
     group: "",
+    key: "everyone",
     count: year2025Data.responses.length,
     func: (_response) => true,
   });
@@ -752,6 +759,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   filterOptions.unshift({
     label: "(hidden)",
     group: "",
+    key: "hidden",
     count: year2025Data.responses.length,
     func: (_response) => false,
   });
@@ -786,14 +794,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       type: "bar",
       data: {
         datasets: [
-          getEmotionsDatasetFor({
-            questionKey,
-            label: "Everyone",
-            backgroundColor: emotionsPalette[0].backgroundColor,
-            func: () => true
-          }),
-          { label: "(hidden)", hidden: true },
-          { label: "(hidden)", hidden: true },
+          // Gets set later on using defaults or URL Search Params
         ]
       },
       options: {
@@ -816,6 +817,21 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
+  function toggleEmotionOption(targetOption, dataSetIndex) {
+    const i = dataSetIndex;
+    emotions.forEach(({questionKey}) => {
+      const filterOption = filterOptions.find(o => o.key === targetOption);
+      const chart = charts[`emotionsOverview_${questionKey}`];
+      chart.data.datasets[i] = getEmotionsDatasetFor({
+        questionKey,
+        label: filterOption.label,
+        backgroundColor: emotionsPalette[i].backgroundColor,
+        func: filterOption.func
+      });
+      chart.update();
+    });
+  }
+
   for (let i = 0; i < 3; i++) {
     const wrapperForDropdown = createElement("div");
     const filterLabel = createElement("label", `Set ${i + 1}:`)
@@ -837,30 +853,52 @@ window.addEventListener("DOMContentLoaded", async () => {
         filterDropdown.appendChild(optGroup);
       }
       const optionElement = createElement("option", option.label === "(hidden)" ? "(hidden)" : `${option.label} - (${option.count} respondents)`);
-      optionElement.value = option.label;
+      optionElement.value = option.key;
       
       if (option.group === "") filterDropdown.appendChild(optionElement);
       else optGroup.appendChild(optionElement);
     });
 
     filterDropdown.addEventListener("change", event => {
-      emotions.forEach(({questionKey}) => {
-        const filterOption = filterOptions.find(o => o.label === event.target.value);
-        const chart = charts[`emotionsOverview_${questionKey}`];
-        chart.data.datasets[i] = getEmotionsDatasetFor({
-          questionKey,
-          label: filterOption.label,
-          backgroundColor: emotionsPalette[i].backgroundColor,
-          func: filterOption.func
-        });
-        chart.update();
-      })
+      const targetOption = event.target.value;
+      toggleEmotionOption(targetOption, i);
+      setQueryParam(`ef${i}`, targetOption);
     });
 
     if (i === 0) filterDropdown.value = "Everyone"
 
     getById("emotion-selects").appendChild(wrapperForDropdown);
   }
+
+  const params = new URLSearchParams(window.location.search);
+
+  function getParam(name) {
+    const value = params.get(name)?.toLowerCase();
+    return filterOptions.find(o => o.key === value) ? value : null;
+  }
+
+  function setQueryParam(name, value) {
+    const url = new URL(window.location);
+    const params = url.searchParams;
+    if (value === null || value === undefined) params.delete(name);
+    else params.set(name, value);
+    window.history.pushState({}, '', url.toString());
+  };
+  
+  const filter0 = getParam("ef0") || "everyone";
+  const filter1 = getParam("ef1") || "hidden";
+  const filter2 = getParam("ef2") || "hidden";
+
+  function initializeEmotionFilter(i, key) {
+    const select = getById(`emotionFilter${i}`);
+    select.value = key;
+    toggleEmotionOption(key, i);
+  }
+
+  initializeEmotionFilter(0, filter0);
+  initializeEmotionFilter(1, filter1);
+  initializeEmotionFilter(2, filter2);
+
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
 
