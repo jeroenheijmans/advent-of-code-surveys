@@ -256,8 +256,7 @@ function wireUpDataTableFor(chartData, title, subject, filterFn = () => true) {
         });
         rows[i.x] = row;
       }
-      console.log(i.x, ds.label)
-      console.log(rows[i.x])
+      
       rows[i.x][ds.label].appendChild(createElement("span", i.absolute));
       rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(1)}%`));
     }));

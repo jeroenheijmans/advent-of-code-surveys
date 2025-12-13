@@ -271,22 +271,19 @@ footer {
 .datatable .rawdata {
   display: flex;
   flex-direction: column;
+  line-height: 1.1rem;
 }
 
 .datatable .rawdata > span {
   display: inline-block;
   text-align: right;
+  padding-left: 10px;
+  margin-left: auto;
 }
 
-@media (min-width: 1800px), (min-width: 960px) and (max-width: 1400px) {
-  .datatable .rawdata {
-    flex-direction: row;
-  }
-
-  .datatable .rawdata > span {
-    padding-left: 10px;
-    margin-left: auto;
-  }
+.datatable .rawdata span:nth-child(2) {
+  opacity: 0.6;
+  font-size: 0.7rem;
 }
 
 @media (max-width: 1400px) {
