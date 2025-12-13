@@ -1,20 +1,21 @@
 const baseUrl = "";
-const currentYear = "2024";
+const currentYear = "2025";
 const years = [
-  { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'rectRot' },
+  { nr: "2018", bgColor: "rgba(208, 60, 88, 0.2)", borderColor: "rgb(208, 60, 88, 0.75)", borderColorDimmed: "rgb(208, 60, 88, 0.25)", pointStyle: 'line' },
   { nr: "2019", bgColor: "rgba(208, 102, 60, 0.2)", borderColor: "rgb(208, 102, 60, 0.75)", borderColorDimmed: "rgb(208, 102, 60, 0.25)", pointStyle: 'crossRot' },
   { nr: "2020", bgColor: "rgba(208, 203, 60, 0.2)", borderColor: "rgb(208, 203, 60, 0.75)", borderColorDimmed: "rgb(208, 203, 60, 0.25)", pointStyle: 'circle' },
   { nr: "2021", bgColor: "rgba(60, 208, 106, 0.20)", borderColor: "rgb(60, 208, 106, 0.75)", borderColorDimmed: "rgb(60, 208, 106, 0.25)", pointStyle: 'star' },
   { nr: "2022", bgColor: "rgba(75, 192, 232, 0.2)", borderColor: "rgb(75, 192, 232, 0.75)", borderColorDimmed: "rgb(75, 192, 232, 0.25)", pointStyle: 'rect' },
   { nr: "2023", bgColor: "rgba(60, 102, 255, 0.2)", borderColor: "rgb(60, 102, 255, 0.75)", borderColorDimmed: "rgb(60, 102, 255, 0.25)", pointStyle: 'cross' },
   { nr: "2024", bgColor: "rgba(173, 122, 255, 0.2)", borderColor: "rgb(173, 122, 255, 0.75)", borderColorDimmed: "rgb(173, 122, 255, 0.25)", pointStyle: 'triangle' },
+  { nr: "2025", bgColor: "rgba(255, 122, 200, 0.2)", borderColor: "rgb(255, 122, 200, 0.75)", borderColorDimmed: "rgb(255, 122, 200, 0.25)", pointStyle: 'rectRot' },
 ];
 
 Chart.register(ChartDataLabels);
 
 Chart.defaults.color = "#E0DEDE";
 Chart.defaults.scale.grid.color = "rgba(255, 255, 255, 0.1)";
-Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1.25 : 1.75; // TODO: Evaluate this on screen resize
+Chart.defaults.aspectRatio = Math.min(screen.width, window.innerWidth) < 960 ? 1.00 : 1.75; // TODO: Evaluate this on screen resize
 Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
   let label = context.dataset.label || "";
   if (label) label += ": ";
@@ -26,6 +27,11 @@ Chart.defaults.plugins.tooltip.callbacks.label = (context) => {
 // Helpers
 const getById = (id) => document.getElementById(id);
 const createElement = (tag, text = "") => { const el = document.createElement(tag); el.innerText = text; return el; }
+
+function sluggify() {
+  if (arguments.length === 0) throw new Error("Function requires at least one argument.");
+  return [...arguments].map(a => `${a}`.toLowerCase().replace(/\s+/g, '-')).join('-');
+}
 
 function datalabelsYFormatter(options = { withLabel: false, alwaysShow: false }) {
   return {
@@ -158,6 +164,10 @@ function xSorter() {
   return (a, b) => a.x.localeCompare(b.x);
 }
 
+function xSorterNumeric() {
+  return (a, b) => parseInt(a.x) - parseInt(b.x);
+}
+
 // Apologies for this name, and apologies for such a "mutable" (mutant?) method
 // TODO: Wrangle some JavaScript to make this nicer, more functional...
 function mutateDataSetsToGroupRestItemsUnderYValue(data, yThreshold) {
@@ -188,7 +198,7 @@ function mutateDataAddLabelsToForceOrderForMostRecentYear(data) {
 // It's nice to have nearly no dependencies, but wow building some html
 // without a framework or templating library is cumbersome. Anyways, it
 // keeps things simple for now, so...
-function wireUpDataTableFor(chartData, title, subject) {
+function wireUpDataTableFor(chartData, title, subject, filterFn = () => true) {
   // Cheap clone setup, because we want our own private copy of this data:
   chartData = JSON.parse(JSON.stringify(chartData));
 
@@ -215,7 +225,7 @@ function wireUpDataTableFor(chartData, title, subject) {
     let tr = thead.appendChild(createElement("tr"));
     let th = tr.appendChild(createElement("th", title));
   
-    years.forEach(year => {
+    years.filter(filterFn).forEach(year => {
       let thYear = tr.appendChild(createElement("th", year.nr + (year.nr === currentYear ? " ⬇" : "")));
       const responseCount = chartData.datasets.find(ds => ds.label === year.nr)?.responseCount;
       if (responseCount) {
@@ -240,12 +250,13 @@ function wireUpDataTableFor(chartData, title, subject) {
         // render nicely on small devices.
         if (i.x.match(/\S{16,}/)) rowTh.style.wordBreak = "break-all";
 
-        years.forEach(year => {
+        years.filter(filterFn).forEach(year => {
           row[year.nr] = row.tr.appendChild(createElement("td")).appendChild(createElement("div"));
           row[year.nr].classList.add("rawdata")
         });
         rows[i.x] = row;
       }
+      
       rows[i.x][ds.label].appendChild(createElement("span", i.absolute));
       rows[i.x][ds.label].appendChild(createElement("span", `${i.y.toFixed(1)}%`));
     }));
@@ -284,7 +295,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     }));
   } catch (error) {
     getById("error").style.display = "block";
-    getById("charts").style.display = "none";
+    getById("charts1").style.display = "none";
+    getById("charts2").style.display = "none";
+    getById("charts3").style.display = "none";
     return;
   }
 
@@ -427,7 +440,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   ////////////////////////////////////////////////////////////////////////////////
   // leaderboardsGlobal
   data = {
-    datasets: alldata.map(year => ({
+    datasets: alldata.filter(year => year.nr < "2025").map(year => ({
       ...yearDatasetDefaults(year),
       responseCount: year.responses.length,
       data: year
@@ -437,7 +450,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }))
   };
   
-  wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal");
+  wireUpDataTableFor(data, "Global Leaderboard Participation", "leaderboardsGlobal", year => year.nr < "2025");
   mutateDataSetsToGroupRestItemsUnderYValue(data, 0.5);
   data.datasets.forEach(ds => ds.data.sort(ySorterWithFixedEndItems(["Other..."])));
   mutateDataAddLabelsToForceOrderForMostRecentYear(data);
@@ -446,8 +459,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
+      scales: { y: { suggestedMax: 50 } },
       plugins: {
-        ...chartTitle("Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
+        ...chartTitle("[2024 and before] Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
         ...datalabelsYFormatter(),
       },
     },
@@ -494,6 +508,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     { key: "Participates_in_2022", label: "2022" },
     { key: "Participates_in_2023", label: "2023" },
     { key: "Participates_in_2024", label: "2024" },
+    { key: "Participates_in_2025", label: "2025" },
   ];
 
   const participationOptions = [
@@ -605,6 +620,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   data = {
     datasets: alldata.filter(year => year.nr === "2024").map(year => ({
       ...yearDatasetDefaults(year),
+      hidden: false,
       borderColor: "rgba(0, 0, 0, 0.8)",
       backgroundColor: [
         // Hard-coded, the 2024 data won't change anymore anyways
@@ -692,9 +708,214 @@ window.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // Emotions Overview Graph
+  const emotions = [
+    { questionKey: "Emotions_EcstasyJoy",             questionTitle: "😁 [2025] Ecstasy and/or Joy 😁",            },
+    { questionKey: "Emotions_AdmirationTrust",        questionTitle: "🤩 [2025] Admiration and/or Trust 🤩",       },
+    { questionKey: "Emotions_TerrorFear",             questionTitle: "😱 [2025] Terror and/or Fear 😱",            },
+    { questionKey: "Emotions_AmazementSurprise",      questionTitle: "😲 [2025] Amazement and/or Surprise 😲",     },
+    { questionKey: "Emotions_GriefSadnessc",          questionTitle: "😭 [2025] Grief and/or Sadness 😭",          },
+    { questionKey: "Emotions_LoathingDisgust",        questionTitle: "🤮 [2025] Loathing and/or Disgust 🤮",       },
+    { questionKey: "Emotions_RageAnger",              questionTitle: "😡 [2025] Rage and/or Anger 😡",             },
+    { questionKey: "Emotions_VigilanceAnticipation",  questionTitle: "😬 [2025] Vigilance and/or Anticipation 😬", },
+  ];
+
+  const year2025Data = alldata.find(year => year.nr === "2025");
+
+  const filterOptions = ["OS", "Languages", "IDEs"]
+    .map(group => year2025Data.responses
+      .map(r => r[group])
+      .flat()
+      .reduce((result, key) => {
+        const label = `${key}`;
+        let wrapper = result.find(i => i.label === label);
+        if (!wrapper) {
+          wrapper = {
+            count: 0,
+            group,
+            label,
+            key: sluggify(group, label),
+            func: (response) => Array.isArray(response[group]) ? response[group].includes(key) : response[group] === key,
+          };
+          result.push(wrapper);
+        }
+        wrapper.count++;
+        return result;
+      }, [])
+      .filter(i => i.count >= 2)
+      .toSorted((a, b) => a.label.localeCompare(b.label))
+    )
+    .flat();
+
+  filterOptions.unshift({
+    label: "Everyone",
+    group: "",
+    key: "everyone",
+    count: year2025Data.responses.length,
+    func: (_response) => true,
+  });
+
+  filterOptions.unshift({
+    label: "(hidden)",
+    group: "",
+    key: "hidden",
+    count: year2025Data.responses.length,
+    func: (_response) => false,
+  });
+
+  const emotionsPalette = [
+    { backgroundColor: "rgba(80, 150, 250, 0.7)" },
+    { backgroundColor: "rgba(255, 126, 0, 0.7)" },
+    { backgroundColor: "rgba(90, 225, 0, 0.7)" },
+  ];
+
+  function getEmotionsDatasetFor({ questionKey, label, backgroundColor, func}) {
+    const responses = year2025Data.responses.filter(func).filter(r => r[questionKey] !== "");
+    const set = {
+      label,
+      backgroundColor,
+      borderColor: "rgba(0, 0, 0, 0.5)",
+      borderWidth: 1,
+      responseCount: responses.length,
+      hidden: label === "(hidden)",
+      data: responses
+        .reduce(singleAnswerReducer(questionKey), [])
+        .map(percentageMapperFor({responses}))
+        .sort(xSorterNumeric())
+    };
+    const avg = set.data.reduce((result, next) => result + (parseInt(next.x) * next.y / 100), 0);
+    set.label = `${set.label} (avg = ${avg.toFixed(1)})`
+    return set;
+  }
+
+  emotions.forEach(({ questionKey, questionTitle }) => {
+    if (!year2025Data) return;
+    
+    charts[`emotionsOverview_${questionKey}`] = new Chart(getById(`emotionsOverview_${questionKey}`).getContext("2d"), {
+      type: "bar",
+      data: {
+        datasets: [
+          // Gets set later on using defaults or URL Search Params
+        ]
+      },
+      options: {
+        scales: { 
+          x: { display: true, labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], },
+          y: { suggestedMax: 80 },
+        },
+        plugins: {
+          ...chartTitle(questionTitle, "'How intensely do you experience this while doing AoC?'"),
+          datalabels: { display: false },
+          legend: {
+            labels: {
+              filter: function(legendItem, data) {
+                return !legendItem.text.startsWith("(hidden)");
+              }
+            }
+          },
+        },
+      },
+    });
+  });
+
+  function toggleEmotionOption(targetOption, dataSetIndex) {
+    const i = dataSetIndex;
+    emotions.forEach(({questionKey}) => {
+      const filterOption = filterOptions.find(o => o.key === targetOption);
+      const chart = charts[`emotionsOverview_${questionKey}`];
+      chart.data.datasets[i] = getEmotionsDatasetFor({
+        questionKey,
+        label: filterOption.label,
+        backgroundColor: emotionsPalette[i].backgroundColor,
+        func: filterOption.func
+      });
+      chart.update();
+    });
+  }
+
+  for (let i = 0; i < 3; i++) {
+    const wrapperForDropdown = createElement("div");
+    const filterLabel = createElement("label", `Set ${i + 1}:`)
+    const filterDropdown = createElement("select");
+
+    wrapperForDropdown.appendChild(filterLabel);
+    wrapperForDropdown.appendChild(filterDropdown);
+    wrapperForDropdown.classList = "emotions-wrapper";
+
+    filterDropdown.classList ="glowing";
+    filterDropdown.id = `emotionFilter${i}`;
+    filterLabel.setAttribute("for", `emotionFilter${i}`);
+
+    let optGroup = null;
+
+    filterOptions.forEach(option => {
+      if (option.group !== "" && optGroup?.label !== option.group) {
+        optGroup = createElement("optgroup");
+        optGroup.label = option.group;
+        filterDropdown.appendChild(optGroup);
+      }
+      const optionElement = createElement("option", option.label.startsWith("(hidden)") ? "(hidden)" : `${option.label} - (${option.count} respondents)`);
+      optionElement.value = option.key;
+      
+      if (option.group === "") filterDropdown.appendChild(optionElement);
+      else optGroup.appendChild(optionElement);
+    });
+
+    filterDropdown.addEventListener("focus", _ => {
+      setTimeout(() => document.querySelectorAll(".glowing").forEach(el => el.classList.remove("glowing")), 2000);
+    });
+
+    filterDropdown.addEventListener("change", event => {
+      const targetOption = event.target.value;
+      toggleEmotionOption(targetOption, i);
+      setQueryParam(`ef${i}`, targetOption, "section-emotions");
+    });
+
+    if (i === 0) filterDropdown.value = "Everyone"
+
+    getById("emotion-selects").appendChild(wrapperForDropdown);
+  }
+
+  const params = new URLSearchParams(window.location.search);
+
+  function getParam(name) {
+    const value = params.get(name)?.toLowerCase();
+    return filterOptions.find(o => o.key === value) ? value : null;
+  }
+
+  function setQueryParam(name, value, hashFragment = null) {
+    const url = new URL(window.location);
+    const params = url.searchParams;
+    if (value === null || value === undefined) params.delete(name);
+    else params.set(name, value);
+    if (hashFragment !== null && hashFragment !== undefined) url.hash = hashFragment.startsWith('#') ? hashFragment : `#${hashFragment}`;
+    window.history.pushState({}, '', url.toString());
+  }
+  
+  const filter0 = getParam("ef0") || "everyone";
+  const filter1 = getParam("ef1") || "hidden";
+  const filter2 = getParam("ef2") || "hidden";
+
+  function initializeEmotionFilter(i, key) {
+    const select = getById(`emotionFilter${i}`);
+    select.value = key;
+    toggleEmotionOption(key, i);
+  }
+
+  initializeEmotionFilter(0, filter0);
+  initializeEmotionFilter(1, filter1);
+  initializeEmotionFilter(2, filter2);
+
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+
   function toggleYear(year, visible) {
     for (let key in charts) {
       if (key === "responsesPerDay") continue; // Allows for indivindual toggling
+      if (key === "yearSpecificQuestion2023") continue; // Never toggle 2023-specific question
+      if (key === "yearSpecificQuestion2024") continue; // Never toggle 2024-specific question
       charts[key].data.datasets.forEach((dataset) =>{
         if (dataset.label === year) {
           const idx = charts[key].data.datasets.indexOf(dataset);

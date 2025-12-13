@@ -1770,7 +1770,7 @@
     "IDEs": [
       "mcedit"
     ],
-    "OS": "BSD",
+    "OS": "Combi of BSD/Linux",
     "Global_Leaderboard_Participation": "No, too stressful",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
@@ -5034,7 +5034,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "to make visualizations"
+      "to create visualizations"
     ],
     "Year_specific_2024_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -20677,7 +20677,7 @@
     ],
     "IDEs": [
       "Vim",
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -62203,7 +62203,7 @@
     ],
     "IDEs": [],
     "OS": "macOS",
-    "Global_Leaderboard_Participation": "(Blank)",
+    "Global_Leaderboard_Participation": "No, too much AI/LLM on leaderboard",
     "Private_Leaderboard_Count": "1",
     "Reason_for_participating": [
       "for fun",
@@ -76644,7 +76644,7 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "Compete with colleagues, opportunity for which is rare"
+      "to compete with colleagues"
     ],
     "Year_specific_2024_AI_and_LLM_thoughts": [
       "Other..."
@@ -79696,7 +79696,7 @@
     "Languages": [
       "Go",
       "VB6",
-      "Turbo Pascal 7"
+      "Turbo Pascal"
     ],
     "IDEs": [
       "Zed"
@@ -98407,7 +98407,7 @@
       "for a challenge",
       "for Santa!",
       "improve skills",
-      "As a group activity with friends."
+      "for fun with friends"
     ],
     "Year_specific_2024_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -106517,7 +106517,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -124983,7 +124983,7 @@
       "Bash/Shell"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -125551,7 +125551,7 @@
       "Ruby"
     ],
     "IDEs": [
-      "KATE",
+      "Kate",
       "Kakoune"
     ],
     "OS": "Linux",
@@ -125656,7 +125656,7 @@
       "Python 3"
     ],
     "IDEs": [
-      "KATE"
+      "Kate"
     ],
     "OS": "Linux",
     "Global_Leaderboard_Participation": "No, timezone is problematic",
@@ -126199,7 +126199,8 @@
       "for fun",
       "for a challenge",
       "improve skills",
-      "community and live streams"
+      "for the community",
+      "for the live streams"
     ],
     "Year_specific_2024_AI_and_LLM_thoughts": [
       "Not again with AI",
@@ -126525,7 +126526,7 @@
     "IDEs": [
       "IntelliJ",
       "Vim",
-      "Uiua pad (web editor)"
+      "Uiua Pad"
     ],
     "OS": "macOS",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -127564,7 +127565,7 @@
     ],
     "IDEs": [
       "VS Code",
-      "Uiua online pad"
+      "Uiua Pad"
     ],
     "OS": "WSL",
     "Global_Leaderboard_Participation": "No, not interested",
@@ -127933,7 +127934,7 @@
     "IDEs": [
       "PyCharm"
     ],
-    "OS": "Fedora KDE",
+    "OS": "Linux",
     "Global_Leaderboard_Participation": "No, not interested",
     "Private_Leaderboard_Count": "0",
     "Reason_for_participating": [
