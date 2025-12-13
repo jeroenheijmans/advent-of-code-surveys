@@ -770,7 +770,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       borderColor: "rgba(0, 0, 0, 0.5)",
       borderWidth: 1,
       responseCount: responses.length,
-      hidden: label === "",
+      hidden: label === "(hidden)",
       data: responses
         .filter(r => r[questionKey] !== "")
         .reduce(singleAnswerReducer(questionKey), [])
@@ -792,8 +792,8 @@ window.addEventListener("DOMContentLoaded", async () => {
             backgroundColor: emotionsPalette[0].backgroundColor,
             func: () => true
           }),
-          { hidden: true },
-          { hidden: true },
+          { label: "(hidden)", hidden: true },
+          { label: "(hidden)", hidden: true },
         ]
       },
       options: {
@@ -804,6 +804,13 @@ window.addEventListener("DOMContentLoaded", async () => {
         plugins: {
           ...chartTitle(questionTitle, "'How intensely do you experience this while doing AoC?'"),
           datalabels: { display: false },
+          legend: {
+            labels: {
+              filter: function(legendItem, data) {
+                return legendItem.text !== "(hidden)";
+              }
+            }
+          },
         },
       },
     });
