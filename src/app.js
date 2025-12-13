@@ -772,8 +772,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   ];
 
   function getEmotionsDatasetFor({ questionKey, label, backgroundColor, func}) {
-    const responses = year2025Data.responses.filter(func);
-    return {
+    const responses = year2025Data.responses.filter(func).filter(r => r[questionKey] !== "");
+    const set = {
       label,
       backgroundColor,
       borderColor: "rgba(0, 0, 0, 0.5)",
@@ -781,11 +781,13 @@ window.addEventListener("DOMContentLoaded", async () => {
       responseCount: responses.length,
       hidden: label === "(hidden)",
       data: responses
-        .filter(r => r[questionKey] !== "")
         .reduce(singleAnswerReducer(questionKey), [])
         .map(percentageMapperFor({responses}))
         .sort(xSorterNumeric())
     };
+    const avg = set.data.reduce((result, next) => result + (parseInt(next.x) * next.y / 100), 0);
+    set.label = `${set.label} (avg = ${avg.toFixed(1)})`
+    return set;
   }
 
   emotions.forEach(({ questionKey, questionTitle }) => {
@@ -809,7 +811,7 @@ window.addEventListener("DOMContentLoaded", async () => {
           legend: {
             labels: {
               filter: function(legendItem, data) {
-                return legendItem.text !== "(hidden)";
+                return !legendItem.text.startsWith("(hidden)");
               }
             }
           },
@@ -853,7 +855,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         optGroup.label = option.group;
         filterDropdown.appendChild(optGroup);
       }
-      const optionElement = createElement("option", option.label === "(hidden)" ? "(hidden)" : `${option.label} - (${option.count} respondents)`);
+      const optionElement = createElement("option", option.label.startsWith("(hidden)") ? "(hidden)" : `${option.label} - (${option.count} respondents)`);
       optionElement.value = option.key;
       
       if (option.group === "") filterDropdown.appendChild(optionElement);
