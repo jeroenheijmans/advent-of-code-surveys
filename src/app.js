@@ -451,6 +451,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     type: "bar",
     data,
     options: {
+      scales: { y: { suggestedMax: 50 } },
       plugins: {
         ...chartTitle("[2024 and before] Global Leaderboard Participation", "Why you are (not) participating on the global leaderboard."),
         ...datalabelsYFormatter(),
@@ -715,38 +716,86 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const year2025Data = alldata.find(year => year.nr === "2025");
 
-  // TODO: Make filters dynamic. These are just examples for now.
-  const filters = [
-    { label: "Everyone",  backgroundColor: "rgba(80, 150, 250, 0.7)", func: () => true },
-    { label: "PHP",       backgroundColor: "rgba(255, 126, 0, 0.7)",  func: (response) => response["Languages"].includes("PHP") },
+  const filterOptions = ["OS", "Languages", "IDEs"]
+    .map(divider => year2025Data.responses
+      .map(r => r[divider])
+      .flat()
+      .reduce((result, key) => {
+        const label = `${divider}: ${key}`;
+        let wrapper = result.find(i => i.label === label);
+        if (!wrapper) {
+          wrapper = {
+            count: 0,
+            label,
+            func: (response) => Array.isArray(response[divider]) ? response[divider].includes(key) : response[divider] === key,
+          };
+          result.push(wrapper);
+        }
+        wrapper.count++;
+        return result;
+      }, [])
+      .filter(i => i.count >= 2)
+      .toSorted((a, b) => a.label.localeCompare(b.label))
+    )
+    .flat();
+
+  filterOptions.unshift({
+    label: "Everyone",
+    count: year2025Data.responses.length,
+    func: (_response) => true,
+  });
+
+  filterOptions.unshift({
+    label: "",
+    count: year2025Data.responses.length,
+    func: (_response) => false,
+  });
+
+  const emotionsPalette = [
+    { backgroundColor: "rgba(80, 150, 250, 0.7)" },
+    { backgroundColor: "rgba(255, 126, 0, 0.7)" },
+    { backgroundColor: "rgba(90, 225, 0, 0.7)" },
   ];
+
+  function getEmotionsDatasetFor({ questionKey, label, backgroundColor, func}) {
+    const responses = year2025Data.responses.filter(func);
+    return {
+      label,
+      backgroundColor,
+      borderColor: "rgba(0, 0, 0, 0.5)",
+      borderWidth: 1,
+      responseCount: responses.length,
+      hidden: label === "",
+      data: responses
+        .filter(r => r[questionKey] !== "")
+        .reduce(singleAnswerReducer(questionKey), [])
+        .map(percentageMapperFor({responses}))
+        .sort(xSorterNumeric())
+    };
+  }
 
   emotions.forEach(({ questionKey, questionTitle }) => {
     if (!year2025Data) return;
-
-    data = {
-      datasets: filters
-        .map(({label, backgroundColor, func}) => ({ label, backgroundColor, responses: year2025Data.responses.filter(func)}))
-        .map((set) => ({
-          label: set.label,
-          backgroundColor: set.backgroundColor,
-          borderColor: "rgba(0, 0, 0, 0.5)",
-          borderWidth: 1,
-          responseCount: set.responses.length,
-          data: set.responses
-            .filter(r => r[questionKey] !== "")
-            .reduce(singleAnswerReducer(questionKey), [])
-            .map(percentageMapperFor(set))
-        }))
-    };
     
-    data.datasets.forEach(ds => ds.data.sort(xSorterNumeric()));
-
     charts[`emotionsOverview_${questionKey}`] = new Chart(getById(`emotionsOverview_${questionKey}`).getContext("2d"), {
       type: "bar",
-      data,
+      data: {
+        datasets: [
+          getEmotionsDatasetFor({
+            questionKey,
+            label: "Everyone",
+            backgroundColor: emotionsPalette[0].backgroundColor,
+            func: () => true
+          }),
+          { hidden: true },
+          { hidden: true },
+        ]
+      },
       options: {
-        scales: { y: { suggestedMax: 80 } },
+        scales: { 
+          x: { display: true, labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], },
+          y: { suggestedMax: 80 },
+        },
         plugins: {
           ...chartTitle(questionTitle, "'How intensely do you experience this while doing AoC?'"),
           datalabels: { display: false },
@@ -754,6 +803,43 @@ window.addEventListener("DOMContentLoaded", async () => {
       },
     });
   });
+
+  for (let i = 0; i < 3; i++) {
+    const wrapperForDropdown = createElement("div");
+    const filterLabel = createElement("label", `Set ${i + 1}:`)
+    const filterDropdown = createElement("select");
+
+    wrapperForDropdown.appendChild(filterLabel);
+    wrapperForDropdown.appendChild(filterDropdown);
+    wrapperForDropdown.classList = "emotions-wrapper";
+
+    filterDropdown.id = `emotionFilter${i}`;
+    filterLabel.setAttribute("for", `emotionFilter${i}`);
+
+    filterOptions.forEach(option => {
+      const optionElement = createElement("option", option.label === "" ? "" : `${option.label} - (${option.count} respondents)`);
+      optionElement.value = option.label;
+      filterDropdown.appendChild(optionElement);
+    });
+
+    filterDropdown.addEventListener("change", event => {
+      emotions.forEach(({questionKey}) => {
+        const filterOption = filterOptions.find(o => o.label === event.target.value);
+        const chart = charts[`emotionsOverview_${questionKey}`];
+        chart.data.datasets[i] = getEmotionsDatasetFor({
+          questionKey,
+          label: filterOption.label,
+          backgroundColor: emotionsPalette[i].backgroundColor,
+          func: filterOption.func
+        });
+        chart.update();
+      })
+    });
+
+    if (i === 0) filterDropdown.value = "Everyone"
+
+    getById("emotion-selects").appendChild(wrapperForDropdown);
+  }
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
 

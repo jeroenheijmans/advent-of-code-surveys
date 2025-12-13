@@ -2,6 +2,7 @@
   --bg-darkest: #161d1f;
   --bg-darker: #1b2223;
   --bg-dark: #232c2d;
+  --bg-dark-min-1: #434c4d;
   --fg-lighter: #f4efef;
   --fg-light: #cecaca;
   --fg-dark: #a1a1a1;
@@ -64,6 +65,23 @@ h1, h2, h3, h4, h5, h6 {
 
 p { 
   margin: 0.5em 0 0 0;
+}
+
+select {
+  max-width: min(250px, 30vw);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--fg-light);
+  background-color: var(--bg-darkest);
+  padding: 5px 10px 5px 10px;
+  border: 1px solid var(--bg-dark);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: 2px solid var(--bg-dark-min-1);
+  outline-offset: 2px;
 }
 
 header label {
@@ -188,6 +206,19 @@ footer {
   transition: all 0.2s;
 }
 
+.emotion-filters-wrapper {
+  grid-column: span 2;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.emotions-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .datatable-scroll-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -274,6 +305,11 @@ footer {
   .datatable th,
   .datatable td {
     padding: 2px 4px;
+  }
+
+  .emotion-filters-wrapper {
+    align-items: center;
+    flex-direction: column;
   }
 }
 
