@@ -717,17 +717,18 @@ window.addEventListener("DOMContentLoaded", async () => {
   const year2025Data = alldata.find(year => year.nr === "2025");
 
   const filterOptions = ["OS", "Languages", "IDEs"]
-    .map(divider => year2025Data.responses
-      .map(r => r[divider])
+    .map(group => year2025Data.responses
+      .map(r => r[group])
       .flat()
       .reduce((result, key) => {
-        const label = `${divider}: ${key}`;
+        const label = `${key}`;
         let wrapper = result.find(i => i.label === label);
         if (!wrapper) {
           wrapper = {
             count: 0,
+            group,
             label,
-            func: (response) => Array.isArray(response[divider]) ? response[divider].includes(key) : response[divider] === key,
+            func: (response) => Array.isArray(response[group]) ? response[group].includes(key) : response[group] === key,
           };
           result.push(wrapper);
         }
@@ -741,12 +742,14 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   filterOptions.unshift({
     label: "Everyone",
+    group: "",
     count: year2025Data.responses.length,
     func: (_response) => true,
   });
 
   filterOptions.unshift({
-    label: "",
+    label: "(hidden)",
+    group: "",
     count: year2025Data.responses.length,
     func: (_response) => false,
   });
@@ -816,10 +819,19 @@ window.addEventListener("DOMContentLoaded", async () => {
     filterDropdown.id = `emotionFilter${i}`;
     filterLabel.setAttribute("for", `emotionFilter${i}`);
 
+    let optGroup = null;
+
     filterOptions.forEach(option => {
-      const optionElement = createElement("option", option.label === "" ? "" : `${option.label} - (${option.count} respondents)`);
+      if (option.group !== "" && optGroup?.label !== option.group) {
+        optGroup = createElement("optgroup");
+        optGroup.label = option.group;
+        filterDropdown.appendChild(optGroup);
+      }
+      const optionElement = createElement("option", option.label === "(hidden)" ? "(hidden)" : `${option.label} - (${option.count} respondents)`);
       optionElement.value = option.label;
-      filterDropdown.appendChild(optionElement);
+      
+      if (option.group === "") filterDropdown.appendChild(optionElement);
+      else optGroup.appendChild(optionElement);
     });
 
     filterDropdown.addEventListener("change", event => {
