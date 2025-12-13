@@ -154,6 +154,7 @@ footer {
 }
 
 .section-heading {
+  scroll-margin-top: 200px;
   text-align: center;
   box-shadow: 0 -20px 40px -20px rgba(0, 0, 0, 0.7);
   padding: 30px 0 20px;
