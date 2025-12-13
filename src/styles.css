@@ -289,7 +289,7 @@ footer {
 }
 
 @media (max-width: 1400px) {
-  #charts {
+  .charts {
     grid-template-columns: 1fr;
   }
 
